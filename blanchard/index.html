@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blanchard</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
 
 
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"> </script>
@@ -16,192 +16,192 @@
 </head>
 
 <body>
-  <header class="header container">
-    <div class="header-container ">
-      <a href="#" class="logo-header">
-        <img src="img/logo/logo1.svg" alt="" class="logo-first">
-        <img src="img/logo/logo2.svg" alt="" class="logo-second">
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="header__logo">
+        <img src="img/logo/logo.svg" alt="" class="header__logo__image">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__item__link"> О нас</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__item__link"> Галерея</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__item__link">Каталог</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__item__link">События</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__item__link">Издания</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__item__link">Проекты</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__item__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="header__btn">
+        <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
+            fill="currentColor" />
+        </svg>
+        Войти
       </a>
     </div>
-
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#" class="link-list"> О нас</a>
+    <div class="container header__menu ">
+      <ul class="menu" id="menu">
+        <li class="header__menu__item">
+          <a href="#" class="header__menu__link__btn">Реализм
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
+            </svg>
+          </a>
+          <ul class="sub__menu" data-simplebar>
+            <li class="sub__menu__item first-item-realism">
+              <a href="#" class="sub__menu__link">Тинторетто</a>
+            </li>
+            <li class="sub__menu__item second-item-realism">
+              <a href="#" class="sub__menu__link">Фридрих</a>
+            </li>
+            <li class="sub__menu__item third-item-realism">
+              <a href="#" class="sub__menu__link">Леонардо</a>
+            </li>
+            <li class="sub__menu__item fourth-item-realism">
+              <a href="#" class="sub__menu__link">Верроккьо</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="link-list"> Галерея</a>
+        <li class="header__menu__item">
+          <a href="#" class="header__menu__link__btn">Импрессионизм
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
+            </svg>
+          </a>
+          <ul class="sub__menu" data-simplebar>
+            <li class="sub__menu__item first-item-Impressionism">
+              <a href="#" class="sub__menu__link">Моне</a>
+            </li>
+            <li class="sub__menu__item second-item-Impressionism">
+              <a href="#" class="sub__menu__link">Сислей</a>
+            </li>
+            <li class="sub__menu__item third-item-Impressionism">
+              <a href="#" class="sub__menu__link">Мане</a>
+            </li>
+            <li class="sub__menu__item fourth-item-Impressionism">
+              <a href="#" class="sub__menu__link">Ренуар</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="link-list">Каталог</a>
+        <li class="header__menu__item">
+          <a href="#" class="header__menu__link__btn">Постимпрессионизм
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
+            </svg>
+          </a>
+          <ul class="sub__menu" data-simplebar="">
+            <li class="sub__menu__item first-item-post">
+              <a href="#" class="sub__menu__link">Ван Гог</a>
+            </li>
+            <li class="sub__menu__item second-item-post">
+              <a href="#" class="sub__menu__link">Сезанн</a>
+            </li>
+            <li class="sub__menu__item third-item-post">
+              <a href="#" class="sub__menu__link">Гоген</a>
+            </li>
+            <li class="sub__menu__item fourth-item-post">
+              <a href="#" class="sub__menu__link">Сёра</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="link-list">События</a>
+        <li class="header__menu__item">
+          <a href="#" class="header__menu__link__btn">Авангард
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
+            </svg>
+          </a>
+          <ul class="sub__menu" data-simplebar="">
+            <li class="sub__menu__item first-item-avangard">
+              <a href="#" class="sub__menu__link">Кандинский</a>
+            </li>
+            <li class="sub__menu__item second-item-avangard">
+              <a href="#" class="sub__menu__link">Маринетти</a>
+            </li>
+            <li class="sub__menu__item third-item-avangard">
+              <a href="#" class="sub__menu__link">Малевич</a>
+            </li>
+            <li class="sub__menu__item fourth-item-avangard">
+              <a href="#" class="sub__menu__link">Пикассо</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="link-list">Издания</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="link-list">Проекты</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="link-list">Контакты</a>
+        <li class="header__menu__item">
+          <a href="#" class="header__menu__link__btn">Футуризм
+            <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
+            </svg>
+          </a>
+          <ul class="sub__menu" data-simplebar="">
+            <li class="sub__menu__item first-item-futurizm">
+              <a href="#" class="sub__menu__link">Карра</a>
+            </li>
+            <li class="sub__menu__item second-item-futurizm">
+              <a href="#" class="sub__menu__link">Прателла</a>
+            </li>
+            <li class="sub__menu__item third-item-futurizm">
+              <a href="#" class="sub__menu__link">Северини</a>
+            </li>
+            <li class="sub__menu__item fourth-item-futurizm">
+              <a href="#" class="sub__menu__link">Балла</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </li>
       </ul>
-    </nav>
-    <a href="#" class="btn-enter" aria-label="Войти">
-      <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
-          fill="currentColor" />
-      </svg>
-      Войти
-    </a>
+      <form action="#" method="get" class="header__menu__form">
+        <button class="header__menu__btn">
+          <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="11.5138" y="10.5495" width="6.8678" height="1.71695"
+              transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 0.653427)" fill="currentColor" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.0969 18C5.53041 18 1.99692 14.3229 1.99692 10C1.99692 5.67715 5.53041 2 10.0969 2C14.6634 2 18.1969 5.67715 18.1969 10C18.1969 14.3229 14.6634 18 10.0969 18ZM10.0969 20C4.57408 20 0.0969238 15.5228 0.0969238 10C0.0969238 4.47715 4.57408 0 10.0969 0C15.6198 0 20.0969 4.47715 20.0969 10C20.0969 15.5228 15.6198 20 10.0969 20Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+        <input class="input header__menu__input" placeholder="Поиск по сайту" name="search" type="search">
+      </form>
+    </div>
+
   </header>
 
   <main>
     <section class="section-hero anim-hero">
-      <div class="direction-hero">
-        <ul class="hero-menu" id="menu">
-          <li class="direction-item">
-            <a href="#" class="direction-link-btn">Реализм
-              <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
-              </svg>
-            </a>
-            <ul class="sub-menu" data-simplebar>
-              <li class="sub-menu-link first-link-realism">
-                <a href="#" class="sub-menu-item">Тинторетто</a>
-              </li>
-              <li class="sub-menu-link second-link-realism">
-                <a href="#" class="sub-menu-item">Фридрих</a>
-              </li>
-              <li class="sub-menu-link third-link-realism">
-                <a href="#" class="sub-menu-item">Леонардо</a>
-              </li>
-              <li class="sub-menu-link fourth-link-realism">
-                <a href="#" class="sub-menu-item">Верроккьо</a>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </li>
-          <li class="direction-item">
-            <a href="#" class="direction-link-btn">Импрессионизм
-              <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
-              </svg>
-            </a>
-            <ul class="sub-menu" data-simplebar >
-              <li class="sub-menu-link first-link-Impressionism">
-                <a href="#" class="sub-menu-item">Моне</a>
-              </li>
-              <li class="sub-menu-link second-link-Impressionism">
-                <a href="#" class="sub-menu-item">Сислей</a>
-              </li>
-              <li class="sub-menu-link third-link-Impressionism">
-                <a href="#" class="sub-menu-item">Мане</a>
-              </li>
-              <li class="sub-menu-link fourth-link-Impressionism">
-                <a href="#" class="sub-menu-item">Ренуар</a>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </li>
-          <li class="direction-item">
-            <a href="#" class="direction-link-btn">Постимпрессионизм
-              <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
-              </svg>
-            </a>
-            <ul class="sub-menu" data-simplebar="">
-              <li class="sub-menu-link first-link-post">
-                <a href="#" class="sub-menu-item">Ван Гог</a>
-              </li>
-              <li class="sub-menu-link second-link-post">
-                <a href="#" class="sub-menu-item">Сезанн</a>
-              </li>
-              <li class="sub-menu-link third-link-post">
-                <a href="#" class="sub-menu-item">Гоген</a>
-              </li>
-              <li class="sub-menu-link fourth-link-post">
-                <a href="#" class="sub-menu-item">Сёра</a>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </li>
-          <li class="direction-item">
-            <a href="#" class="direction-link-btn">Авангард
-              <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
-              </svg>
-            </a>
-            <ul class="sub-menu" data-simplebar="">
-              <li class="sub-menu-link first-link-avangard">
-                <a href="#" class="sub-menu-item">Кандинский</a>
-              </li>
-              <li class="sub-menu-link second-link-avangard">
-                <a href="#" class="sub-menu-item">Маринетти</a>
-              </li>
-              <li class="sub-menu-link third-link-avangard">
-                <a href="#" class="sub-menu-item">Малевич</a>
-              </li>
-              <li class="sub-menu-link fourth-link-avangard">
-                <a href="#" class="sub-menu-item">Пикассо</a>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </li>
-          <li class="direction-item">
-            <a href="#" class="direction-link-btn">Футуризм
-              <svg width="12" height="11" viewbox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
-              </svg>
-            </a>
-            <ul class="sub-menu" data-simplebar="">
-              <li class="sub-menu-link first-link-futurizm">
-                <a href="#" class="sub-menu-item">Карра</a>
-              </li>
-              <li class="sub-menu-link second-link-futurizm">
-                <a href="#" class="sub-menu-item">Прателла</a>
-              </li>
-              <li class="sub-menu-link third-link-futurizm">
-                <a href="#" class="sub-menu-item">Северини</a>
-              </li>
-              <li class="sub-menu-link fourth-link-futurizm">
-                <a href="#" class="sub-menu-item">Балла</a>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </li>
-        </ul>
-        <form action="#" method="get" class="form-search">
-          <button class="btn-search">
-            <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="11.5138" y="10.5495" width="6.8678" height="1.71695"
-                transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 0.653427)" fill="currentColor" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M10.0969 18C5.53041 18 1.99692 14.3229 1.99692 10C1.99692 5.67715 5.53041 2 10.0969 2C14.6634 2 18.1969 5.67715 18.1969 10C18.1969 14.3229 14.6634 18 10.0969 18ZM10.0969 20C4.57408 20 0.0969238 15.5228 0.0969238 10C0.0969238 4.47715 4.57408 0 10.0969 0C15.6198 0 20.0969 4.47715 20.0969 10C20.0969 15.5228 15.6198 20 10.0969 20Z"
-                fill="currentColor" />
-            </svg>
-          </button>
-          <input class="input-search input" tapindex="1" placeholder="Поиск по сайту" name="search" type="search">
-        </form>
-      </div>
+
       <div class="discription-hero">
         <h1 class="hero-hidding">
           Прикоснитесь к прекрасному
@@ -227,32 +227,56 @@
       </p>
     </section>
 
+    <section class="section-gallery">
+      <div class="container gallery">
+        <div class="right-block">
+          <h2 class="hidding-gallery">
+            Галерея
+          </h2>
+          <p class="select-discription">Фильтровать по:</p>
+          <select name="select" id="selectCustom">
+            <option value="#" label="check-1"></option>
+            <option value="#" label="check-2"></option>
+            <option value="#" label="check-3"></option>
+          </select>
+          <p class="gallery-discription">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний авторизуйтесь, либо
+            воспользуйтесь лицензией.
+          </p>
+        </div>
+        <div class="swiper-container">
+
+        </div>
+      </div>
+
+    </section>
+
 
     <script>
       let open_items = new Set();
 
-      let items = document.querySelectorAll('.direction-item');
+      let items = document.querySelectorAll('.header__menu__item');
       let angle = 180;
       items.forEach((item) => {
-      item.onclick = function() {
-      item.classList.toggle('open');
-      if (item.classList.contains("open")) {
-      for (let open_item of open_items) {
-      open_item.click();
-      }
-      open_items.clear();
-      open_items.add(item);
-      }
-      else {
-      open_items.delete(item);
-      }
-      let arrow = item.getElementsByClassName("direction-link-btn");
-      let svg = arrow.item(0).getElementsByTagName("svg");
-      svg.item(0).style = "transform: rotate(" + angle + "deg)";
-      angle += 180;
-      }
+        item.onclick = function () {
+          item.classList.toggle('open');
+          if (item.classList.contains("open")) {
+            for (let open_item of open_items) {
+              open_item.click();
+            }
+            open_items.clear();
+            open_items.add(item);
+          }
+          else {
+            open_items.delete(item);
+          }
+          let arrow = item.getElementsByClassName("header__menu__link__btn");
+          let svg = arrow.item(0).getElementsByTagName("svg");
+          svg.item(0).style = "transform: rotate(" + angle + "deg)";
+          angle += 180;
+        }
       })
-      </script>
+    </script>
 
   </main>
 

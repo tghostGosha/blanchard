@@ -49,81 +49,74 @@ ul {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1630px;
   margin: 0 auto;
-  padding-left: 160px;
-  padding-right: 160px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*==================HEADER======================*/
 
 .header {
+  max-width: 1920px;
   background-color: #000000;
+
+}
+
+.header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
   align-items: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
-
-.logo-header {
-  display: flex;
-  flex-direction: column;
-  margin-right: auto;
-}
-.nav {
+.header__nav {
   margin-right: 105px;
 }
 
-.nav-list {
+.header__nav__list {
   display: flex;
   flex-direction: row;
   text-align: center;
 
 }
 
-.logo-first {
-  margin-bottom: 7px;
-  width: 173px;
-  height: 22px;
+.header__logo__image {
+
 }
 
-.logo-second {
-  width: 172px;
-  height: 11px;
-}
 
-.nav-item:not(:last-child){
+.header__nav__item:not(:last-child){
   margin-right: 62px;
 }
 
-.nav-item:last-child {
+.header__nav__item:last-child {
   margin-right: 0;
 }
 
-.link-list {
+.header__nav__item__link {
   color: var(--whitecolor);
   font-size: 18px;
   letter-spacing: 0.5px;
   transition: all 0.2s ease-in-out 0s;
 }
 
-.link-list:hover {
+.header__nav__item__link:hover {
   color: var(--pink);
 }
 
-.link-list:focus {
+.header__nav__item__link:focus {
   border: 1px solid #9D5CD0 ;
 }
 
-.link-list:active {
+.header__nav__item__link:active {
   color: #7943A4;
   border: none;
 }
 
-.btn-enter {
+.header__btn {
   border: none;
   background-color: #000000;
   color: var(--whitecolor);
@@ -132,77 +125,66 @@ ul {
   transition: all 0.2s ease-in-out 0s;
 }
 
-.btn-enter svg {
+.header__btn svg {
   color: var(--whitecolor);
   margin-right: 4px;
   transition: all 0.2s ease-in-out 0s;
 }
 
-.btn-enter:focus {
+.header__btn:focus {
   outline: 1px solid #9D5CD0 ;
 }
 
-.btn-enter:hover {
+.header__btn:hover {
   color: var(--pink);
 }
 
-.btn-enter:active{
+.header__btn:active{
   color: #7943A4;
 }
 
-.btn-enter:hover svg{
+.header__btn:hover svg{
   color: var(--pink);
 }
 
-.btn-enter:active svg{
+.header__btn:active svg{
   color: var(--pink);
   opacity: 0.5;
 }
 
+/*=====================header menu===============*/
 
-
-
-/* ========================HERO=================*/
-
-.section-hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 80px;
-}
-
-@keyframes anim {
-  0% {
-    background-image: url('../img/birmingham-museums.png');
-  }
-  50% {
-    background-image: url('../img/birmingham-museums-2.png');
-  }
-
-  100% {
-    background-image: url('../img/birmingham-museums-3.png');
-  }
-}
-
-.anim-hero {
-  animation: anim 10s alternate linear infinite;
-}
-
-.hero-menu {
+.menu {
   display: flex;
   flex-direction: row;
 }
 
-
-.direction-hero{
+.header__menu{
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 23px 160px 22px 160px;
+  padding-top: 23px;
+  padding-bottom: 22px;
   background-color: rgba(0, 0, 0, 0.4);
-  margin-bottom: 71px;
+  position: relative;
+
 }
 
-.direction-link-btn {
+.header__menu__item {
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.header__menu__item:not(:last-child) {
+  margin-right: 79px;
+}
+
+.header__menu__item:last-child {
+  margin-right: 298px;
+}
+
+.header__menu__link__btn {
   background: transparent;
   border: 0;
   color: var(--whitecolor);
@@ -210,25 +192,22 @@ ul {
   font-size: 18px;
   line-height: 24px;
   padding-right: 17px;
-
 }
 
-.direction-item {
-  display: inline-block;
-  position: relative;
-  transition: all 0.2s ease-in-out 0s;
+.header__menu__link__btn:hover {
+  color: var(--pink);
 }
 
-.sub-menu-link:not(:last-child) {
-  margin: 0 0 20px 0;
+.header__menu__link__btn:focus {
+  outline: 1px solid var(--pink);
 }
 
-.sub-menu-link {
-  padding: 9px 124px 12px 14px;
-  cursor: pointer;
+.header__menu__link__btn:active {
+  outline: none;
+  color: var(--pink);
 }
 
-.sub-menu {
+.sub__menu {
   padding: 40px;
   width: 300px;
   height: 300px;
@@ -240,142 +219,130 @@ ul {
   display: none;
 }
 
-.sub-menu
-.sub-menu-item {
+.sub__menu__item:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+.sub__menu__item {
+  padding: 9px 124px 12px 14px;
+  cursor: pointer;
+}
+
+.sub__menu__item:hover {
+  outline: 1px solid var(--pink);
+}
+
+.sub__menu
+.sub__menu__link {
   color: var(--whitecolor);
 }
 
-.open >.sub-menu {
+.open >.sub__menu {
   display: block;
 }
 
-.first-link-realism{
+.first-item-realism{
   background-image: url('../img/painter/tintoretto.png');
 }
 
-.second-link-realism {
+.second-item-realism {
   background-image: url('../img/painter/fred.png');
 }
 
-.third-link-realism {
+.third-item-realism {
   background-image: url('../img/painter/Leonardo.png');
 }
 
-.fourth-link-realism {
+.fourth-item-realism {
   background-image: url('../img/painter/verrokk.png');
 }
 
-.first-link-Impressionism {
+.first-item-Impressionism {
   background-image: url('../img/painter/mone.png');
 }
-.second-link-Impressionism {
+.second-item-Impressionism {
   background-image: url('../img/painter/sisley.png');
 }
 
-.third-link-Impressionism {
+.third-item-Impressionism {
   background-image: url('../img/painter/mane.png');
 }
 
-.fourth-link-Impressionism {
+.fourth-item-Impressionism {
   background-image: url('../img/painter/renuar.png');
 }
 
-.first-link-post {
+.first-item-post {
   background-image: url('../img/painter/vangog.png');
 }
 
-.second-link-post {
+.second-item-post {
   background-image: url('../img/painter/sezan.png');
 }
 
-.third-link-post {
+.third-item-post {
   background-image: url('../img/painter/gogen.png');
 }
 
-.fourth-link-post {
+.fourth-item-post {
   background-image: url('../img/painter/sera.png');
 }
 
-.first-link-avangard{
+.first-item-avangard{
   background-image: url('../img/painter/kanditsky.png');
 }
 
-.second-link-avangard{
+.second-item-avangard{
   background-image: url('../img/painter/marinetty.png');
 }
 
-.third-link-avangard{
+.third-item-avangard{
   background-image: url('../img/painter/malevich.png');
 }
 
-.fourth-link-avangard{
+.fourth-item-avangard{
   background-image: url('../img/painter/picasso.png');
 }
 
-.first-link-futurizm{
+.first-item-futurizm{
   background-image: url('../img/painter/karra.png');
 }
-.second-link-futurizm{
+.second-item-futurizm{
   background-image: url('../img/painter/pratella.png');
 }
-.third-link-futurizm{
+.third-item-futurizm{
   background-image: url('../img/painter/severini.png');
 }
-.fourth-link-futurizm{
+.fourth-item-futurizm{
   background-image: url('../img/painter/balla.png');
 }
-.direction-item:not(:last-child) {
-  margin-right: 79px;
-}
 
-.direction-item:last-child {
-  margin-right: 298px;
-}
-
-.direction-link-btn:hover {
-  color: var(--pink);
-}
-
-.direction-link-btn:focus {
-  outline: 1px solid var(--pink);
-}
-
-.direction-link-btn:active {
-  outline: none;
-  color: var(--pink);
-}
-
-.form-search {
+.header__menu__form {
   align-items: center;
 }
 
-.form-search:focus {
+.header__menu__form:focus {
   outline: 1px solid var(--pink);
 }
 
+.header__menu__form svg:hover{
+  color: var(--pink);
+}
 
-.btn-search {
+.header__menu__btn {
   outline: none;
   background-color: transparent;
   border: none;
-
 }
 
-.btn-search svg {
+.header__menu__btn svg {
   position: relative;
   top: 4px;
   color: var(--whitecolor);
 }
 
-.form-search svg:hover{
-  color: var(--pink);
-}
 
-.sub-menu-link:hover {
-  outline: 1px solid var(--pink);
-}
-
-.input-search {
+.header__menu__input {
   background: transparent;
   border: none;
   outline: 0;
@@ -384,9 +351,11 @@ ul {
   cursor: pointer;
 }
 
-.input-search:hover{
+.header__menu__input:hover{
   border-bottom: 1px solid var(--pink);
 }
+
+/*=====================menu scrollbar================*/
 
 .simplebar-scrollbar:before {
   background-color: var(--whitecolor);
@@ -423,6 +392,31 @@ ul {
 .simplebar-track {
   right: 19px;
   height: 220px;
+}
+
+/* ========================HERO=================*/
+
+.section-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+@keyframes anim {
+  0% {
+    background-image: url('../img/birmingham-museums.png');
+  }
+  50% {
+    background-image: url('../img/birmingham-museums-2.png');
+  }
+
+  100% {
+    background-image: url('../img/birmingham-museums-3.png');
+  }
+}
+
+.anim-hero {
+  animation: anim 10s alternate linear infinite;
 }
 
 .discription-hero {
@@ -492,9 +486,12 @@ ul {
   line-height: 32px;
   padding-right: 32.5%;
 }
-
-@media (max-width: 1440px) {
-  
+/*==========================GALLERY=======================*/
+.section-gallery {
+  background-image: url('../img/gallery-background.png');
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 
