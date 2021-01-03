@@ -7,9 +7,16 @@
   <title>blanchard</title>
 
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
 
-
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"> </script>
+
+  <script src="magnific-popup/jquery.magnific-popup.js"></script>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -202,21 +209,22 @@
   <main>
     <section class="hero anim-hero">
       <div class="section__hero container">
-        <h1 class="section__hero__heading">
+        <h1 class="section__hero-heading">
           Прикоснитесь к прекрасному
         </h1>
-        <p class="section__hero__text">
+        <p class="section__hero-text">
           Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
           предложений.
         </p>
-        <a href="#" class="btn section__hero__btn">Подписаться на рассылку</a>
+        <a href="#" class="btn section__hero-btn">Подписаться на рассылку</a>
       </div>
     </section>
 
     <section class="about">
       <div class="sectio__about container">
-        <h2 class="section__about__heading">О нас</h2>
-        <p class="section__about__discription">Ясность нашей позиции очевидна: семантический разбор внешних противодействий
+        <h2 class="section__about-heading">О нас</h2>
+        <p class="section__about-discription">Ясность нашей позиции очевидна: семантический разбор внешних
+          противодействий
           однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения
           внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
           влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что
@@ -232,26 +240,153 @@
 
     <section class="gallery">
       <div class="container section__gallery">
-        <div class="section__gallery__right__block">
-          <h2 class="section__gallery__heading">
+        <div class="section__gallery__leftblock">
+          <h2 class="section__gallery__leftblock-heading">
             Галерея
           </h2>
-          <p class="section__gallery__filter">Фильтровать по:</p>
-          <select name="select" id="selectCustom">
-            <option value="#" label="check-1"></option>
-            <option value="#" label="check-2"></option>
-            <option value="#" label="check-3"></option>
+          <p class="section__gallery-filter">Фильтровать по:</p>
+          <select name="select" id="selectCustom" class="section__gallery-select">
+            <option value="" label="check-1">Автор</option>
+            <option value="" label="check-2">Направление</option>
+            <option value="" label="check-3">Техника</option>
           </select>
-          <p class="section__gallery__discription">
-            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний авторизуйтесь, либо
+          <p class="section__gallery-discription">
+            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#"
+              class="section__gallery-log-in">авторизуйтесь,</a> либо
             воспользуйтесь лицензией.
           </p>
         </div>
-        <div class="section__gallery__left__block swiper-container">
+        <div class="section__gallery__rightblock">
+          <!-- If we need pagination -->
+          <!-- If we need navigation buttons -->
+          <div class="slider-top">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="swiper-slide-list">
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image1.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item tooltip" >
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image2.png" alt="">
+                    </a>
 
+
+                    <div class="popup">
+                      <img src="/img/gallery/image-popup.png" alt="" class="popup__img">
+                      <div class="popup_container">
+                        <h3 class="img-heading">Казимир Малевич</h3>
+                        <p class="img-discription">"Женщина с граблями"</p>
+                        <span class="img-years">1931-1932</span>
+                        <p class="popup-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image3.png"  alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image4.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image5.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image6.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="swiper-slide-list">
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image8.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image9.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image10.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image11.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image12.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image13.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="swiper-slide-list">
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image14.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image15.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image16.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image17.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image18.png" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link">
+                      <img src="/img/gallery/image19.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
       </div>
-
     </section>
 
 
@@ -279,6 +414,27 @@
           angle += 180;
         }
       })
+    </script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+      });
+    </script>
+
+    <script>
+      const element = document.querySelector('#selectCustom');
+      new Choices(element, {
+        searchEnabled: false,
+        itemSelectText: false
+      });
     </script>
 
   </main>
