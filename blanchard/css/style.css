@@ -729,7 +729,7 @@ input[type="search" i] {
   right: 0;
   left: -236px;
   top: 50%;
-  display: none;
+  opacity: 0;
   transition: opacity .3s ease-in-out;
 }
 
@@ -765,5 +765,5 @@ input[type="search" i] {
 }
 
 .tooltip:hover + .popup {
-  display: block;
+  opacity: 1;
 }
