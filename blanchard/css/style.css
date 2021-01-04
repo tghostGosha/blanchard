@@ -730,6 +730,7 @@ input[type="search" i] {
   left: -236px;
   top: 50%;
   opacity: 0;
+  z-index: -2;
   transition: opacity .3s ease-in-out;
 }
 
@@ -764,6 +765,30 @@ input[type="search" i] {
   margin-top: 50px;
 }
 
-.tooltip:hover + .popup {
+.tooltip:active + .popup {
   opacity: 1;
+  z-index: 4;
+}
+
+.tooltip:hover + .slide-zoom {
+  opacity: 1;
+  z-index: 3;
+}
+
+.slide-zoom {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 300px;
+  bottom: 24px;
+  left: 24px;
+  opacity: 0;
+  z-index: -3;
+  cursor: pointer;
+}
+
+.slide__zoom-img {
+  position: relative;
+  left: 33%;
+  top: 33%;
 }
