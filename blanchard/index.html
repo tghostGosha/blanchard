@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -270,18 +270,24 @@
               <div class="swiper-slide">
                 <ul class="swiper-slide-list">
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image1.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item tooltip" >
-                    <a href="#" class="swiper-slide-link tooltip">
+                    <a href="#popup" class="swiper-slide-link tooltip" onclick="return false;">
                       <img src="img/gallery/image2.png" alt="">
                     </a>
                     <div class="slide-zoom">
                       <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
                     </div>
-                    <div class="popup">
+                    <div class="popup" id="popup">
+                    <a href="#" class="popup-close" id="close">
+                      <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+                        </svg>
+                    </a>
                       <img src="img/gallery/image-popup.png" alt="" class="popup__img">
                       <div class="popup_container">
                         <h3 class="img-heading">Казимир Малевич</h3>
@@ -292,22 +298,22 @@
                     </div>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image3.png"  alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image4.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image5.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image6.png" alt="">
                     </a>
                   </li>
@@ -316,32 +322,32 @@
               <div class="swiper-slide">
                 <ul class="swiper-slide-list">
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image8.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image9.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image10.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image11.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image12.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image13.png" alt="">
                     </a>
                   </li>
@@ -350,32 +356,32 @@
               <div class="swiper-slide">
                 <ul class="swiper-slide-list">
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image14.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image15.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image16.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image17.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image18.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
-                    <a href="#" class="swiper-slide-link">
+                    <a href="#" class="swiper-slide-link" onclick="return false;">
                       <img src="img/gallery/image19.png" alt="">
                     </a>
                   </li>
@@ -437,7 +443,28 @@
         itemSelectText: false
       });
     </script>
-
+    <script>
+      $(document).ready(function() {
+      $('.tooltip').click( function(event){
+        event.preventDefault();
+        $('#overlay').fadeIn(250,
+           function(){
+            $('#popUp')
+              .css('visibility', 'visible');
+        });
+      });
+    /*по нажатию на крестик закрываю окно*/
+      $('#close, #overlay').click( function(){
+        $('#popUp')
+          .animate({opacity: 0}, 490,
+            function(){
+              $(this).css('visibility', 'hidden');
+              $('#overlay').fadeOut(220);
+            }
+          );
+        });
+      });
+    </script>
   </main>
 
 
