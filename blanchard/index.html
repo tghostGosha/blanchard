@@ -6,18 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blanchard</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"> </script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/simplebar.min.js"> </script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
 
-
-
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/simplebar.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -274,32 +273,38 @@
                       <img src="img/gallery/image1.png" alt="">
                     </a>
                   </li>
-                  <li class="swiper-slide-item tooltip" >
-                    <a href="#popup" class="swiper-slide-link tooltip" onclick="return false;">
+                  <li class="swiper-slide-item " id="swiper-slide-item">
+                    <a href="#" class="swiper-slide-link" id="swiper-slide-link">
                       <img src="img/gallery/image2.png" alt="">
                     </a>
                     <div class="slide-zoom">
                       <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
                     </div>
-                    <div class="popup" id="popup">
-                    <a href="#" class="popup-close" id="close">
-                      <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z" fill="black"/>
+                    <div class="popup is-active" id="popup">
+                      <a href="#popup" class="popup-close" id="close">
+                        <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
+                            fill="black" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                            fill="black" />
                         </svg>
-                    </a>
+                      </a>
                       <img src="img/gallery/image-popup.png" alt="" class="popup__img">
                       <div class="popup_container">
                         <h3 class="img-heading">Казимир Малевич</h3>
                         <p class="img-discription">"Женщина с граблями"</p>
                         <span class="img-years">1931-1932</span>
-                        <p class="popup-text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+                        <p class="popup-text">Картина из второй серии крестьянского цикла работ Казимира Малевича.
+                          Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян
+                          после Берлинской и Варшавской выставок в 1927 году.</p>
                       </div>
                     </div>
                   </li>
-                  <li class="swiper-slide-item">
+                  <li class="swiper-slide-item tooltip">
                     <a href="#" class="swiper-slide-link" onclick="return false;">
-                      <img src="img/gallery/image3.png"  alt="">
+                      <img src="img/gallery/image3.png" alt="">
                     </a>
                   </li>
                   <li class="swiper-slide-item">
@@ -396,78 +401,254 @@
       </div>
     </section>
 
-
-    <script>
-      let open_items = new Set();
-
-      let items = document.querySelectorAll('.header__menu__item');
-      let angle = 180;
-      items.forEach((item) => {
-        item.onclick = function () {
-          item.classList.toggle('open');
-          if (item.classList.contains("open")) {
-            for (let open_item of open_items) {
-              open_item.click();
-            }
-            open_items.clear();
-            open_items.add(item);
-          }
-          else {
-            open_items.delete(item);
-          }
-          let arrow = item.getElementsByClassName("header__menu__link__btn");
-          let svg = arrow.item(0).getElementsByTagName("svg");
-          svg.item(0).style = "transform: rotate(" + angle + "deg)";
-          angle += 180;
-        }
-      })
-    </script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-      });
-    </script>
-
-    <script>
-      const element = document.querySelector('#selectCustom');
-      new Choices(element, {
-        searchEnabled: false,
-        itemSelectText: false
-      });
-    </script>
-    <script>
-      $(document).ready(function() {
-      $('.tooltip').click( function(event){
-        event.preventDefault();
-        $('#overlay').fadeIn(250,
-           function(){
-            $('#popUp')
-              .css('visibility', 'visible');
-        });
-      });
-    /*по нажатию на крестик закрываю окно*/
-      $('#close, #overlay').click( function(){
-        $('#popUp')
-          .animate({opacity: 0}, 490,
-            function(){
-              $(this).css('visibility', 'hidden');
-              $('#overlay').fadeOut(220);
-            }
-          );
-        });
-      });
-    </script>
+    <section class="catalog">
+      <div class="container catalog-container">
+        <div class="catalog__top">
+          <h2 class="catalog-heading">Каталог</h2>
+          <ul class="tabs">
+            <li class="tabs__item">
+              <button class="tabs__btn btn-france" data-path="one"></button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__btn btn-german" data-path="two"></button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__btn btn-italic" data-path="three"></button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__btn btn-russia" data-path="four"></button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__btn btn-spain" data-path="five"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab__content tab-content-active" data-target="one"></div>
+        <div class="tab__content tab-content-active" data-target="two"></div>
+        <div class="tab__content tab-content-active" data-target="three"></div>
+        <div class="tab__content tab-content-active" data-target="four">
+          <div class="tab__content__discription">
+            <p class="tab__content__discription__text">
+              Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
+              политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего
+              лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день
+              остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+            </p>
+          </div>
+          <div class="tab__content__painters">
+            <div class="painters-left-block" id="Dominic">
+              <img src="img/dominic.png" alt="" class="painter-img">
+              <h3 class="left-block-heading">Доменико Гирландайо</h3>
+              <span>2 июня 1448 — 11 января 1494.</span>
+              <p>
+                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в
+                течение
+                года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными
+                подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане
+                Флоренции в костюмах того времени).
+              </p>
+            </div>
+            <div class="painters-right-block">
+              <ul class="years-list" id="accordion">
+                <li class="years-item">
+                  <button type="button" class="years-item-btn">
+                    <span>C 1400 по 1499 гг.</span>
+                    <div class="btn-svg">
+                      <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
+                      </svg>
+                    </div>
+                  </button>
+                  <ul class="accordion-list">
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Бенедетто ди Биндо</a>
+                      <a href="#" class="accordion-link">Бергоньоне, Амброджо</a>
+                      <a href="#" class="accordion-link">Биссоло, Франческо</a>
+                      <a href="#" class="accordion-link">Больтраффио, Джованни</a>
+                      <a href="#" class="accordion-link">Бонсиньори, Франческо</a>
+                      <a href="#" class="accordion-link">Боттичини, Рафаэлло</a>
+                      <a href="#" class="accordion-link">Брамантино</a>
+                      <a href="#" class="accordion-link">Бреа, Людовико</a>
+                      <a href="#" class="accordion-link">Бьяджо д’Антонио Туччи</a>
+                    </li>
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Веккьетта</a>
+                      <a href="#" class="accordion-link">Андреа Верроккьо</a>
+                      <a href="#Dominic" class="accordion-link"> Доменико Гирландайо</a>
+                      <a href="#" class="accordion-link">Беноццо Гоццоли</a>
+                      <a href="#" class="accordion-link">Граначчи, Франческо</a>
+                      <a href="#" class="accordion-link">Грегорио ди Чекко</a>
+                      <a href="#" class="accordion-link">Джованни да Удине</a>
+                      <a href="#" class="accordion-link">Джованни ди Паоло</a>
+                      <a href="#" class="accordion-link">Джорджоне</a>
+                    </li>
+                    <li class="accordion-item">
+                      <a href="#" class="accordion-link">Парентино,Бернардо</a>
+                      <a href="#" class="accordion-link">Пезеллино</a>
+                      <a href="#" class="accordion-link">Пьетро Перуджино</a>
+                      <a href="#" class="accordion-link">Перуцци,Бальдассаре</a>
+                      <a href="#" class="accordion-link">Пизанелло</a>
+                      <a href="#" class="accordion-link">Пинтуриккьо</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="years-item">
+                  <button type="button" class="years-item-btn">
+                    <span> C 1500 по 1599 гг.</span>
+                    <div class="btn-svg">
+                      <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
+                      </svg>
+                    </div>
+                  </button>
+                </li>
+                <li class="years-item">
+                  <button type="button" class="years-item-btn">
+                    <span> C 1600 по 1699 гг.</span>
+                    <div class="btn-svg">
+                      <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
+                      </svg>
+                    </div>
+                  </button>
+                </li>
+                <li class="years-item">
+                  <button type="button" class="years-item-btn">
+                    <span> C 1700 по 1799 гг.</span>
+                    <div class="btn-svg">
+                      <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
+                      </svg>
+                    </div>
+                  </button>
+                </li>
+                <li class="years-item">
+                  <button type="button" class="years-item-btn">
+                    <span> C 1800 по 1899 гг.</span>
+                    <div class="btn-svg">
+                      <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
+                      </svg>
+                    </div>
+                  </button>
+                </li>
+                <li class="years-item">
+                  <button type="button" class="years-item-btn">
+                    <span> C 1900 по 1999 гг.</span>
+                    <div class="btn-svg">
+                      <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
+                      </svg>
+                    </div>
+                  </button>
+                </li>
+                <li class="years-item">
+                  <button type="button" class="years-item-btn">
+                    <span> C 2000 г.</span>
+                    <div class="btn-svg">
+                      <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
+                      </svg>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab__content tab-content-active" data-target="five"></div>
+        </div>
+      </div>
+    </section>
+    <section class="events">
+      <div class="container section-events">
+        <h2 class="events__heading">События</h2>
+        <ul class="events__list">
+          <li class="events__item">
+              <img src="img/events/event-1.png" alt="" class="events__item-img">
+            <span class="wrapper-span">Музей им. Щусева <br>
+              с 20 марта по 30 апреля</span>
+              <h3 class="wrapper-heading">Книжная гравюра в живом восприятии</h3>
+              <p class="wrapper-discription first-wrapper-discription">
+                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+                продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+              </p>
+              <a href="#" class="wrapper-link">Подробнее</a>
+          </li>
+          <li class="events__item">
+            <img src="img/events/event-2.png" alt="" class="events__item-img">
+            <span class="wrapper-span">ММОМА <br>
+              24 марта 19:00</span>
+              <h3 class="wrapper-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+              <p class="wrapper-discription second-wrapper-discription">
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент
+                проверки новых принципов формирования...
+              </p>
+              <a href="#" class="wrapper-link">Подробнее</a>
+          </li>
+          <li class="events__item">
+            <img src="img/events/event-3.png" alt="" class="events__item-img">
+            <span class="wrapper-span">Еврейский музей <br>
+              с 31 марта по 21 апреля</span>
+              <h3 class="wrapper-heading">Выставка «Формация 2020»</h3>
+              <p class="wrapper-discription third-wrapper-discription">
+                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+                формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
+                значение для новых принципов формирования материально-технической и кадровой базы.
+              </p>
+              <a href="#" class="wrapper-link">Подробнее</a>
+          </li>
+        </ul>
+        <ul class="events__list hidding-list is-active" id="hidding-list">
+          <li class="events__item">
+              <img src="img/events/event-4.png" alt="" class="events__item-img">
+            <span class="wrapper-span">Третьяковка на Крымском валу <br>
+              с 30 марта по 30 апреля</span>
+              <h3 class="wrapper-heading">XXIV Международная биеннале молодого искусства</h3>
+              <p class="wrapper-discription fourth-wrapper-discription">
+                Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...
+              </p>
+              <a href="#" class="wrapper-link">Подробнее</a>
+          </li>
+          <li class="events__item">
+            <img src="img/events/event-5.png" alt="" class="events__item-img">
+            <span class="wrapper-span">ММАМ <br>
+              с 8 апреля по 20 мая</span>
+              <h3 class="wrapper-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+              <p class="wrapper-discription fiveth-wrapper-discription">
+                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+              </p>
+              <a href="#" class="wrapper-link">Подробнее</a>
+          </li>
+          <li class="events__item">
+            <img src="img/events/event-3.png" alt="" class="events__item-img">
+            <span class="wrapper-span">Еврейский музей <br>
+              с 31 марта по 21 апреля</span>
+              <h3 class="wrapper-heading">Выставка «Формация 2020»</h3>
+              <p class="wrapper-discription third-wrapper-discription">
+                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+                формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
+                значение для новых принципов формирования материально-технической и кадровой базы.
+              </p>
+              <a href="#" class="wrapper-link">Подробнее</a>
+          </li>
+        </ul>
+        <button type="button" class="btn-event" id="btn-event">Все события</button>
+      </div>
+    </section>
   </main>
 
+  <script src="js/index.js"> </script>
 
+  <script>
+    $(function () {
+      $('#accordion').accordion({
+        collapsible: true,
+        active: false
+      });
+    });
+  </script>
 </body>
 
 </html>
