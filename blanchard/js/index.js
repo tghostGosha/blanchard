@@ -24,13 +24,41 @@ items.forEach((item) => {
 })
 
 var swiper = new Swiper('.swiper-container', {
+
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
+
   },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+});
+
+var swiper1 = new Swiper('.swiper-container', {
+  pagination: {
+    el: '.swiper-pagination-edition',
+    type: 'fraction',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+
+var swiper2 = new Swiper('.swiper-container-project', {
+
+  slideClass: 'swiper-slide-project',
+  wrapperClass: 'swiper-wrapper-project',
+
+
+  navigation: {
+    nextEl: '.project-swiper-button-next',
+    prevEl: '.project-swiper-button-prev',
   },
 
 });
@@ -64,5 +92,12 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#btn-event').addEventListener('click', function() {
     document.querySelector('#hidding-list').classList.toggle('is-active')
+    let x = document.getElementById("btn-event");
+    if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
   })
 })
+

@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blanchard</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="js/swiper-bundle.js"></script>
   <script src="js/choices.min.js"></script>
   <script src="js/simplebar.min.js"> </script>
   <script src="js/jquery.js"></script>
   <script src="js/jquery-ui.js"></script>
-
+  <link rel="stylesheet" href="css/swiper-bundle.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/simplebar.css">
@@ -280,8 +280,8 @@
                     <div class="slide-zoom">
                       <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
                     </div>
-                    <div class="popup is-active" id="popup">
-                      <a href="#popup" class="popup-close" id="close">
+                    <div class="popup" id="popup">
+                      <a href="#popup" class="popup-close" id="close" onclick="return false;">
                         <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
@@ -565,76 +565,301 @@
         <h2 class="events__heading">События</h2>
         <ul class="events__list">
           <li class="events__item">
-              <img src="img/events/event-1.png" alt="" class="events__item-img">
+            <img src="img/events/event-1.png" alt="" class="events__item-img">
             <span class="wrapper-span">Музей им. Щусева <br>
               с 20 марта по 30 апреля</span>
-              <h3 class="wrapper-heading">Книжная гравюра в живом восприятии</h3>
-              <p class="wrapper-discription first-wrapper-discription">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
-                продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
-              </p>
-              <a href="#" class="wrapper-link">Подробнее</a>
+            <h3 class="wrapper-heading">Книжная гравюра в живом восприятии</h3>
+            <p class="wrapper-discription first-wrapper-discription">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+              продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+            </p>
+            <a href="#" class="wrapper-link">Подробнее</a>
           </li>
           <li class="events__item">
             <img src="img/events/event-2.png" alt="" class="events__item-img">
             <span class="wrapper-span">ММОМА <br>
               24 марта 19:00</span>
-              <h3 class="wrapper-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-              <p class="wrapper-discription second-wrapper-discription">
-                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
-                факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент
-                проверки новых принципов формирования...
-              </p>
-              <a href="#" class="wrapper-link">Подробнее</a>
+            <h3 class="wrapper-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+            <p class="wrapper-discription second-wrapper-discription">
+              Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+              факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент
+              проверки новых принципов формирования...
+            </p>
+            <a href="#" class="wrapper-link">Подробнее</a>
           </li>
           <li class="events__item">
             <img src="img/events/event-3.png" alt="" class="events__item-img">
             <span class="wrapper-span">Еврейский музей <br>
               с 31 марта по 21 апреля</span>
-              <h3 class="wrapper-heading">Выставка «Формация 2020»</h3>
-              <p class="wrapper-discription third-wrapper-discription">
-                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
-                формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
-                значение для новых принципов формирования материально-технической и кадровой базы.
-              </p>
-              <a href="#" class="wrapper-link">Подробнее</a>
+            <h3 class="wrapper-heading">Выставка «Формация 2020»</h3>
+            <p class="wrapper-discription third-wrapper-discription">
+              Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+              формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
+              значение для новых принципов формирования материально-технической и кадровой базы.
+            </p>
+            <a href="#" class="wrapper-link">Подробнее</a>
           </li>
         </ul>
-        <ul class="events__list hidding-list is-active" id="hidding-list">
+        <ul class="events__list hidding-list" id="hidding-list">
           <li class="events__item">
-              <img src="img/events/event-4.png" alt="" class="events__item-img">
+            <img src="img/events/event-4.png" alt="" class="events__item-img">
             <span class="wrapper-span">Третьяковка на Крымском валу <br>
               с 30 марта по 30 апреля</span>
-              <h3 class="wrapper-heading">XXIV Международная биеннале молодого искусства</h3>
-              <p class="wrapper-discription fourth-wrapper-discription">
-                Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...
-              </p>
-              <a href="#" class="wrapper-link">Подробнее</a>
+            <h3 class="wrapper-heading">XXIV Международная биеннале молодого искусства</h3>
+            <p class="wrapper-discription fourth-wrapper-discription">
+              Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что
+              иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе
+              маркетинговых и финансовых...
+            </p>
+            <a href="#" class="wrapper-link">Подробнее</a>
           </li>
           <li class="events__item">
             <img src="img/events/event-5.png" alt="" class="events__item-img">
             <span class="wrapper-span">ММАМ <br>
               с 8 апреля по 20 мая</span>
-              <h3 class="wrapper-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-              <p class="wrapper-discription fiveth-wrapper-discription">
-                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
-              </p>
-              <a href="#" class="wrapper-link">Подробнее</a>
+            <h3 class="wrapper-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+            <p class="wrapper-discription fiveth-wrapper-discription">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
+              продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
+            </p>
+            <a href="#" class="wrapper-link">Подробнее</a>
           </li>
           <li class="events__item">
             <img src="img/events/event-3.png" alt="" class="events__item-img">
             <span class="wrapper-span">Еврейский музей <br>
               с 31 марта по 21 апреля</span>
-              <h3 class="wrapper-heading">Выставка «Формация 2020»</h3>
-              <p class="wrapper-discription third-wrapper-discription">
-                Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
-                формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
-                значение для новых принципов формирования материально-технической и кадровой базы.
-              </p>
-              <a href="#" class="wrapper-link">Подробнее</a>
+            <h3 class="wrapper-heading">Выставка «Формация 2020»</h3>
+            <p class="wrapper-discription third-wrapper-discription">
+              Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
+              формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
+              значение для новых принципов формирования материально-технической и кадровой базы.
+            </p>
+            <a href="#" class="wrapper-link">Подробнее</a>
           </li>
         </ul>
         <button type="button" class="btn-event" id="btn-event">Все события</button>
+      </div>
+    </section>
+
+    <section class="edition">
+      <div class="container edition-container">
+
+        <div class="edition__checkbox">
+          <h2 class="edition__heading">Издания</h2>
+          <h3 class="checkbox-heading">Категории</h3>
+          <form action="" class="edition__form">
+            <input type="checkbox" name="checkbox" id="check-1" class="edition__form-input sr-only">
+            <label for="check-1" class="edition__form-label">
+              Бестселлеры
+            </label>
+            <input type="checkbox" name="checkbox" id="check-2" class="edition__form-input sr-only">
+            <label for="check-2" class="edition__form-label">
+              Искусство
+            </label>
+            <input type="checkbox" id="check-3" class="edition__form-input sr-only">
+            <label for="check-3" class="edition__form-label">
+              Архитектура
+            </label>
+            <input type="checkbox" name="checkbox" id="check-4" class="edition__form-input sr-only">
+            <label for="check-4" class="edition__form-label">
+              Дизайн
+            </label>
+            <input type="checkbox" name="checkbox" id="check-5" class="edition__form-input sr-only">
+            <label for="check-5" class="edition__form-label">
+              Мода
+            </label>
+            <input type="checkbox" name="checkbox" id="check-6" class="edition__form-input sr-only">
+            <label for="check-6" class="edition__form-label">
+              Детям
+            </label>
+            <input type="checkbox" name="checkbox" id="check-7" class="edition__form-input sr-only">
+            <label for="check-7" class="edition__form-label">
+              Художественная литература
+            </label>
+            <input type="checkbox" name="checkbox" id="check-8" class="edition__form-input sr-only">
+            <label for="check-8" class="edition__form-label">
+              Публицистика
+            </label>
+            <input type="checkbox" name="checkbox" id="check-9" class="edition__form-input sr-only">
+            <label for="check-9" class="edition__form-label">
+              Путеводители
+            </label>
+            <input type="checkbox" name="checkbox" id="check-10" class="edition__form-input sr-only">
+            <label for="check-10" class="edition__form-label">
+              Философия
+            </label>
+            <input type="checkbox" name="checkbox" id="check-11" class="edition__form-input sr-only">
+            <label for="check-11" class="edition__form-label">
+              Учебная литература
+            </label>
+            <input type="checkbox" name="checkbox" id="check-12" class="edition__form-input sr-only">
+            <label for="check-12" class="edition__form-label">
+              Журналы и газеты
+            </label>
+          </form>
+          <h3 class="price-heading">Цена</h3>
+          <form action="" class="form-price">
+            <span>От</span>
+            <input type="text" class="price-input">
+            <span>До</span>
+            <input type="text" class="price-input">
+            <span>Руб.</span>
+          </form>
+        </div>
+        <div class="edition__catalog">
+          <div class="slider-top">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination-edition"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="edition__catalog-list">
+                  <li class="edition__catalog-item">
+                    <img src="img/edition/The_Art_of_Color.jpg" alt="" class="edition-img">
+                    <div class="edition__price-block">
+                      <h3 class="edition__item-heading">Искусство цвета</h3>
+                      <span class="edition__item-price">620 руб</span>
+                    </div>
+                    <span class="edition__item-author">Иттен, Иоханнес</span>
+                    <button class="btn edition__item-btn">Заказать</button>
+                  </li>
+                  <li class="edition__catalog-item">
+                    <img src="img/edition/Typography.jpg" alt="" class="edition-img">
+                    <div class="edition__price-block">
+                      <h3 class="edition__item-heading">Типографика</h3>
+                      <span class="edition__item-price">2 450 руб</span>
+                    </div>
+                    <span class="edition__item-author">Рудер, Эмиль</span>
+                    <button class="btn edition__item-btn">Заказать</button>
+                  </li>
+                  <li class="edition__catalog-item">
+                    <img src="img/edition/The_book_is_about_letters.jpg" alt="" class="edition-img">
+                    <div class="edition__price-block">
+                      <h3 class="edition__item-heading">Книга про буквы</h3>
+                      <span class="edition__item-price">2 200 руб</span>
+                    </div>
+                    <span class="edition__item-author">Гордон, Юрий</span>
+                    <button class="btn edition__item-btn">Заказать</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="edition__catalog-list">
+                  <li class="edition__catalog-item">
+                    <img src="img/edition/Krichevsky.jpg" alt="" class="edition-img">
+                    <div class="edition__price-block">
+                      <h3 class="edition__item-heading">Николай Ильин</h3>
+                      <span class="edition__item-price">1 100 руб</span>
+                    </div>
+                    <span class="edition__item-author">Кричевский, Владимир</span>
+                    <button class="btn edition__item-btn">Заказать</button>
+                  </li>
+                  <li class="edition__catalog-item">
+                    <img src="img/edition/Modular_grids.jpg" alt="" class="edition-img">
+                    <div class="edition__price-block">
+                      <h3 class="edition__item-heading">Модульные сетки в граф...</h3>
+                      <span class="edition__item-price">1 450 руб</span>
+                    </div>
+                    <span class="edition__item-author">Мюллер-Брокманн, Йозеф</span>
+                    <button class="btn edition__item-btn">Заказать</button>
+                  </li>
+                  <li class="edition__catalog-item">
+                    <img src="img/edition/The_book_is_about_letters.jpg" alt="" class="edition-img">
+                    <div class="edition__price-block">
+                      <h3 class="edition__item-heading">Эволюция графических ст...</h3>
+                      <span class="edition__item-price">3 200 руб</span>
+                    </div>
+                    <span class="edition__item-author">Хеллер, Чваст</span>
+                    <button class="btn edition__item-btn">Заказать</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="edition__catalog-list">
+                  <li class="edition__catalog-item">
+                    <img src="img/edition/the_art_of_visual.jpg" alt="" class="edition-img">
+                    <div class="edition__price-block">
+                      <h3 class="edition__item-heading">Искусство и визуальное в...</h3>
+                      <span class="edition__item-price">2 200 руб</span>
+                    </div>
+                    <span class="edition__item-author"> Арнхейм, Рудольф</span>
+                    <button class="btn edition__item-btn">Заказать</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project">
+      <div class="project-section container">
+        <h2 class="project__headding">Проекты</h2>
+        <p class="project__discription">
+          Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
+          фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
+          уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
+          Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует
+          необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
+          оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Банальные, но
+          неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
+          которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
+          Подробнее: <a href="">blanchard-art.ru/projects/about</a>
+        </p>
+        <h3 class="swiper-heading-project">Партнеры проектов:</h3>
+        <div class="swiper-container-project">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper-project">
+            <!-- Slides -->
+            <div class="swiper-slide-project">
+              <ul class="swiper-project-list">
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project first-link-project"></a>
+                </li>
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project second-link-project"></a>
+                </li>
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project third-link-project"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide-project">
+              <ul class="swiper-project-list">
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project first-link-project"></a>
+                </li>
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project second-link-project"></a>
+                </li>
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project third-link-project"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-slide-project">
+              <ul class="swiper-project-list">
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project first-link-project"></a>
+                </li>
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project second-link-project"></a>
+                </li>
+                <li class="swiper-item-project">
+                  <a href="" class="swiper-link-project third-link-project"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="project-swiper-button-prev"></div>
+          <div class="project-swiper-button-next"></div>
+
+
+        </div>
       </div>
     </section>
   </main>

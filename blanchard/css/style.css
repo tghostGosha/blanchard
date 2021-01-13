@@ -669,9 +669,7 @@ input[type="search" i] {
 
 .swiper-container {
   max-width: 1150px;
-  height: 754px;
   margin: 0;
-
 }
 
 .swiper-slide-list {
@@ -1152,9 +1150,254 @@ input[type="search" i] {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  left: 45%;
-  position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
+/*=====================================EDITION=====================*/
+.edition {
+  background-image: url('../img/edition/birmingham-museums-edition-background.jpg');
+}
+.edition-container {
+  display: flex;
+  padding: 80px 0;
+  margin-bottom: 80px;
+}
+.edition__checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 341px;
+  margin-right: 109px;
+}
+
+.edition__form {
+  margin-bottom: 32px;
+}
+
+.edition__form-label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.edition__form-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.edition__form-label::before {
+  content: '';
+  margin-right: 12px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--whitecolor);
+}
+
+.edition__form-input:checked + .edition__form-label::before {
+  content: '';
+  background-image: url('../img/icons/Ellipse.svg');
+  background-repeat: no-repeat;
+  background-size: 3px;
+  background-position-x: 4px;
+  background-position-y: 4px;
+  text-align: center;
+  display: inline-block;
+  border:  1px solid var(--pink);
+}
+
+.edition__heading {
+  color: var(--whitecolor);
+  margin-bottom: 30px;
+}
+
+.checkbox-heading {
+  color: var(--whitecolor);
+  margin-bottom: 19px;
+}
+.edition__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edition__form-label {
+  color: var(--whitecolor);
+}
+
+.price-heading {
+  color: var(--whitecolor);
+  margin-bottom: 10px;
+}
+
+.form-price {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+
+.form-price span {
+  color: var(--whitecolor);
+  line-height: 32px;
+  padding: 4px 10px;
+}
+
+.price-input {
+  border: none;
+  background-color: var(--pink);
+  width: 73px;
+  color: var(--whitecolor);
+  font-weight: 400px;
+  line-height: 32px;
+  padding: 4px 0 7px 10px;
+}
+.edition__catalog-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.edition__catalog-item {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.edition__catalog-item:not(:last-child) {
+  margin-right: 50px;
+}
+.edition__price-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edition-img {
+  margin-bottom: 23px;
+}
+
+.edition__item-heading {
+  color: var(--whitecolor);
+  line-height: 22px;
+}
+
+.edition__item-price {
+  color: var(--whitecolor);
+  line-height: 22px;
+}
+
+.edition__item-author {
+  color: var(--whitecolor);
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.edition__item-btn {
+  background-color: transparent;
+  width: 120px;
+  padding: 8px 14px 8px 14px;
+  color: var(--whitecolor);
+  border: 1px solid var(--pink);
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  max-width: 1150px;
+}
+
+.swiper-pagination-fraction {
+  width: 47px;
+  color: var(--whitecolor);
+}
+
+.swiper-button-prev {
+  margin: 0;
+}
+
+/*==============================Projects=========================*/
+.project-section {
+  margin-bottom: 80px;
+}
+.project__headding {
+  margin-bottom: 30px;
+}
+
+.project__discription {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.swiper-heading-project {
+  margin-bottom: 23px;
+}
+.swiper-wrapper-project{
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-slide-project {
+  display: flex;
+}
+.swiper-project-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 0;
+}
+
+.swiper-item-project {
+  width: 450px;
+  height: 150px;
+  border: 1px solid #CACACA;
+  text-align: center;
+}
+
+.swiper-item-project:not(:last-child) {
+  margin-right: 50px;
+}
+
+.swiper-link-project {
+  width: 450px;
+  height: 150px;
+  filter: grayscale(100%);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-link-project:hover {
+  filter: none;
+}
+.first-link-project {
+  background-image: url('../img/projects/freelans.png');
+}
+
+.second-link-project {
+  background-image: url('../img/projects/institute.png');
+}
+
+.third-link-project {
+  background-image: url('../img/projects/workhouse.png');
+}
+
+.swiper-container-project {
+	overflow: hidden;
+	width: 100%;
+}
 
 
