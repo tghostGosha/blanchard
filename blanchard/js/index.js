@@ -22,45 +22,40 @@ items.forEach((item) => {
   }
 
 })
+const sliders = document.querySelectorAll('.swiper-container');
 
-var swiper = new Swiper('.swiper-container', {
+sliders.forEach((el) => {
+	let swiper = new Swiper(el, {
 
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+		spaceBetween: 10,
+		loop: true,
+		pagination: {
+			el: el.querySelector('.swiper-pagination'),
+			clickable: true,
+		},
+		navigation: {
+			nextEl: el.querySelector('.swiper-button-next'),
+			prevEl: el.querySelector('.swiper-button-prev'),
+		},
+	});
 });
 
-var swiper1 = new Swiper('.swiper-container', {
-  pagination: {
-    el: '.swiper-pagination-edition',
-    type: 'fraction',
-  },
+const slider1 = document.querySelector('.swiper-container-project');
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+let mySwiper1 = new Swiper(slider1, {
+  slideNextClass: 'project-swiper-button-next',
+  slidePrevClass: 'project-swiper-button-prev',
 
-
-});
-
-var swiper2 = new Swiper('.swiper-container-project', {
-
-  slideClass: 'swiper-slide-project',
-  wrapperClass: 'swiper-wrapper-project',
-
-
-  navigation: {
-    nextEl: '.project-swiper-button-next',
-    prevEl: '.project-swiper-button-prev',
-  },
-
+  slideClass: 'swiper-slide-projects',
+	loop: true,
+	pagination: {
+		el: '.pag-2',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.project-swiper-button-next',
+		prevEl: '.project-swiper-button-prev',
+	},
 });
 
 const element = document.querySelector('#selectCustom');
@@ -101,3 +96,12 @@ window.addEventListener('DOMContentLoaded', function() {
   })
 })
 
+tippy('#myButton', {
+  content: 'Пример современных тенденций - современная методология разработки ',
+});
+tippy('#myButton2', {
+  content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции   ',
+});
+tippy('#myButton3', {
+  content: 'В стремлении повысить качество  ',
+});

@@ -13,6 +13,9 @@
   <script src="js/simplebar.min.js"> </script>
   <script src="js/jquery.js"></script>
   <script src="js/jquery-ui.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="js/"></script>
   <link rel="stylesheet" href="css/swiper-bundle.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
   <link rel="stylesheet" href="css/choices.min.css">
@@ -258,13 +261,14 @@
         <div class="section__gallery__rightblock">
           <!-- If we need pagination -->
           <!-- If we need navigation buttons -->
-          <div class="slider-top">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-          </div>
+
           <!-- Additional required wrapper -->
           <div class="swiper-container">
+            <div class="slider-top">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <ul class="swiper-slide-list">
@@ -707,12 +711,13 @@
           </form>
         </div>
         <div class="edition__catalog">
-          <div class="slider-top">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination-edition"></div>
-            <div class="swiper-button-next"></div>
-          </div>
+
           <div class="swiper-container">
+            <div class="slider-top">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <ul class="edition__catalog-list">
@@ -802,19 +807,20 @@
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
           фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
           уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
-          Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует
+          Прежде всего, постоянное информационно-пропагандистское <button class="btn-tooltip first-tooltip" id="myButton"></button> Пример современных тенденций - современная методология разработки  обеспечение нашей деятельности однозначно фиксирует
           необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей
-          оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Банальные, но
+          оппозиции могут быть рассмотрены <button class="btn-tooltip second-tooltip" id="myButton2"></button> исключительно в разрезе маркетинговых и финансовых <button class="btn-tooltip third-tooltip" id="myButton3"></button> предпосылок. Банальные, но
           неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям,
           которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
-          Подробнее: <a href="">blanchard-art.ru/projects/about</a>
+          Подробнее: <a href="#">blanchard-art.ru/projects/about</a>
         </p>
         <h3 class="swiper-heading-project">Партнеры проектов:</h3>
         <div class="swiper-container-project">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper-project">
+          <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide-project">
+            <div class="project-swiper-button-next"></div>
+            <div class="swiper-slide-projects">
               <ul class="swiper-project-list">
                 <li class="swiper-item-project">
                   <a href="" class="swiper-link-project first-link-project"></a>
@@ -827,38 +833,37 @@
                 </li>
               </ul>
             </div>
-            <div class="swiper-slide-project">
+            <div class="swiper-slide-projects">
               <ul class="swiper-project-list">
                 <li class="swiper-item-project">
-                  <a href="" class="swiper-link-project first-link-project"></a>
+                  <a href="" class="swiper-link-project fourth-link-project"></a>
                 </li>
                 <li class="swiper-item-project">
-                  <a href="" class="swiper-link-project second-link-project"></a>
+                  <a href="" class="swiper-link-project fifth-link-project"></a>
                 </li>
                 <li class="swiper-item-project">
-                  <a href="" class="swiper-link-project third-link-project"></a>
+                  <a href="" class="swiper-link-project sixth-link-project"></a>
                 </li>
               </ul>
             </div>
-            <div class="swiper-slide-project">
+            <div class="swiper-slide-projects">
               <ul class="swiper-project-list">
                 <li class="swiper-item-project">
-                  <a href="" class="swiper-link-project first-link-project"></a>
+                  <a href="" class="swiper-link-project seventh-link-project"></a>
                 </li>
                 <li class="swiper-item-project">
-                  <a href="" class="swiper-link-project second-link-project"></a>
+                  <a href="" class="swiper-link-project eighth-link-project"></a>
                 </li>
                 <li class="swiper-item-project">
-                  <a href="" class="swiper-link-project third-link-project"></a>
+                  <a href="" class="swiper-link-project ninth-link-project"></a>
                 </li>
               </ul>
             </div>
+            <div class="project-swiper-button-prev"></div>
           </div>
           <!-- If we need navigation buttons -->
-          <div class="project-swiper-button-prev"></div>
+
           <div class="project-swiper-button-next"></div>
-
-
         </div>
       </div>
     </section>
