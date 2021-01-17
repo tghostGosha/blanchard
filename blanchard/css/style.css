@@ -276,6 +276,7 @@ h2 {
 .sub__menu__item {
   padding: 9px 124px 12px 14px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .sub__menu__item:hover {
@@ -369,6 +370,7 @@ h2 {
 
 .header__menu__form {
   align-items: center;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .header__menu__form:focus {
@@ -402,7 +404,7 @@ h2 {
   color: var(--whitecolor);
   cursor: pointer;
   font-size: 18px;
-
+  transition: all 0.3s ease-in-out 0s;
   letter-spacing: -0.6px;
 }
 
@@ -422,6 +424,7 @@ input[type="search" i] {
   left: 1px;
   right: 1px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .simplebar-scrollbar:hover::before {
@@ -518,6 +521,7 @@ input[type="search" i] {
   transition: all 0.2s ease-in-out 0s;
   font-size: 18px;
   letter-spacing: 0.8px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .section__hero-btn:hover {
@@ -553,8 +557,8 @@ input[type="search" i] {
 
 .gallery {
   background-image: url('../img/gallery-background.png');
-  background-repeat: no-repeat;
   margin-bottom: 80px;
+  width: 100%;
 }
 
 .section__gallery {
@@ -696,6 +700,7 @@ input[type="search" i] {
 .swiper-slide-link {
   display: inline-block;
   height: 350px;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .swiper-pagination {
@@ -722,6 +727,7 @@ input[type="search" i] {
   color: var(--whitecolor);
   background-color: #666666;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .swiper-button-prev,
@@ -872,6 +878,7 @@ input[type="search" i] {
   border: 0 none;
   border-radius: 50%;
   outline: none;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .tabs__btn:hover {
@@ -1046,6 +1053,7 @@ input[type="search" i] {
 
 .accordion-link {
   color: #333333;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .accordion-link:focus {
@@ -1217,6 +1225,19 @@ input[type="search" i] {
   text-align: center;
   display: inline-block;
   border:  1px solid var(--pink);
+
+}
+
+.edition__form-input > span:focus {
+  outline: 1px solid var(--pink);
+}
+
+.edition__form-label:hover {
+  color: var(--pink);
+}
+
+.edition__form-label::before:hover {
+  border:  1px solid var(--pink);
 }
 
 .edition__heading {
@@ -1263,6 +1284,7 @@ input[type="search" i] {
   line-height: 32px;
   padding: 4px 0 7px 10px;
 }
+
 .edition__catalog-list {
   display: flex;
   flex-direction: row;
@@ -1313,10 +1335,20 @@ input[type="search" i] {
   border: 1px solid var(--pink);
   display: block;
   margin: 0 auto;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.swiper-slide {
-  max-width: 1150px;
+.span-btn:hover {
+  outline: 1px solid var(--pink);
+}
+
+.edition__item-btn:hover {
+  background-color: var(--pink);
+}
+
+.edition__item-btn:active {
+  background-color: var(--pink);
+  border: 1px solid  #D1A9F0;
 }
 
 .swiper-pagination-fraction {
@@ -1340,6 +1372,11 @@ input[type="search" i] {
   font-weight: 600;
   margin-bottom: 30px;
   padding-right: 31%;
+}
+
+.tippy-box {
+  padding: 10px !important;
+  text-align: center;
 }
 
 .btn-tooltip {
@@ -1368,7 +1405,6 @@ input[type="search" i] {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
   min-height: 0;
 }
 
@@ -1390,6 +1426,7 @@ input[type="search" i] {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .swiper-link-project:hover {
@@ -1431,21 +1468,183 @@ input[type="search" i] {
   background-image: url('../img/projects/esad.png');
 }
 
+
 .swiper-project-container {
-
-
+  max-width: 1604px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
+
 .swiper-project-wrapper {
+  max-width: 1450px;
 
 }
 
-.project-swiper-button-next {
-
+.project-swiper-slide {
+  justify-content: center;
+  position: relative;
 }
 
+.project-swiper-button-next,
 .project-swiper-button-prev {
-  
+  background-color: #ececec;
+  position: absolute;
 }
+
+.project-swiper-button-next::after,
+.project-swiper-button-prev:after{
+  color: #000000;
+}
+
+
+/*===============================CONTACTS==========================*/
+
+.contacts-heading {
+  padding-left: 160px;
+  margin-bottom: 30px;
+}
+
+.contacts-container {
+  display: flex;
+}
+
+.contacts__left {
+  max-width: 700px;
+  padding: 124px 122px 124px 160px;
+  border-top: 1px solid #cacaca;
+}
+
+.contacts__left-heading-discr {
+  margin-bottom: 36px;
+}
+
+.form-heading {
+  margin-bottom: 19px;
+}
+
+.form__input {
+  margin-bottom: 23px;
+  width: 400px;
+  height: 40px;
+  border-color: #333333;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  padding: 4px 0 4px 24px;
+  color: #999999;
+}
+
+.contacts__form-btn {
+  color: var(--pink);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  border: 1px solid var(--pink);
+  background-color: transparent;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 40px;
+}
+
+.social-heading {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 18px;
+
+}
+.js-validate-error-label {
+  position: relative;
+  top: -76px;
+}
+.social-icons {
+  display: flex;
+}
+
+.social-link {
+  width: 38.75px;
+  height: 38.75px;
+  border-radius: 50%;
+}
+
+.social-link:not(:last-child) {
+  margin-right: 20.62px;
+}
+
+.whatsapp {
+  background-color: #30BF39;
+  background-image: url('../img/icons/watsapp.png');
+  background-repeat: no-repeat;
+  background-position: 8px 6px;
+}
+
+.telegram {
+  background-color: #229ED9 ;
+  background-image: url('../img/icons/telegram.png');
+  background-repeat: no-repeat;
+  background-position: 7px 9px;
+}
+.contacts__map {
+  width: 1220px;
+  height: 700px;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+
+/*===================================FOOTER=========================*/
+
+
+.footer {
+  background-color: #000000;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 160px;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 19px;
+}
+
+.footer__social-link {
+  width: 45.4px;
+  height: 45.4px;
+}
+
+.footer__social-link {
+  display: inline-block;
+}
+
+.vk {
+  background-image: url('../img/icons/vk.png');
+  background-repeat: no-repeat;
+}
+
+.instagram svg{
+  color: #cacaca;
+  width: 54px;
+  height: 47px;
+}
+.facebook {
+  background-image: url('../img/icons/facebook.png');
+  background-repeat: no-repeat;
+}
+
+
+
+
 
 
 
