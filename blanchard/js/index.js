@@ -22,24 +22,61 @@ items.forEach((item) => {
   }
 
 })
-const sliders = document.querySelectorAll('.swiper-container');
+const sliders = document.querySelector('.swiper-container');
+const slider1 = document.querySelector('.edition-swiper-container');
+const slider2 = document.querySelector('.project-swiper-container');
 
-sliders.forEach((el) => {
-  let swiper = new Swiper(el, {
-    delegate: '.tile.swiper-slide:not(.swiper-slide-duplicate) a, *:not(.swiper-slide) > a',
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
+  let swiper = new Swiper(sliders, {
+    slidesPerView: 3,
+    slidesPerColumn: 2,
+    spaceBetween: 50,
+    slidesPerGroup: 3,
     pagination: {
-      el: el.querySelector('.swiper-pagination'),
+      el: '.swiper-pagination',
       clickable: true,
       type: 'fraction',
     },
     navigation: {
-      nextEl: el.querySelector('.swiper-button-next'),
-      prevEl: el.querySelector('.swiper-button-prev'),
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-  });
+
+});
+
+
+  let swiper1 = new Swiper(slider1, {
+    autoHeight: false,
+    slideClass: 'edition-swiper-slide',
+    wrapperClass: 'edition-swiper-wrapper',
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 50,
+    pagination: {
+      el: '.edition-swiper-pagination',
+      clickable: true,
+      type: 'fraction',
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+});
+
+let swiper2 = new Swiper(slider2, {
+  centerSlides: true,
+  slideClass: 'project-swiper-slide',
+  wrapperClass: 'project-swiper-wrapper',
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+
+  navigation: {
+    nextEl: '.project-swiper-button-next',
+    prevEl: '.project-swiper-button-prev',
+  },
+
 });
 
 const element = document.querySelector('#selectCustom');
@@ -116,3 +153,8 @@ new JustValidate('.form', {
   },
 });
 
+$(document).ready(function() {
+  $('.header-burger').click(function(event) {
+    $('.header-burger,.header__nav').toggleClass('active');
+  });
+});
