@@ -22,15 +22,18 @@ items.forEach((item) => {
   }
 
 })
+
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#header__menu__btn').addEventListener('click', function () {
+    document.querySelector('#header__menu__input').classList.toggle('is-active')
+  })
+})
+
 const sliders = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.edition-swiper-container');
 const slider2 = document.querySelector('.project-swiper-container');
 
   let swiper = new Swiper(sliders, {
-    slidesPerView: 3,
-    slidesPerColumn: 2,
-    spaceBetween: 50,
-    slidesPerGroup: 3,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -41,6 +44,29 @@ const slider2 = document.querySelector('.project-swiper-container');
       prevEl: '.swiper-button-prev',
     },
 
+    breakpoints: {
+
+      600: {
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        spaceBetween: 34
+      },
+
+      850: {
+        slidesPerView: 4,
+        slidesPerColumn: 2,
+        spaceBetween: 34,
+
+      },
+
+      1420: {
+        slidesPerView: 3,
+        slidesPerColumn: 2,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+      }
+    },
+
 });
 
 
@@ -48,9 +74,6 @@ const slider2 = document.querySelector('.project-swiper-container');
     autoHeight: false,
     slideClass: 'edition-swiper-slide',
     wrapperClass: 'edition-swiper-wrapper',
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween: 50,
     pagination: {
       el: '.edition-swiper-pagination',
       clickable: true,
@@ -61,22 +84,56 @@ const slider2 = document.querySelector('.project-swiper-container');
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
 
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 34,
+        slidesPerGroup: 2,
+      },
+
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 49,
+        slidesPerGroup: 2,
+      },
+
+      1420: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
+      }
+    },
 });
 
 let swiper2 = new Swiper(slider2, {
   centerSlides: true,
   slideClass: 'project-swiper-slide',
   wrapperClass: 'project-swiper-wrapper',
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 50,
-
   navigation: {
     nextEl: '.project-swiper-button-next',
     prevEl: '.project-swiper-button-prev',
   },
+  breakpoints: {
 
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 34,
+      slidesPerGroup: 2,
+    },
+
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+      slidesPerGroup: 2,
+    },
+
+    1420: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
+    }
+  },
 });
 
 const element = document.querySelector('#selectCustom');
