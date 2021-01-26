@@ -435,33 +435,32 @@
                     </div>
                   </button>
 
-                  <ul class="accordion-list grid">
+                  <ul class="accordion-list ">
                       <li class="accordion-item"><a href="#" class="accordion-link">Бенедетто ди Биндо</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Веккьетта</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link parentino">Парентино,Бернардо</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Бергоньоне, Амброджо</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Андреа Верроккьо</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Пезеллино</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Биссоло, Франческо</a></li>
-                      <li class="accordion-item"><a href="#Dominic" class="accordion-link dominic"> Доменико Гирландайо</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Пьетро Перуджино</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Больтраффио, Джованни</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Беноццо Гоццоли</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link baldassary">Перуцци,Бальдассаре</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Бонсиньори, Франческо</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Граначчи, Франческо</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Пизанелло</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Боттичини, Рафаэлло</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Грегорио ди Чекко</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Пинтуриккьо</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Брамантино</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Джованни да Удине</a></li>
-                      <li class="accordion-item"><a href="#" class="accordion-link">Джованни ди Паоло</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Бреа, Людовико</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link biadjo">Бьяджо д’Антонио Туччи</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Веккьетта</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Андреа Верроккьо</a></li>
+                      <li class="accordion-item"><a href="#Dominic" class="accordion-link dominic"> Доменико Гирландайо</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Беноццо Гоццоли</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Граначчи, Франческо</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Грегорио ди Чекко</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Джованни да Удине</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Джованни ди Паоло</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Джорджоне</a></li>
-                  </ul>
-
+                      <li class="accordion-item"><a href="#" class="accordion-link parentino">Парентино,Бернардо</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Пезеллино</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Пьетро Перуджино</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link baldassary">Перуцци,Бальдассаре</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Пизанелло</a></li>
+                      <li class="accordion-item"><a href="#" class="accordion-link">Пинтуриккьо</a></li>
+                 </ul>
                 </li>
                 <li class="years-item">
                   <button type="button" class="years-item-btn">
@@ -533,9 +532,10 @@
     <section class="events">
       <div class="container section-events">
         <h2 class="events__heading">События</h2>
-        <div class="events-swiper-container" data-mobile="false">
-        <ul class="events__list hidding-list  events-swiper-wrapper" id="hidding-list">
-          <li class="events__item">
+        <div class="events-swiper-container hidding-list" data-mobile="false" id="hidding-list">
+        <div class="events__list hidding-list  events-swiper-wrapper" >
+          <div class="events-swiper-slider">
+          <div class="events__item">
             <img src="img/events/event-1.png" alt="" class="events__item-img">
             <span class="wrapper-span">Музей им. Щусева <br>
               с 20 марта по 30 апреля</span>
@@ -545,8 +545,10 @@
               продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
             </p>
             <a href="#" class="wrapper-link">Подробнее</a>
-          </li>
-          <li class="events__item">
+          </div>
+        </div>
+        <div class="events-swiper-slider">
+          <div class="events__item">
             <img src="img/events/event-2.png" alt="" class="events__item-img">
             <span class="wrapper-span">ММОМА <br>
               24 марта 19:00</span>
@@ -557,8 +559,10 @@
               проверки новых принципов формирования...
             </p>
             <a href="#" class="wrapper-link">Подробнее</a>
-          </li>
-          <li class="events__item">
+          </div>
+          </div>
+          <div class="events-swiper-slider">
+          <div class="events__item">
             <img src="img/events/event-3.png" alt="" class="events__item-img">
             <span class="wrapper-span">Еврейский музей <br>
               с 31 марта по 21 апреля</span>
@@ -569,8 +573,10 @@
               значение для новых принципов формирования материально-технической и кадровой базы.
             </p>
             <a href="#" class="wrapper-link">Подробнее</a>
-          </li>
-          <li class="events__item">
+          </div>
+        </div>
+        <div class="events-swiper-slider">
+          <div class="events__item">
             <img src="img/events/event-4.png" alt="" class="events__item-img" data-simplebar>
             <span class="wrapper-span">Третьяковка на Крымском валу <br>
               с 30 марта по 30 апреля</span>
@@ -581,8 +587,10 @@
               маркетинговых и финансовых...
             </p>
             <a href="#" class="wrapper-link">Подробнее</a>
-          </li>
-          <li class="events__item">
+          </div>
+        </div>
+        <div class="events-swiper-slider">
+          <div class="events__item">
             <img src="img/events/event-5.png" alt="" class="events__item-img">
             <span class="wrapper-span">ММАМ <br>
               с 8 апреля по 20 мая</span>
@@ -592,8 +600,9 @@
               продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
             </p>
             <a href="#" class="wrapper-link">Подробнее</a>
-          </li>
-        </ul>
+          </div>
+        </div>
+        </div>
         <div class="swiper-pagination events-swiper-pagination"></div>
       </div>
         <button type="button" class="btn-event" id="btn-event">Все события</button>

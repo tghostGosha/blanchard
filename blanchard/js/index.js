@@ -117,13 +117,13 @@ let swiper = new Swiper(sliders, {
 let mySwiper;
 
 function mobileSlider() {
-	if (window.innerWidth <= 500 && slider.dataset.mobile == 'false') {
+	if (document.documentElement.clientWidth <= 500 && slider.dataset.mobile == 'false') {
 		mySwiper = new Swiper(slider, {
 			slidesPerView: 1,
 			spaceBetween: 10,
       loop: true,
       wrapperClass: 'events-swiper-wrapper',
-			slideClass: 'events__item',
+			slideClass: 'events-swiper-slider',
       pagination:{
 			el: '.events-swiper-pagination',
 			clickable: true,
@@ -133,7 +133,7 @@ function mobileSlider() {
 		slider.dataset.mobile = 'true';
 	}
 
-	if (window.innerWidth > 500) {
+	if (document.documentElement.clientWidth > 500) {
     slider.dataset.mobile = 'false';
 
 		if (slider.classList.contains('swiper-container-initialized')) {
