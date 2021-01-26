@@ -119,13 +119,13 @@ h2 {
 }
 
 .header__logo {
-  width: 172px;
+  width: 173px;
   height: 40px;
   margin-right: 143px;
 }
 
 .header__logo__image {
-  width: 172px;
+  width: 100%;
 }
 
 .header__nav {
@@ -1067,6 +1067,7 @@ input[type="search" i] {
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 342px;
+  max-height: 342px;
   width: 100%;
   padding: 25px 0 26px 0;
   border-top: 1px solid  var(--pink);
@@ -1159,11 +1160,12 @@ input[type="search" i] {
   max-width: 500px;
   height: 700px;
 }
-
-.hidding-list.is-active {
+/*
+.events-swiper-containert,
+.events-swiper-wrapper.is-active {
   height: 1450px;
 }
-
+*/
 .events__item {
   max-width: 500px;
   border: 1px solid #cacaca;
