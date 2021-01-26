@@ -533,7 +533,8 @@
     <section class="events">
       <div class="container section-events">
         <h2 class="events__heading">События</h2>
-        <ul class="events__list hidding-list" id="hidding-list">
+        <div class="events-swiper-container" data-mobile="false">
+        <ul class="events__list hidding-list  events-swiper-wrapper" id="hidding-list">
           <li class="events__item">
             <img src="img/events/event-1.png" alt="" class="events__item-img">
             <span class="wrapper-span">Музей им. Щусева <br>
@@ -592,8 +593,9 @@
             </p>
             <a href="#" class="wrapper-link">Подробнее</a>
           </li>
-
         </ul>
+        <div class="swiper-pagination events-swiper-pagination"></div>
+      </div>
         <button type="button" class="btn-event" id="btn-event">Все события</button>
       </div>
     </section>

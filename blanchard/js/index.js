@@ -32,8 +32,9 @@ window.addEventListener('DOMContentLoaded', function () {
 const sliders = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.edition-swiper-container');
 const slider2 = document.querySelector('.project-swiper-container');
+const slider = document.querySelector('.events-swiper-container');
 
-  let swiper = new Swiper(sliders, {
+let swiper = new Swiper(sliders, {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -45,11 +46,17 @@ const slider2 = document.querySelector('.project-swiper-container');
     },
 
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+        slidesPerColumn: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 12
+      },
 
       600: {
         slidesPerView: 4,
         slidesPerColumn: 2,
-        spaceBetween: 34
+        spaceBetween: 34,
       },
 
       850: {
@@ -104,6 +111,41 @@ const slider2 = document.querySelector('.project-swiper-container');
         slidesPerGroup: 3,
       }
     },
+});
+
+
+let mySwiper;
+
+function mobileSlider() {
+	if (window.innerWidth <= 500 && slider.dataset.mobile == 'false') {
+		mySwiper = new Swiper(slider, {
+			slidesPerView: 1,
+			spaceBetween: 10,
+      loop: true,
+      wrapperClass: 'events-swiper-wrapper',
+			slideClass: 'events__item',
+      pagination:{
+			el: '.events-swiper-pagination',
+			clickable: true,
+			 },
+		});
+
+		slider.dataset.mobile = 'true';
+	}
+
+	if (window.innerWidth > 500) {
+    slider.dataset.mobile = 'false';
+
+		if (slider.classList.contains('swiper-container-initialized')) {
+			mySwiper.destroy();
+		}
+	}
+}
+
+mobileSlider()
+
+window.addEventListener('resize', () => {
+	mobileSlider();
 });
 
 let swiper2 = new Swiper(slider2, {
