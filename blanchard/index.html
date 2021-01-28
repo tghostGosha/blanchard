@@ -320,7 +320,6 @@
               <div class="gallery-swiper-slide swiper-slide">
                 <img src="img/gallery/image3.png" alt="" class="slider-img">
               </div>
-
               <div class="gallery-swiper-slide swiper-slide">
                 <img src="img/gallery/image4.png" alt="" class="slider-img">
               </div>
@@ -434,7 +433,6 @@
                       </svg>
                     </div>
                   </button>
-
                   <ul class="accordion-list ">
                       <li class="accordion-item"><a href="#" class="accordion-link">Бенедетто ди Биндо</a></li>
                       <li class="accordion-item"><a href="#" class="accordion-link">Бергоньоне, Амброджо</a></li>
@@ -580,7 +578,7 @@
             <img src="img/events/event-4.png" alt="" class="events__item-img" data-simplebar>
             <span class="wrapper-span">Третьяковка на Крымском валу <br>
               с 30 марта по 30 апреля</span>
-            <h3 class="wrapper-heading">XXIV Международная биеннале молодого искусства</h3>
+            <h3 class="wrapper-heading fourth-wrapper-heading">XXIV Международная биеннале молодого искусства</h3>
             <p class="wrapper-discription fourth-wrapper-discription custom-scroll" data-simplebar>
               Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что
               иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе
@@ -594,8 +592,8 @@
             <img src="img/events/event-5.png" alt="" class="events__item-img">
             <span class="wrapper-span">ММАМ <br>
               с 8 апреля по 20 мая</span>
-            <h3 class="wrapper-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-            <p class="wrapper-discription fiveth-wrapper-discription custom-scroll" data-simplebar>
+            <h3 class="wrapper-heading fifth-wrapper-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+            <p class="wrapper-discription fifth-wrapper-discription custom-scroll" data-simplebar>
               Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
               продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
             </p>
@@ -615,7 +613,7 @@
         <div class="edition__checkbox">
           <h2 class="edition__heading">Издания</h2>
           <h3 class="checkbox-heading">Категории</h3>
-          <form action="" class="edition__form">
+          <form action="" class="edition__form edition-select" id="edition-select">
             <input type="checkbox" name="checkbox" id="check-1" class="edition__form-input sr-only">
             <label for="check-1" class="edition__form-label">
               <span>Бестселлеры</span>
@@ -675,7 +673,7 @@
           </form>
         </div>
         <div class="edition__catalog">
-          <div class="edition-swiper-container">
+          <div class="edition-swiper-container" data-mobile="active">
             <div class="slider-top slider-top-second">
               <div class="swiper-button-prev swiper-btn-prev-edition"></div>
               <div class="swiper-pagination edition-swiper-pagination"></div>
@@ -816,8 +814,9 @@
     </section>
 
     <section class="contacts">
-      <h2 class="contacts-heading">Контакты</h2>
       <div class="contacts-container">
+      <h2 class="contacts-heading">Контакты</h2>
+      <div class="contacts-block">
         <div class="contacts__left">
           <h3 class="contacts__left-heading">Шоурум №4</h3>
           <p class="contacts__left-heading-discr">Леонтьевский переулок, дом 5, строение 1</p>
@@ -845,6 +844,7 @@
         </div>
         <div class="contacts__map" id="map"></div>
       </div>
+    </div>
     </section>
   </main>
   <footer class="footer">

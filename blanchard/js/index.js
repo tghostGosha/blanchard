@@ -39,6 +39,7 @@ let swiper = new Swiper(sliders, {
       el: '.swiper-pagination',
       clickable: true,
       type: 'fraction',
+      loop: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -57,13 +58,14 @@ let swiper = new Swiper(sliders, {
         slidesPerView: 4,
         slidesPerColumn: 2,
         spaceBetween: 34,
+        slidesPerGroup: 4,
       },
 
       850: {
         slidesPerView: 4,
         slidesPerColumn: 2,
         spaceBetween: 34,
-
+        slidesPerGroup: 3,
       },
 
       1420: {
@@ -111,7 +113,12 @@ let swiper = new Swiper(sliders, {
         slidesPerGroup: 3,
       }
     },
+
 });
+
+const changeDirection = (slider1) => {
+  document.documentElement.clientWidth <= 600 ? slider1.destroy(true, true) : slider1.init();
+};
 
 
 let mySwiper;
@@ -120,8 +127,8 @@ function mobileSlider() {
 	if (document.documentElement.clientWidth <= 500 && slider.dataset.mobile == 'false') {
 		mySwiper = new Swiper(slider, {
 			slidesPerView: 1,
-			spaceBetween: 10,
-      loop: true,
+			spaceBetween: 30,
+
       wrapperClass: 'events-swiper-wrapper',
 			slideClass: 'events-swiper-slider',
       pagination:{
@@ -185,6 +192,7 @@ new Choices(element, {
 });
 
 
+
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#swiper-slide-item, #swiper-slide-link').addEventListener('click', function () {
     document.querySelector('#popup').classList.toggle('is-active')
@@ -206,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#btn-event').addEventListener('click', function () {
-    document.querySelector('#hidding-list').classList.toggle('is-active')
+    document.querySelector('.events-swiper-containert, .events-swiper-wrapper').classList.toggle('is-active')
     let x = document.getElementById("btn-event");
     if (x.style.display === "none") {
       x.style.display = "block";
