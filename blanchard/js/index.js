@@ -78,8 +78,10 @@ let swiper = new Swiper(sliders, {
 
 });
 
+let swiper1;
 
-  let swiper1 = new Swiper(slider1, {
+function init_swiper1() {
+  swiper1 = new Swiper(slider1, {
     autoHeight: false,
     slideClass: 'edition-swiper-slide',
     wrapperClass: 'edition-swiper-wrapper',
@@ -114,10 +116,19 @@ let swiper = new Swiper(sliders, {
       }
     },
 
-});
-
-const changeDirection = (slider1) => {
-  document.documentElement.clientWidth <= 600 ? slider1.destroy(true, true) : slider1.init();
+  });
+}
+init_swiper1();
+const changeDirection = () => {
+  console.log(document.documentElement.clientWidth)
+  if (document.documentElement.clientWidth <= 600) {
+    if (swiper1)
+      swiper1.destroy(true, true);
+    swiper1 = null;
+  } else {
+    if (!swiper1)
+      init_swiper1();
+  }
 };
 
 
@@ -153,6 +164,7 @@ mobileSlider()
 
 window.addEventListener('resize', () => {
 	mobileSlider();
+  changeDirection();
 });
 
 let swiper2 = new Swiper(slider2, {
@@ -164,7 +176,11 @@ let swiper2 = new Swiper(slider2, {
     prevEl: '.project-swiper-button-prev',
   },
   breakpoints: {
-
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 21,
+    },
     600: {
       slidesPerView: 2,
       spaceBetween: 34,
