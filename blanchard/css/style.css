@@ -1269,6 +1269,7 @@ input[type="search" i] {
   padding-bottom: 80px;
   margin-bottom: 80px;
 }
+
 .edition__checkbox {
   display: flex;
   flex-direction: column;
@@ -1276,6 +1277,20 @@ input[type="search" i] {
   margin-right: 109px;
 }
 
+.edition__checkbox-btn {
+  display: flex;
+  justify-content: space-between;
+  color: var(--whitecolor);
+  margin-bottom: 15px;
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  background-color: transparent;
+  border: none;
+}
+
+.checkbox-btn-svg {
+  display: none;
+}
 .edition__form-label {
   position: relative;
   cursor: pointer;
@@ -1345,6 +1360,8 @@ input[type="search" i] {
   margin-bottom: 15px;
   font-size: 16px;
   letter-spacing: 0.9px;
+  background-color: transparent;
+  border: none;
 }
 
 .edition-swiper-container {
@@ -2261,6 +2278,14 @@ input[type="search" i] {
     margin-right: 137px;
   }
 
+  .header__logo.is-active{
+    display: none;
+  }
+
+  .header-burger.is-active{
+    display: none;
+  }
+
   .header__menu__input {
     display: none;
   }
@@ -2268,7 +2293,7 @@ input[type="search" i] {
   .header__menu__btn svg {
     margin: 0;
   }
-
+  
   .header__menu__input.is-active {
     display: flex;
     z-index: 50;
@@ -2337,7 +2362,7 @@ input[type="search" i] {
 
   .popup-close {
     right: 934px;
-    bottom: 706px;
+    bottom: 561px;
   }
   .catalog {
     margin-bottom: 70px;
@@ -2638,7 +2663,7 @@ input[type="search" i] {
 
   .section__gallery {
     padding-top: 51px;
-    padding-bottom: 242px;
+    padding-bottom: 67px;
   }
 
   .section__gallery__leftblock {
@@ -2661,13 +2686,14 @@ input[type="search" i] {
     overflow: visible;
   }
   .swiper-container {
-    height: 425px;
+    height: 600px;
   }
 
   .swiper-wrapper {
     height: 367px;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow: visible;
   }
 
   .slider-top{
@@ -2695,6 +2721,38 @@ input[type="search" i] {
   .section__gallery-discription {
     bottom: -555px;
     width: 290px;
+  }
+
+  .popup {
+    flex-direction: column;
+    width: 290px;
+    height: 600px;
+    top: -120px;
+    padding: 120px 0 20px 0;
+  }
+
+  .popup.is-active {
+    z-index: 50;
+
+  }
+  .popup-close {
+    right: 641px;
+    bottom: 340px;
+  }
+
+  .popup__img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .popup_container {
+    padding: 0;
+    padding: 17px 21px 38px 18px;
+  }
+
+  .popup-text {
+    margin-top: 10px;
+    line-height: 32px;
   }
 
   .catalog {
@@ -2741,11 +2799,6 @@ input[type="search" i] {
   .btn-svg svg {
     top: -3px;
     width: 11px;
-  }
-
-  .grid {
-    grid-template-columns: 100%;
-    min-height: 806px;
   }
 
   .accordion-list {
@@ -2894,20 +2947,48 @@ input[type="search" i] {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
+  .edition__heading {
+    margin-bottom: 11px;
+  }
   .edition__form {
     flex-wrap: nowrap;
     height: 36px;
+    margin-bottom: 28px;
     visibility: hidden;
+    transition: all 0.3s  ease-in-out 0s;
   }
 
+  .edition__checkbox-btn {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid var(--whitecolor);
+    border-bottom: 1px solid var(--whitecolor);
+    outline: none;
+  }
+
+  .checkbox-btn-svg {
+    display: block;
+  }
+
+  .edition__form-label {
+    width: 290px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid var(--whitecolor);
+    border-bottom: 1px solid var(--whitecolor);
+  }
+  .edition__form-label:not(:last-child) {
+    margin: 0;
+  }
   .slider-top-second {
     display: none;
   }
 
   .edition-swiper-wrapper {
     flex-wrap: wrap;
-
     padding: 0;
   }
 
@@ -3006,6 +3087,7 @@ input[type="search" i] {
   .contacts-container {
     height: 766px;
     padding-bottom: 50px;
+    margin-bottom: 30px;
   }
   .contacts-block {
     flex-direction: column;
@@ -3080,9 +3162,16 @@ input[type="search" i] {
     margin-right: 13px;
   }
 
+  .instagram svg {
+    color: #cacaca;
+    width: 25px;
+    height: 25px;
+  }
 
-
-
+  .vk,
+  .facebook {
+    background-size: 25px;
+  }
 
 
 }

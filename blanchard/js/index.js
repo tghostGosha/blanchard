@@ -26,8 +26,11 @@ items.forEach((item) => {
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#header__menu__btn').addEventListener('click', function () {
     document.querySelector('#header__menu__input').classList.toggle('is-active')
+    document.getElementById('header-burger').style.display='none'
+    document.getElementById('header__logo').style.display='none'
   })
 })
+
 
 const sliders = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.edition-swiper-container');
@@ -35,8 +38,13 @@ const slider2 = document.querySelector('.project-swiper-container');
 const slider = document.querySelector('.events-swiper-container');
 
 let swiper = new Swiper(sliders, {
-    pagination: {
-      el: '.swiper-pagination',
+
+  pagination: {
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 12,
+    el: '.swiper-pagination',
       clickable: true,
       type: 'fraction',
       loop: true,
@@ -47,12 +55,6 @@ let swiper = new Swiper(sliders, {
     },
 
     breakpoints: {
-      0: {
-        slidesPerView: 1,
-        slidesPerColumn: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 12
-      },
 
       600: {
         slidesPerView: 4,
@@ -168,6 +170,9 @@ window.addEventListener('resize', () => {
 });
 
 let swiper2 = new Swiper(slider2, {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 21,
   centerSlides: true,
   slideClass: 'project-swiper-slide',
   wrapperClass: 'project-swiper-wrapper',
@@ -176,11 +181,7 @@ let swiper2 = new Swiper(slider2, {
     prevEl: '.project-swiper-button-prev',
   },
   breakpoints: {
-    0: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      spaceBetween: 21,
-    },
+
     600: {
       slidesPerView: 2,
       spaceBetween: 34,
