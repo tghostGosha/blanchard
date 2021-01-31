@@ -32,31 +32,19 @@ $(document).ready(function() {
 
 /*====================320 px header=================*/
 window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#header__menu__btn').addEventListener('click', function(event) {
+  document.querySelector('#header__menu__btn, #header__close-btn').addEventListener('click', function(event) {
     document.querySelector('#header__form').classList.toggle('is-active')
     document.querySelector('.header-burger').classList.toggle('is-close')
     document.querySelector('.header__logo').classList.toggle('is-close')
     document.querySelector('.header__close-btn').classList.toggle('is-open')
     document.querySelector('.header__menu__input').classList.toggle('is-open')
   })
-  document.querySelector('#header__close-btn').addEventListener('click', function () {
-    document.querySelector('.header__close-btn').classList.toggle('is-close')
-    document.querySelector('.header__menu__input').classList.toggle('is-close')
-    document.querySelector('#header__form').classList.toggle('is-normal')
-    document.querySelector('.header-burger').classList.toggle('is-open')
-    document.querySelector('.header__logo').classList.toggle('is-open')
-  })
+
 })
 /*===================edition checkbox=================*/
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#edition__checkbox-btn').addEventListener('click', function(event) {
     document.querySelector('.edition__form').classList.toggle('is-active')
-  })
-});
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#check-1').addEventListener('click', function () {
-    document.querySelector('#check-1').classList.toggle('is-open')
-    document.getElementById('#check-1, #check-2, #check-3').style.display='none'
   })
 });
 
