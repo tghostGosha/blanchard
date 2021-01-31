@@ -2589,10 +2589,7 @@ input[type="search" i] {
     height: 2px;
   }
 
-  .header-burger.is-active,
-  .header__logo.is-active {
-    display: block;
-  }
+
   .header-burger span {
     width: 16px;
     height: 2px;
@@ -2981,13 +2978,27 @@ input[type="search" i] {
     margin-bottom: 11px;
   }
   .edition__form {
+    display: none;
     flex-wrap: nowrap;
     height: 36px;
     margin-bottom: 28px;
-    visibility: hidden;
     transition: all 0.3s  ease-in-out 0s;
   }
 
+  .edition__form.is-active {
+    display: block;
+    height: 500px;
+  }
+
+  .edition__form-label span:nth-child(1),
+  .edition__form-label span:nth-child(2),
+  .edition__form-label span:nth-child(3),
+  .edition__form-label span:nth-child(4) {
+    margin: 0;
+  }
+  #check-1 {
+    display: block;
+  }
   .edition__checkbox-btn {
     margin: 0;
     border: none;

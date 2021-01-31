@@ -40,13 +40,24 @@ window.addEventListener('DOMContentLoaded', function () {
     document.getElementById('header__menu__input').style.display='block'
   })
   document.querySelector('#header__close-btn').addEventListener('click', function () {
-    document.querySelector('.header-burger, .header__logo').classList.toggle('is-active')
     document.getElementById('header__close-btn').style.display='none'
     document.getElementById('header__menu__input').style.display='none'
     document.getElementById('header-burger').style.display='block'
     document.getElementById('header__logo').style.display='block'
   })
 })
+/*===================edition checkbox=================*/
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#edition__checkbox-btn').addEventListener('click', function(event) {
+    document.querySelector('.edition__form').classList.toggle('is-active')
+  })
+});
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#check-1').addEventListener('click', function () {
+    document.querySelector('#check-1').classList.toggle('is-open')
+    document.getElementById('#check-1, #check-2, #check-3').style.display='none'
+  })
+});
 
 /*==========================swiper==================*/
 const sliders = document.querySelector('.swiper-container');
