@@ -23,15 +23,32 @@ items.forEach((item) => {
 
 })
 
+/*========================burger========================*/
+$(document).ready(function() {
+  $('.header-burger').click(function(event) {
+    $('.header-burger,.header__nav').toggleClass('active');
+  });
+});
+
+/*====================320 px header=================*/
 window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#header__menu__btn').addEventListener('click', function () {
-    document.querySelector('#header__menu__input').classList.toggle('is-active')
+  document.querySelector('#header__menu__btn').addEventListener('click', function(event) {
+    document.querySelector('#header__form , #header__menu__input').classList.toggle('is-active')
     document.getElementById('header-burger').style.display='none'
     document.getElementById('header__logo').style.display='none'
+    document.getElementById('header__close-btn').style.display='block'
+    document.getElementById('header__menu__input').style.display='block'
+  })
+  document.querySelector('#header__close-btn').addEventListener('click', function () {
+    document.querySelector('.header-burger, .header__logo').classList.toggle('is-active')
+    document.getElementById('header__close-btn').style.display='none'
+    document.getElementById('header__menu__input').style.display='none'
+    document.getElementById('header-burger').style.display='block'
+    document.getElementById('header__logo').style.display='block'
   })
 })
 
-
+/*==========================swiper==================*/
 const sliders = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.edition-swiper-container');
 const slider2 = document.querySelector('.project-swiper-container');
@@ -202,6 +219,25 @@ let swiper2 = new Swiper(slider2, {
   },
 });
 
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#btn-event').addEventListener('click', function () {
+    document.querySelector('.events-swiper-containert, .events-swiper-wrapper').classList.toggle('is-active')
+    let x = document.getElementById("btn-event");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  })
+})
+/*=======================swiper popup===================*/
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('#swiper-slide-item, #swiper-slide-link').addEventListener('click', function () {
+    document.querySelector('#popup').classList.toggle('is-active')
+  })
+})
+
+/*=======================Choises=================*/
 const element = document.querySelector('#selectCustom');
 new Choices(element, {
   searchEnabled: false,
@@ -210,11 +246,7 @@ new Choices(element, {
 
 
 
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#swiper-slide-item, #swiper-slide-link').addEventListener('click', function () {
-    document.querySelector('#popup').classList.toggle('is-active')
-  })
-})
+/*===================================TABS========================*/
 
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.tabs__btn').forEach(function (tabsBtn) {
@@ -229,17 +261,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
-window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#btn-event').addEventListener('click', function () {
-    document.querySelector('.events-swiper-containert, .events-swiper-wrapper').classList.toggle('is-active')
-    let x = document.getElementById("btn-event");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  })
-})
+
 
 tippy('#myButton', {
   content: 'Пример современных тенденций - современная методология разработки ',
@@ -277,8 +299,4 @@ new JustValidate('.form', {
   },
 });
 
-$(document).ready(function() {
-  $('.header-burger').click(function(event) {
-    $('.header-burger,.header__nav').toggleClass('active');
-  });
-});
+
