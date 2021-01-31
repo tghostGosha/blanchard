@@ -33,17 +33,18 @@ $(document).ready(function() {
 /*====================320 px header=================*/
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#header__menu__btn').addEventListener('click', function(event) {
-    document.querySelector('#header__form , #header__menu__input').classList.toggle('is-active')
-    document.getElementById('header-burger').style.display='none'
-    document.getElementById('header__logo').style.display='none'
-    document.getElementById('header__close-btn').style.display='block'
-    document.getElementById('header__menu__input').style.display='block'
+    document.querySelector('#header__form').classList.toggle('is-active')
+    document.querySelector('.header-burger').classList.toggle('is-close')
+    document.querySelector('.header__logo').classList.toggle('is-close')
+    document.querySelector('.header__close-btn').classList.toggle('is-open')
+    document.querySelector('.header__menu__input').classList.toggle('is-open')
   })
   document.querySelector('#header__close-btn').addEventListener('click', function () {
-    document.getElementById('header__close-btn').style.display='none'
-    document.getElementById('header__menu__input').style.display='none'
-    document.getElementById('header-burger').style.display='block'
-    document.getElementById('header__logo').style.display='block'
+    document.querySelector('.header__close-btn').classList.toggle('is-close')
+    document.querySelector('.header__menu__input').classList.toggle('is-close')
+    document.querySelector('#header__form').classList.toggle('is-normal')
+    document.querySelector('.header-burger').classList.toggle('is-open')
+    document.querySelector('.header__logo').classList.toggle('is-open')
   })
 })
 /*===================edition checkbox=================*/

@@ -2589,6 +2589,15 @@ input[type="search" i] {
     height: 2px;
   }
 
+  .header-burger.is-close,
+  .header__logo.is-close{
+    display: none;
+  }
+
+  .header-burger.is-open,
+  .header__logo.is-open{
+    display: block;
+  }
 
   .header-burger span {
     width: 16px;
@@ -2618,9 +2627,12 @@ input[type="search" i] {
     top: 4px;
   }
 
-  .header__menu__input.is-active {
+  .header__menu__input.is-open {
+    display: block;
     width: 100%;
-
+  }
+  .header__menu__input.is-close {
+    display: none;
   }
 
   .header__form.is-active {
@@ -2628,13 +2640,20 @@ input[type="search" i] {
     padding-top: 40px;
     padding-bottom: 19px;
   }
-
-  .header__close-btn {
+  .header__form.is-normal {
+    width: 3%;
+    padding: 0;
+  }
+  .header__close-btn.is-open {
+    display: block;
     position: fixed;
     right: 14px;
     top: 14px;
   }
 
+  .header__close-btn.is-close {
+    display: none;
+  }
   .hero {
     margin-bottom: 50px;
   }
