@@ -1,6 +1,6 @@
 let open_items = new Set();
 
-let items = document.querySelectorAll('.header__menu__item');
+let items = document.querySelectorAll('.header__menu-item');
 let angle = 180;
 items.forEach((item) => {
   item.onclick = function () {
@@ -15,7 +15,7 @@ items.forEach((item) => {
     else {
       open_items.delete(item);
     }
-    let arrow = item.getElementsByClassName("header__menu__link__btn");
+    let arrow = item.getElementsByClassName("header__menu-btn");
     let svg = arrow.item(0).getElementsByTagName("svg");
     svg.item(0).style = "transform: rotate(" + angle + "deg)";
     angle += 180;
@@ -249,14 +249,14 @@ new Choices(element, {
 /*===================================TABS========================*/
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.tabs__btn').forEach(function (tabsBtn) {
+  document.querySelectorAll('.catalog__tabs-btn').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
 
-      document.querySelectorAll('.tab-content').forEach(function (tabContent) {
-        tabContent.classList.remove('tab-content-active')
+      document.querySelectorAll('.tab__content').forEach(function (tabContent) {
+        tabContent.classList.remove('tab__content-active')
       })
-      document.querySelector(`[data-target="${path}"]`).classList.add('tab-content-active')
+      document.querySelector(`[data-target="${path}"]`).classList.add('tab__content-active')
     })
   })
 })

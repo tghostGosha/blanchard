@@ -28,42 +28,43 @@
 
 <body>
   <header class="header">
-    <div class="header__container">
+    <div class="header__background-container">
+    <div class="header__container container">
       <button class="header-burger" id="header-burger">
         <span>
 
         </span>
       </button>
       <a href="#" class="header__logo" id="header__logo">
-        <img src="img/logo/logo.svg" alt="" class="header__logo__image">
+        <img src="img/logo/logo.svg" alt="" class="header__logo-image">
       </a>
       <div class="header__nav">
         <nav class="nav">
-          <ul class="header__nav__list list-reset">
-            <li class="header__nav__item">
-              <a href="#" class="header__nav__item__link">О нас</a>
+          <ul class="header__nav-list list-reset">
+            <li class="header__nav-item">
+              <a href="#" class="nav__item-link">О нас</a>
             </li>
-            <li class="header__nav__item">
-              <a href="#" class="header__nav__item__link">Галерея</a>
+            <li class="header__nav-item">
+              <a href="#" class="nav__item-link">Галерея</a>
             </li>
-            <li class="header__nav__item">
-              <a href="#" class="header__nav__item__link">Каталог</a>
+            <li class="header__nav-item">
+              <a href="#" class="nav__item-link">Каталог</a>
             </li>
-            <li class="header__nav__item">
-              <a href="#" class="header__nav__item__link">События</a>
+            <li class="header__nav-item">
+              <a href="#" class="nav__item-link">События</a>
             </li>
-            <li class="header__nav__item">
-              <a href="#" class="header__nav__item__link">Издания</a>
+            <li class="header__nav-item">
+              <a href="#" class="nav__item-link">Издания</a>
             </li>
-            <li class="header__nav__item">
-              <a href="#" class="header__nav__item__link">Проекты</a>
+            <li class="header__nav-item">
+              <a href="#" class="nav__item-link">Проекты</a>
             </li>
-            <li class="header__nav__item">
-              <a href="#" class="header__nav__item__link">Контакты</a>
+            <li class="header__nav-item">
+              <a href="#" class="nav__item-link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <a href="#" class="header__btn" aria-label="Войти">
+        <a href="#" class="nav-btn">
           <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
@@ -72,8 +73,9 @@
           Войти
         </a>
       </div>
+
       <form action="#" method="get" class="header__form" id="header__form">
-        <button class="header__menu__btn" id="header__menu__btn" aria-label="Найти">
+        <button class="header__menu-btn" id="header__menu__btn" aria-label="Найти">
           <svg width="28" height="27" viewbox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="16.5138" y="14.5495" width="14.8678" height="1.71695"
               transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 0.653427)" fill="currentColor" />
@@ -82,31 +84,33 @@
               fill="white" />
           </svg>
         </button>
-        <input class="input header__menu__input" id="header__menu__input" placeholder="Поиск по сайту" name="search"
+        <input class="input header__menu-input" id="header__menu__input" placeholder="Поиск по сайту" name="search"
           type="search">
       </form>
-      <button class="header__close-btn" id="header__close-btn"></button>
+      <button class="header__form__close-btn" id="header__close-btn"></button>
     </div>
-    <div class=" header__menu ">
-      <ul class="menu list-reset" id="menu">
-        <li class="header__menu__item">
-          <a href="#" class="header__menu__link__btn" aria-label="Реализм">Реализм
+  </div>
+  <div class="header__menu-background">
+    <div class="header__menu container">
+      <ul class="header__menu-list list-reset" id="menu">
+        <li class="header__menu-item">
+          <button type="button" href="#" class="header__menu-btn">Реализм
             <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
             </svg>
-          </a>
+          </button>
           <ul class="sub__menu list-reset" data-simplebar>
-            <li class="sub__menu__item first-item-realism">
-              <a href="#" class="sub__menu__link">Тинторетто</a>
+            <li class="sub__menu-item first-item-realism">
+              <a href="#" class="sub__menu-link">Тинторетто</a>
             </li>
-            <li class="sub__menu__item second-item-realism">
-              <a href="#" class="sub__menu__link">Фридрих</a>
+            <li class="sub__menu-item  second-item-realism">
+              <a href="#" class="sub__menu-link">Фридрих</a>
             </li>
-            <li class="sub__menu__item third-item-realism">
-              <a href="#" class="sub__menu__link">Леонардо</a>
+            <li class="sub__menu-item  third-item-realism">
+              <a href="#" class="sub__menu-link">Леонардо</a>
             </li>
-            <li class="sub__menu__item fourth-item-realism">
-              <a href="#" class="sub__menu__link">Верроккьо</a>
+            <li class="sub__menu-item  fourth-item-realism">
+              <a href="#" class="sub__menu-link">Верроккьо</a>
             </li>
             <li></li>
             <li></li>
@@ -114,49 +118,51 @@
             <li></li>
           </ul>
         </li>
-        <li class="header__menu__item">
-          <a href="#" class="header__menu__link__btn" aria-label="Импрессионизм">Импрессионизм
+        <li class="header__menu-item">
+          <button type="button" href="#" class="header__menu-btn">Импрессионизм
             <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
             </svg>
-          </a>
+          </button>
+          <div data-simplebar class="sub__menu">
+          <ul class="list-reset" >
+            <li class="sub__menu-item  first-item-Impressionism">
+              <a href="#" class="sub__menu-link">Моне</a>
+            </li>
+            <li class="sub__menu-item  second-item-Impressionism">
+              <a href="#" class="sub__menu-link">Сислей</a>
+            </li>
+            <li class="sub__menu-item  third-item-Impressionism">
+              <a href="#" class="sub__menu-link">Мане</a>
+            </li>
+            <li class="sub__menu-item  fourth-item-Impressionism">
+              <a href="#" class="sub__menu-link">Ренуар</a>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        </li>
+        <li class="header__menu-item">
+          <button type="button" href="#" class="header__menu-btn">Постимпрессионизм
+            <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
+            </svg>
+          </button>
           <ul class="sub__menu list-reset" data-simplebar>
-            <li class="sub__menu__item first-item-Impressionism">
-              <a href="#" class="sub__menu__link">Моне</a>
+            <li class="sub__menu-item  first-item-post">
+              <a href="#" class="sub__menu-link">Ван Гог</a>
             </li>
-            <li class="sub__menu__item second-item-Impressionism">
-              <a href="#" class="sub__menu__link">Сислей</a>
+            <li class="sub__menu-item  second-item-post">
+              <a href="#" class="sub__menu-link">Сезанн</a>
             </li>
-            <li class="sub__menu__item third-item-Impressionism">
-              <a href="#" class="sub__menu__link">Мане</a>
+            <li class="sub__menu-item  third-item-post">
+              <a href="#" class="sub__menu-link">Гоген</a>
             </li>
-            <li class="sub__menu__item fourth-item-Impressionism">
-              <a href="#" class="sub__menu__link">Ренуар</a>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </li>
-        <li class="header__menu__item">
-          <a href="#" class="header__menu__link__btn" aria-label="Постимпрессионизм">Постимпрессионизм
-            <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
-            </svg>
-          </a>
-          <ul class="sub__menu list-reset" data-simplebar="">
-            <li class="sub__menu__item first-item-post">
-              <a href="#" class="sub__menu__link">Ван Гог</a>
-            </li>
-            <li class="sub__menu__item second-item-post">
-              <a href="#" class="sub__menu__link">Сезанн</a>
-            </li>
-            <li class="sub__menu__item third-item-post">
-              <a href="#" class="sub__menu__link">Гоген</a>
-            </li>
-            <li class="sub__menu__item fourth-item-post">
-              <a href="#" class="sub__menu__link">Сёра</a>
+            <li class="sub__menu-item  fourth-item-post">
+              <a href="#" class="sub__menu-link">Сёра</a>
             </li>
             <li></li>
             <li></li>
@@ -164,24 +170,24 @@
             <li></li>
           </ul>
         </li>
-        <li class="header__menu__item">
-          <a href="#" class="header__menu__link__btn" aria-label="Авангард">Авангард
+        <li class="header__menu-item">
+          <button type="button" href="#" class="header__menu-btn">Авангард
             <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
             </svg>
-          </a>
-          <ul class="sub__menu list-reset" data-simplebar="">
-            <li class="sub__menu__item first-item-avangard">
-              <a href="#" class="sub__menu__link">Кандинский</a>
+          </button>
+          <ul class="sub__menu list-reset" data-simplebar>
+            <li class="sub__menu-item  first-item-avangard">
+              <a href="#" class="sub__menu-link">Кандинский</a>
             </li>
-            <li class="sub__menu__item second-item-avangard">
-              <a href="#" class="sub__menu__link">Маринетти</a>
+            <li class="sub__menu-item  second-item-avangard">
+              <a href="#" class="sub__menu-link">Маринетти</a>
             </li>
-            <li class="sub__menu__item third-item-avangard">
-              <a href="#" class="sub__menu__link">Малевич</a>
+            <li class="sub__menu-item  third-item-avangard">
+              <a href="#" class="sub__menu-link">Малевич</a>
             </li>
-            <li class="sub__menu__item fourth-item-avangard">
-              <a href="#" class="sub__menu__link">Пикассо</a>
+            <li class="sub__menu-item  fourth-item-avangard">
+              <a href="#" class="sub__menu-link">Пикассо</a>
             </li>
             <li></li>
             <li></li>
@@ -189,35 +195,36 @@
             <li></li>
           </ul>
         </li>
-        <li class="header__menu__item">
-          <a href="#" class="header__menu__link__btn" aria-label="Футуризм">Футуризм
+        <li class="header__menu-item">
+          <button type="button" href="#" class="header__menu-btn">Футуризм
             <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 5L6 10L0.999998 5" stroke="currentColor" />
             </svg>
-          </a>
-          <ul class="sub__menu list-reset" data-simplebar="">
-            <li class="sub__menu__item first-item-futurizm">
-              <a href="#" class="sub__menu__link">Карра</a>
+          </button>
+          <ul class="sub__menu list-reset" data-simplebar>
+            <li class="sub__menu-item  first-item-futurizm">
+              <a href="#" class="sub__menu-link">Карра</a>
             </li>
-            <li class="sub__menu__item second-item-futurizm">
-              <a href="#" class="sub__menu__link">Прателла</a>
+            <li class="sub__menu-item  second-item-futurizm">
+              <a href="#" class="sub__menu-link">Прателла</a>
             </li>
-            <li class="sub__menu__item third-item-futurizm">
-              <a href="#" class="sub__menu__link">Северини</a>
+            <li class="sub__menu-item  third-item-futurizm">
+              <a href="#" class="sub__menu-link">Северини</a>
             </li>
-            <li class="sub__menu__item fourth-item-futurizm">
-              <a href="#" class="sub__menu__link">Балла</a>
+            <li class="sub__menu-item  fourth-item-futurizm">
+              <a href="#" class="sub__menu-link">Балла</a>
             </li>
             <li></li>
             <li></li>
             <li></li>
             <li></li>
+
           </ul>
         </li>
       </ul>
-      <form action="#" method="get" class="header__menu__form">
-        <button class="header__menu__btn" aria-label="найти">
-          <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <form action="#" method="get" class="header__menu-form">
+        <button class="form__menu-btn" aria-label="найти">
+          <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="11.5138" y="10.5495" width="6.8678" height="1.71695"
               transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 0.653427)" fill="currentColor" />
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -225,18 +232,18 @@
               fill="currentColor" />
           </svg>
         </button>
-        <input class="input header__menu__input" placeholder="Поиск по сайту" name="search" type="search">
+        <input class="input header__menu-input" placeholder="Поиск по сайту" name="search" type="search">
       </form>
     </div>
-
+  </div>
   </header>
 
   <main>
     <section class="hero anim-hero">
       <div class="section__hero container">
-        <h1 class="section__hero-heading">
+        <div class="section__hero-heading">
           Прикоснитесь к&nbsp;прекрасному
-        </h1>
+        </div>
         <p class="section__hero-text">
           Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
           предложений.
@@ -246,9 +253,9 @@
     </section>
 
     <section class="about">
-      <div class="sectio__about container">
-        <h2 class="section__about-heading">О нас</h2>
-        <p class="section__about-discription">Ясность нашей позиции очевидна: семантический разбор внешних
+      <div class="section__about container">
+        <h1 class="about-heading">О нас</h1>
+        <p class="about-description">Ясность нашей позиции очевидна: семантический разбор внешних
           противодействий
           однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения
           внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
@@ -265,19 +272,19 @@
 
     <section class="gallery">
       <div class="container section__gallery">
-        <div class="section__gallery__leftblock">
-          <h2 class="section__gallery__leftblock-heading">
+        <div class="section__gallery-leftblock">
+          <h1 class="leftblock-heading">
             Галерея
-          </h2>
-          <p class="section__gallery-filter">Фильтровать по:</p>
+          </h1>
+          <p class="gallery-filter">Фильтровать по:</p>
           <select name="select" id="selectCustom" class="section__gallery-select">
             <option value="" label="check-1">Автор</option>
             <option value="" label="check-2">Направление</option>
             <option value="" label="check-3">Техника</option>
           </select>
-          <p class="section__gallery-discription">
+          <p class="gallery-description">
             Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#"
-              class="section__gallery-log-in">авторизуйтесь,</a> либо
+              class="gallery-log-in">авторизуйтесь,</a> либо
             воспользуйтесь лицензией.
           </p>
         </div>
@@ -291,6 +298,12 @@
           <div class="swiper-wrapper gallery-wrapper">
             <div class="gallery-swiper-slide swiper-slide ">
               <img src="img/gallery/image1.png" alt="" class="slider-img">
+              <div class="slide-zoom">
+                <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
+              </div>
+            </div>
+            <div class="gallery-swiper-slide swiper-slide">
+              <img src="img/gallery/image4.png" alt="" class="slider-img">
               <div class="slide-zoom">
                 <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
               </div>
@@ -314,7 +327,7 @@
                 <img src="img/gallery/image-popup.png" alt="" class="popup__img">
                 <div class="popup_container">
                   <h3 class="img-heading">Казимир Малевич</h3>
-                  <p class="img-discription">"Женщина с граблями"</p>
+                  <p class="img-description">"Женщина с граблями"</p>
                   <span class="img-years">1931-1932</span>
                   <p class="popup-text">Картина из второй серии крестьянского цикла работ Казимира Малевича.
                     Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян
@@ -323,19 +336,14 @@
               </div>
             </div>
             <div class="gallery-swiper-slide swiper-slide">
-              <img src="img/gallery/image3.png" alt="" class="slider-img">
-              <div class="slide-zoom">
-                <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
-              </div>
-            </div>
-            <div class="gallery-swiper-slide swiper-slide">
-              <img src="img/gallery/image4.png" alt="" class="slider-img">
-              <div class="slide-zoom">
-                <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
-              </div>
-            </div>
-            <div class="gallery-swiper-slide swiper-slide">
               <img src="img/gallery/image5.png" alt="" class="slider-img">
+              <div class="slide-zoom">
+                <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
+              </div>
+            </div>
+
+            <div class="gallery-swiper-slide swiper-slide">
+              <img src="img/gallery/image3.png" alt="" class="slider-img">
               <div class="slide-zoom">
                 <img src="img/icons/zoom.svg" alt="" class="slide__zoom-img">
               </div>
@@ -422,47 +430,46 @@
         </div>
         <div class="swiper-scrollbar"></div>
       </div>
-
     </section>
 
     <section class="catalog">
       <div class="container catalog-container">
         <div class="catalog__top">
-          <h2 class="catalog-heading">Каталог</h2>
-          <ul class="tabs">
-            <li class="tabs__item">
-              <button class="tabs__btn btn-france" aria-label="français" data-path="one"></button>
+          <h1 class="catalog-heading">Каталог</h1>
+          <ul class="catalog__tabs">
+            <li class="catalog__tabs-item">
+              <button class="catalog__tabs-btn btn-france" aria-label="français" data-path="one"></button>
             </li>
-            <li class="tabs__item">
-              <button class="tabs__btn btn-german" aria-label="Deutsch" data-path="two"></button>
+            <li class="catalog__tabs-item">
+              <button class="catalog__tabs-btn btn-german" aria-label="Deutsch" data-path="two"></button>
             </li>
-            <li class="tabs__item">
-              <button class="tabs__btn btn-italic" aria-label="italiano" data-path="three"></button>
+            <li class="catalog__tabs-item">
+              <button class="catalog__tabs-btn btn-italic" aria-label="italiano" data-path="three"></button>
             </li>
-            <li class="tabs__item">
-              <button class="tabs__btn btn-russia" aria-label="Русский" data-path="four"></button>
+            <li class="catalog__tabs-item">
+              <button class="catalog__tabs-btn btn-russia" aria-label="Русский" data-path="four"></button>
             </li>
-            <li class="tabs__item">
-              <button class="tabs__btn btn-spain" aria-label="español" data-path="five"></button>
+            <li class="catalog__tabs-item">
+              <button class="catalog__tabs-btn btn-spain" aria-label="español" data-path="five"></button>
             </li>
           </ul>
         </div>
-        <div class="tab__content tab-content-active" data-target="one"></div>
-        <div class="tab__content tab-content-active" data-target="two"></div>
-        <div class="tab__content tab-content-active" data-target="three"></div>
-        <div class="tab__content tab-content-active" data-target="four">
-          <div class="tab__content__discription">
-            <p class="tab__content__discription__text">
+        <div class="tab__content tab__content-active" data-target="one"></div>
+        <div class="tab__content tab__content-active" data-target="two"></div>
+        <div class="tab__content tab__content-active" data-target="three"></div>
+        <div class="tab__content tab__content-active" data-target="four">
+          <div class="tab__content-description">
+            <p class="tab__content__description-text">
               Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
               политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего
               лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день
               остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
             </p>
           </div>
-          <div class="tab__content__painters">
-            <div class="painters-left-block" id="Dominic">
+          <div class="tab__content-painters">
+            <div class="painters__left-block" id="Dominic">
               <img src="img/dominic.png" alt="" class="painter-img">
-              <h3 class="left-block-heading">Доменико Гирландайо</h3>
+              <h2 class="left-block-heading">Доменико Гирландайо</h2>
               <span>2 июня 1448 — 11 января 1494.</span>
               <p>
                 Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
@@ -473,7 +480,7 @@
                 Флоренции в костюмах того времени).
               </p>
             </div>
-            <div class="painters-right-block">
+            <div class="painters__right-block">
               <ul class="years-list" id="accordion">
                 <li class="years-item">
                   <button type="button" class="years-item-btn" aria-label="C 1400 по 1499">
@@ -598,43 +605,43 @@
               </ul>
             </div>
           </div>
-          <div class="tab__content tab-content-active" data-target="five"></div>
+          <div class="tab__content tab__content-active" data-target="five"></div>
         </div>
       </div>
     </section>
     <section class="events">
       <div class="container section-events">
-        <h2 class="events__heading">События</h2>
+        <h1 class="events-heading">События</h1>
         <div class="events-swiper-container hidding-list" data-mobile="false" id="hidding-list">
-          <div class="events__list  events-swiper-wrapper">
-            <div class="events-swiper-slider">
+          <ul class="events__list  events-swiper-wrapper">
+            <li class="events-swiper-slider">
               <div class="events__item">
                 <img src="img/events/event-1.png" alt="" class="events__item-img">
-                <div class="events__item-discription">
+                <div class="events__item-description">
                   <div class="events__img-span">
                     <span class="wrapper-span">Музей им. Щусева </span>
                     <span class="wrapper-span"> с 20 марта по 30 апреля</span>
                   </div>
-                  <h3 class="wrapper-heading">Книжная гравюра в живом восприятии</h3>
-                  <p class="wrapper-discription first-wrapper-discription custom-scroll" data-simplebar>
+                  <h2 class="wrapper-heading">Книжная гравюра в живом восприятии</h2>
+                  <p class="wrapper-description first-wrapper-description custom-scroll" data-simplebar>
                     Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
                     продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
                   </p>
                   <a href="#" class="wrapper-link" aria-label="Подробнее">Подробнее</a>
                 </div>
               </div>
-            </div>
-            <div class="events-swiper-slider">
+            </li>
+            <li class="events-swiper-slider">
               <div class="events__item">
                 <img src="img/events/event-2.png" alt="" class="events__item-img">
-                <div class="events__item-discription">
+                <div class="events__item-description">
                   <div class="events__img-span">
                     <span class="wrapper-span">ММОМА </span>
                     <span class="wrapper-span">24 марта 19:00</span>
                   </div>
-                  <h3 class="wrapper-heading wrapper-heading-second">«Открытая дискуссия». Дмитрий Петров и Сергей
-                    Ильин.</h3>
-                  <p class="wrapper-discription second-wrapper-discription custom-scroll" data-simplebar>
+                  <h2 class="wrapper-heading wrapper-heading-second">«Открытая дискуссия». Дмитрий Петров и Сергей
+                    Ильин.</h2>
+                  <p class="wrapper-description second-wrapper-description custom-scroll" data-simplebar>
                     Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
                     факта: постоянный количественный рост и сфера нашей активности представляет собой интересный
                     эксперимент
@@ -643,17 +650,17 @@
                   <a href="#" class="wrapper-link" aria-label="Подробнее">Подробнее</a>
                 </div>
               </div>
-            </div>
-            <div class="events-swiper-slider">
+            </li>
+            <li class="events-swiper-slider">
               <div class="events__item">
                 <img src="img/events/event-3.png" alt="" class="events__item-img">
-                <div class="events__item-discription">
+                <div class="events__item-description">
                   <div class="events__img-span">
                     <span class="wrapper-span">Еврейский музей</span>
                     <span class="wrapper-span"> с 31 марта по 21 апреля</span>
                   </div>
-                  <h3 class="wrapper-heading">Выставка «Формация 2020»</h3>
-                  <p class="wrapper-discription third-wrapper-discription custom-scroll" data-simplebar>
+                  <h2 class="wrapper-heading">Выставка «Формация 2020»</h2>
+                  <p class="wrapper-description third-wrapper-description custom-scroll" data-simplebar>
                     Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
                     формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее
                     значение для новых принципов формирования материально-технической и кадровой базы.
@@ -661,17 +668,17 @@
                   <a href="#" class="wrapper-link" aria-label="Подробнее">Подробнее</a>
                 </div>
               </div>
-            </div>
-            <div class="events-swiper-slider">
+            </li>
+            <li class="events-swiper-slider">
               <div class="events__item">
                 <img src="img/events/event-4.png" alt="" class="events__item-img" data-simplebar>
-                <div class="events__item-discription">
+                <div class="events__item-description">
                   <div class="events__img-span">
                     <span class="wrapper-span">Третьяковка на Крымском валу</span>
                     <span class="wrapper-span">с 30 марта по 30 апреля</span>
                   </div>
-                  <h3 class="wrapper-heading fourth-wrapper-heading">XXIV Международная биеннале молодого искусства</h3>
-                  <p class="wrapper-discription fourth-wrapper-discription custom-scroll" data-simplebar>
+                  <h2 class="wrapper-heading fourth-wrapper-heading">XXIV Международная биеннале молодого искусства</h2>
+                  <p class="wrapper-description fourth-wrapper-description custom-scroll" data-simplebar>
                     Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не
                     что
                     иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в
@@ -681,26 +688,26 @@
                   <a href="#" class="wrapper-link" aria-label="Подробнее">Подробнее</a>
                 </div>
               </div>
-            </div>
-            <div class="events-swiper-slider">
+            </li>
+            <li class="events-swiper-slider">
               <div class="events__item">
                 <img src="img/events/event-5.png" alt="" class="events__item-img">
-                <div class="events__item-discription">
+                <div class="events__item-description">
                   <div class="events__img-span">
                     <span class="wrapper-span">ММАМ</span>
                     <span class="wrapper-span">с 8 апреля по 20 мая</span>
                   </div>
-                  <h3 class="wrapper-heading fifth-wrapper-heading">Джон Винзор. Фотографии из серии «Метафора серебра»
-                  </h3>
-                  <p class="wrapper-discription fifth-wrapper-discription custom-scroll" data-simplebar>
+                  <h2 class="wrapper-heading fifth-wrapper-heading">Джон Винзор. Фотографии из серии «Метафора серебра»
+                  </h2>
+                  <p class="wrapper-description fifth-wrapper-description custom-scroll" data-simplebar>
                     Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
                     продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.
                   </p>
                   <a href="#" class="wrapper-link" aria-label="Подробнее">Подробнее</a>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="swiper-pagination events-swiper-pagination"></div>
         </div>
         <button type="button" class="btn-event" id="btn-event" aria-label="Все события">Все события</button>
@@ -711,7 +718,7 @@
       <div class="container edition-container">
 
         <div class="edition__checkbox">
-          <h2 class="edition__heading">Издания</h2>
+          <h1 class="edition__heading">Издания</h1>
           <button class="edition__checkbox-btn" type="button" id="edition__checkbox-btn" aria-label="Категории">
             <span>Категории</span>
             <div class="checkbox-btn-svg">
@@ -865,7 +872,7 @@
 
     <section class="project">
       <div class="project-section container">
-        <h2 class="project__headding">Проекты</h2>
+        <h1 class="project__headding">Проекты</h1>
         <p class="project__discription">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
           фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
@@ -931,7 +938,7 @@
 
     <section class="contacts">
       <div class="contacts-container">
-        <h2 class="contacts-heading">Контакты</h2>
+        <h1 class="contacts-heading">Контакты</h1>
         <div class="contacts-block">
           <div class="contacts__left">
             <h3 class="contacts__left-heading">Шоурум №4</h3>
