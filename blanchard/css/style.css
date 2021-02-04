@@ -485,7 +485,6 @@ input[type="search" i] {
 }
 
 .simplebar-scrollbar::before {
-  height: 22px !important;
   cursor: pointer;
   left: -1px;
 }
@@ -591,7 +590,7 @@ input[type="search" i] {
 
 .about{
   padding-top: 80px;
-  padding-bottom: 69px;
+  padding-bottom: 70px;
 }
 
 .about-heading {
@@ -617,7 +616,7 @@ input[type="search" i] {
 .section__gallery {
   display: flex;
   padding-top: 81px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
   min-width: 0;
 }
 
@@ -985,10 +984,12 @@ input[type="search" i] {
 }
 
 .tab__content {
+  display: none;
+}
+.tab__content-active {
   display: flex;
   flex-direction: column;
 }
-
 .tab__content-description {
   margin-bottom: 39px;
 }
@@ -1319,8 +1320,7 @@ input[type="search" i] {
 .edition-container {
   display: flex;
   padding-top: 80px;
-  padding-bottom: 80px;
-  margin-bottom: 80px;
+  padding-bottom: 81px;
 }
 
 .edition__checkbox {
@@ -1341,7 +1341,7 @@ input[type="search" i] {
   display: flex;
   justify-content: space-between;
   color: var(--whitecolor);
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 16px;
   letter-spacing: 0.9px;
   background-color: transparent;
@@ -1469,9 +1469,8 @@ input[type="search" i] {
 
 .price-heading {
   color: var(--whitecolor);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-size: 16px;
-  letter-spacing: 0.5px;
 }
 
 .form-price {
@@ -1527,12 +1526,11 @@ input[type="search" i] {
 }
 .edition__price-block {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .edition-img {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   max-width: 100%;
 }
 
@@ -1540,7 +1538,7 @@ input[type="search" i] {
   color: var(--whitecolor);
   line-height: 22px;
   font-size: 16px;
-  letter-spacing: 0.9px;
+  letter-spacing: -0.2px;
 }
 
 .edition__item-price {
@@ -1563,6 +1561,7 @@ input[type="search" i] {
   padding: 8px 14px 10px 14px;
   color: var(--whitecolor);
   border: 1px solid var(--pink);
+  border-radius: 100px;
   display: block;
   transition: all 0.3s ease-in-out 0s;
   letter-spacing: 1px;
@@ -1587,16 +1586,21 @@ input[type="search" i] {
 
 /*==============================Projects=========================*/
 .project-section {
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+
 .project__headding {
+  position: relative;
+  left: -4px;
   margin-bottom: 17px;
 }
 
 .project__discription {
   font-weight: 600;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   padding-right: 34%;
+  letter-spacing: -0.4px;
 }
 
 .project__discription-link {
@@ -1623,9 +1627,11 @@ input[type="search" i] {
 }
 
 .swiper-heading-project {
+  position: relative;
+  left: -4px;
   margin-bottom: 25px;
   font-size: 24px;
-  letter-spacing: 0.2px;
+  letter-spacing: -0.4px;
 }
 
 .project-swiper-container {
@@ -1738,9 +1744,10 @@ input[type="search" i] {
 /*===============================CONTACTS==========================*/
 
 .contacts-heading {
-  padding-left: 160px;
+  padding-left: 156px;
   margin-bottom: 16px;
 }
+
 .contacts-container {
   width: 100%;
 }
@@ -1750,13 +1757,13 @@ input[type="search" i] {
 
 .contacts__left {
   max-width: 700px;
-  padding: 124px 122px 124px 160px;
+  padding: 125px 122px 124px 160px;
   border-top: 1px solid #cacaca;
 }
 
 .contacts__left-heading {
   font-size: 24px;
-  letter-spacing: 0.6px;
+  letter-spacing: -0.6px;
   margin-bottom: 7px;
 }
 
@@ -1765,8 +1772,9 @@ input[type="search" i] {
 }
 
 .form-heading {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   font-size: 24px;
+  letter-spacing: -0.6px;
 }
 
 .form__input {
@@ -1775,7 +1783,7 @@ input[type="search" i] {
   height: 40px;
   border-color: #333333;
   border-radius: 100px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
   padding: 4px 0 4px 24px;
   color: #999999;
 }
@@ -1786,16 +1794,16 @@ input[type="search" i] {
   font-weight: 700;
   line-height: 24px;
   border: 1px solid var(--pink);
+  border-radius: 100px;
   background-color: transparent;
-  padding: 14px 35px 18px 35px;
-  margin-bottom: 40px;
-  letter-spacing: 0.9px;
+  padding: 14px 34px 17px 34px;
+  margin-bottom: 38px;
 }
 
 .social-heading {
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
 }
 .js-validate-error-label {
@@ -1855,7 +1863,7 @@ input[type="search" i] {
 }
 
 .footer__logo {
-  padding-top: 50px;
+  padding-top: 51px;
   padding-bottom: 47px;
 }
 
