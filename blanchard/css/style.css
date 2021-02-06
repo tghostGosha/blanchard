@@ -264,7 +264,6 @@ h1 {
 
 .header__menu-btn {
   display: flex;
-  align-items: center;
   background: transparent;
   border: 0;
   color: var(--whitecolor);
@@ -277,6 +276,9 @@ h1 {
 
 .header__menu-btn svg{
   margin-left: 3px;
+  align-items: center;
+  position: relative;
+  top: 8px;
 }
 
 .header__menu-btn:hover {
@@ -615,8 +617,8 @@ input[type="search" i] {
 
 .gallery__container {
   display: flex;
-  padding-top: 81px;
-  padding-bottom: 68px;
+  padding-top: 80px;
+  padding-bottom: 69px;
   min-width: 0;
 }
 
@@ -955,7 +957,7 @@ input[type="search" i] {
 }
 
 .catalog__tabs-btn.is-active {
-  border: 2px solid var(--pink);
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
 }
 
 .btn-france {
@@ -1065,15 +1067,33 @@ input[type="search" i] {
   color: var(--pink);
   outline: 0;
 }
-
+.ui-accordion .ui-accordion-header  {
+  display: flex;
+}
+.ui-widget-content {
+  border: none;
+}
 .ui-icon {
   display: none;
 }
-
-.ui-state-active {
-  color: #333333;
+.ui-accordion .ui-accordion-content  {
+  border-top: 1px solid  var(--pink);
 }
-
+.ui-state-active {
+  color:var(--pink);
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button  {
+  font-size: 24px;
+  line-height: 32px;
+}
+.ui-accordion .ui-accordion-header {
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  padding: 28px 0 33px 0;
+}
+.ui-accordion .ui-accordion-content {
+  padding: 25px 25px 20px 0;
+}
 .btn-svg {
   background-color: #ececec;
   background-size: 100px;
@@ -1118,8 +1138,6 @@ input[type="search" i] {
   min-height: 342px;
   max-height: 342px;
   width: 100%;
-  padding: 24px 26px 26px 0;
-  border-top: 1px solid  var(--pink);
 }
 
 .accordion-item {
@@ -1129,22 +1147,15 @@ input[type="search" i] {
 
 .accordion-link {
   line-height: 32px;
+  letter-spacing: 0.4px;
   color: #333333;
   transition: all 0.3s ease-in-out 0s;
 }
 
 .dominic {
-  letter-spacing: 0.5px;
+  color: var(--pink) !important;
 }
 
-.baldassary,
-.parentino {
-  letter-spacing: 0.3px;
-}
-
-.biadjo {
-  letter-spacing: -0.2px;
-}
 .accordion-link:focus {
   outline: 1px solid var(--pink);
 }
@@ -1155,7 +1166,7 @@ input[type="search" i] {
   box-shadow: 0 1px 0 var(--pink);
 }
 
-.accordion-link.is-active {
+.accordion-link.is-selected {
   color: #7943A4;
   box-shadow: none;
   outline: none;
@@ -1163,8 +1174,8 @@ input[type="search" i] {
 
 /*==================================EVENTS=========================*/
 
-.section-events {
-  margin-bottom: 81px;
+.events__container {
+  padding-bottom: 81px;
 }
 
 .events-heading {
@@ -1249,7 +1260,7 @@ input[type="search" i] {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .wrapper-span {
@@ -1323,8 +1334,8 @@ input[type="search" i] {
 
 .edition__container {
   display: flex;
-  padding-top: 80px;
-  padding-bottom: 81px;
+  padding-top: 81px;
+  padding-bottom: 80px;
 }
 
 .edition__checkbox {
@@ -1355,6 +1366,7 @@ input[type="search" i] {
 .checkbox-btn-svg {
   display: none;
 }
+
 .edition__form-label {
   position: relative;
   cursor: pointer;
@@ -1362,10 +1374,13 @@ input[type="search" i] {
   align-items: center;
   user-select: none;
   outline: none;
+  transition: all 0.3s ease 0s;
 }
+
 .edition-select {
   display: none;
 }
+
 .edition__form-label:not(:last-child) {
   margin-bottom: 14px;
 }
@@ -1391,7 +1406,7 @@ input[type="search" i] {
   border: 1px solid var(--whitecolor);
 }
 
-.edition__form-input:checked + .edition__form-label::before {
+.edition__form-input:checked + .edition__form-label::before{
   content: '';
   background-image: url('../img/icons/Ellipse.svg');
   background-repeat: no-repeat;
@@ -1401,10 +1416,7 @@ input[type="search" i] {
   text-align: center;
   display: inline-block;
   border:  1px solid var(--pink);
-}
 
-.edition__form-input > span:focus {
-  outline: 1px solid var(--pink);
 }
 
 .edition__form-label:hover {
@@ -1412,13 +1424,14 @@ input[type="search" i] {
 }
 
 .edition__form-label::before:hover {
+  content: '';
   border:  1px solid var(--pink);
 }
-.edition__form-label span {
-  outline: none;
-}
+
+
 
 .edition__form-label span:focus {
+  outline: none;
   outline: 1px solid var(--pink);
 }
 
@@ -1442,7 +1455,7 @@ input[type="search" i] {
   flex-direction: row;
   max-width: 1150px;
   height: 592px;
-  overflow: hidden;
+
 }
 
 .edition-swiper-slide {
@@ -1598,7 +1611,7 @@ input[type="search" i] {
 /*==============================Projects=========================*/
 .project__container {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 81px;
 }
 
 .project__headding {

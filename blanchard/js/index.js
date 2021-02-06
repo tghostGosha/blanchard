@@ -248,7 +248,7 @@ new Choices(element, {
 /*====================accordion link================*/
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.accordion-link').addEventListener('click', function () {
-    document.querySelector('.accordion-link').classList.toggle('is-active')
+    document.querySelector('.accordion-link').classList.toggle('is-selected')
   })
 })
 
@@ -262,13 +262,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
       document.querySelectorAll('.tab__content').forEach(function (tabContent) {
         tabContent.classList.remove('tab__content-active')
+        tabContent.classList.remove('is-active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('tab__content-active')
-
+      tabsBtn.classList.toggle('is-active')
     })
 
   })
-  document.querySelector('.catalog__tabs-btn').classList.toggle('is-active')
+
 })
 
 
