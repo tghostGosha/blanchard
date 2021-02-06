@@ -230,6 +230,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   })
 })
+
 /*=======================swiper popup===================*/
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#swiper-slide-item, #swiper-slide-link').addEventListener('click', function () {
@@ -244,6 +245,12 @@ new Choices(element, {
   itemSelectText: false
 });
 
+/*====================accordion link================*/
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.accordion-link').addEventListener('click', function () {
+    document.querySelector('.accordion-link').classList.toggle('is-active')
+  })
+})
 
 
 /*===================================TABS========================*/
@@ -257,8 +264,11 @@ document.addEventListener('DOMContentLoaded', function () {
         tabContent.classList.remove('tab__content-active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('tab__content-active')
+
     })
+
   })
+  document.querySelector('.catalog__tabs-btn').classList.toggle('is-active')
 })
 
 

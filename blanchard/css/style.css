@@ -613,14 +613,14 @@ input[type="search" i] {
   background-image: url('../img/gallery-background.png');
 }
 
-.section__gallery {
+.gallery__container {
   display: flex;
   padding-top: 81px;
   padding-bottom: 68px;
   min-width: 0;
 }
 
-.section__gallery-leftblock {
+.gallery__container-leftblock {
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -915,7 +915,7 @@ input[type="search" i] {
 
 /*============================Catalog======================*/
 
-.catalog-container {
+.catalog__container {
   padding-bottom: 81px;
   padding-top: 80px;
 }
@@ -954,7 +954,7 @@ input[type="search" i] {
   filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
 }
 
-.catalog__tabs-btn:active {
+.catalog__tabs-btn.is-active {
   border: 2px solid var(--pink);
 }
 
@@ -986,10 +986,12 @@ input[type="search" i] {
 .tab__content {
   display: none;
 }
+
 .tab__content-active {
   display: flex;
   flex-direction: column;
 }
+
 .tab__content-description {
   margin-bottom: 39px;
 }
@@ -1153,9 +1155,10 @@ input[type="search" i] {
   box-shadow: 0 1px 0 var(--pink);
 }
 
-.accordion-link:active {
+.accordion-link.is-active {
   color: #7943A4;
   box-shadow: none;
+  outline: none;
 }
 
 /*==================================EVENTS=========================*/
@@ -1317,7 +1320,8 @@ input[type="search" i] {
 .edition {
   background-image: url('../img/edition/birmingham-museums-edition-background.jpg');
 }
-.edition-container {
+
+.edition__container {
   display: flex;
   padding-top: 80px;
   padding-bottom: 81px;
@@ -1357,6 +1361,7 @@ input[type="search" i] {
   display: flex;
   align-items: center;
   user-select: none;
+  outline: none;
 }
 .edition-select {
   display: none;
@@ -1409,8 +1414,13 @@ input[type="search" i] {
 .edition__form-label::before:hover {
   border:  1px solid var(--pink);
 }
+.edition__form-label span {
+  outline: none;
+}
 
-
+.edition__form-label span:focus {
+  outline: 1px solid var(--pink);
+}
 
 .checkbox-heading {
   color: var(--whitecolor);
@@ -1487,7 +1497,8 @@ input[type="search" i] {
 
 .price-input {
   border: none;
-  background-color: var(--pink);
+  background-color: #9D5CD0;
+  opacity: 0.5;
   width: 80px;
   color: var(--whitecolor);
   font-weight: 400px;
@@ -1585,7 +1596,7 @@ input[type="search" i] {
 
 
 /*==============================Projects=========================*/
-.project-section {
+.project__container {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -1748,7 +1759,7 @@ input[type="search" i] {
   margin-bottom: 16px;
 }
 
-.contacts-container {
+.contacts__container {
   width: 100%;
 }
 .contacts-block {
@@ -1855,7 +1866,7 @@ input[type="search" i] {
   width: 100%;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
