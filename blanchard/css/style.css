@@ -721,8 +721,10 @@ input[type="search" i] {
   padding-right: 30px;
   letter-spacing: 0.36px;
 }
-
 .gallery-log-in {
+  color: #ffffff;
+}
+.gallery-log-in:hover {
   color: var(--pink);
 }
 /*========================GALLERY_SWIPPER===============*/
@@ -789,7 +791,7 @@ input[type="search" i] {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.swiper-button-prev,
+.swiper-button-prev:focus,
 .swiper-button-next:focus{
   border: 1px solid var(--pink);
   outline: none;
@@ -959,7 +961,9 @@ input[type="search" i] {
 .catalog__tabs-btn.is-active {
   filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
 }
-
+.btn-russia.is-active {
+  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+}
 .btn-france {
   background-image: url('../img/logo/france-lang.svg');
   background-repeat: no-repeat;
@@ -1157,7 +1161,7 @@ input[type="search" i] {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.dominic {
+.dominic .is-active{
   color: var(--pink) !important;
 }
 

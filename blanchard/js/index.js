@@ -264,6 +264,15 @@ document.addEventListener('DOMContentLoaded', function () {
         tabContent.classList.remove('tab__content-active')
         tabContent.classList.remove('is-active')
       })
+      window.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('.btn-russia').classList.toggle('is-active')
+      })
+      window.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('.dominiс').classList.toggle('is-active')
+      })
+      document.querySelectorAll('.catalog__tabs-btn').forEach(function (btn) {
+        btn.classList.remove('is-active');
+      });
       document.querySelector(`[data-target="${path}"]`).classList.add('tab__content-active')
       tabsBtn.classList.toggle('is-active')
     })
