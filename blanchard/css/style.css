@@ -1161,11 +1161,11 @@ input[type="search" i] {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.dominic .is-active{
+.accordion-link.is-active{
   color: var(--pink) !important;
 }
 
-.accordion-link:focus {
+.dominic1:focus {
   outline: 1px solid var(--pink);
 }
 

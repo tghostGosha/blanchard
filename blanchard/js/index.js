@@ -264,12 +264,6 @@ document.addEventListener('DOMContentLoaded', function () {
         tabContent.classList.remove('tab__content-active')
         tabContent.classList.remove('is-active')
       })
-      window.addEventListener('DOMContentLoaded', function(){
-        document.querySelector('.btn-russia').classList.toggle('is-active')
-      })
-      window.addEventListener('DOMContentLoaded', function(){
-        document.querySelector('.dominiс').classList.toggle('is-active')
-      })
       document.querySelectorAll('.catalog__tabs-btn').forEach(function (btn) {
         btn.classList.remove('is-active');
       });
@@ -279,6 +273,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   })
 
+})
+
+window.addEventListener('DOMContentLoaded', function(){
+  document.querySelector('.btn-russia').classList.add('is-active')
+  document.querySelector('.dominic1').classList.add('is-active')
 })
 
 
