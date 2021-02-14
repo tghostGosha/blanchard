@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 window.addEventListener('DOMContentLoaded', function(){
-  document.querySelector('.btn-russia').classList.add('is-active')
+  document.querySelector('.btn-italic').classList.add('is-active')
   document.querySelector('.dominic1').classList.add('is-active')
 })
 

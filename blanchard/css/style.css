@@ -63,7 +63,7 @@ h1,h2,h3,h4 {
   margin: 0;
 }
 
-h1 {
+h2 {
   font-size: 48px;
   line-height: 65px;
   font-weight: 400;
@@ -618,7 +618,7 @@ input[type="search" i] {
 .gallery__container {
   display: flex;
   padding-top: 80px;
-  padding-bottom: 69px;
+  padding-bottom: 70px;
   min-width: 0;
 }
 
@@ -934,24 +934,27 @@ input[type="search" i] {
 }
 .catalog__tabs {
   display: flex;
+  padding: 0;
   margin: 0;
-  margin-bottom: 20px;
-  padding-top: 12px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+
 }
 
 .catalog__tabs-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .catalog__tabs-btn {
-  width: 46px;
-  height: 46px;
+  width: 66px;
+  height: 66px;
   padding: 0;
   margin: 0;
   border: 0 none;
   border-radius: 50%;
   outline: none;
   transition: all 0.3s ease-in-out 0s;
+  background-color: transparent;
 }
 
 .catalog__tabs-btn:hover {
@@ -959,34 +962,41 @@ input[type="search" i] {
 }
 
 .catalog__tabs-btn.is-active {
-  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+  border: 1px solid var(--pink);
 }
-.btn-russia.is-active {
-  filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
+
+.btn-italic.is-active {
+  border: 1px solid var(--pink);
 }
+
 .btn-france {
   background-image: url('../img/logo/france-lang.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-german {
   background-image: url('../img/logo/german-lang.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-italic {
   background-image: url('../img/logo/italic-lang.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-russia {
   background-image: url('../img/logo/russia-lang.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-spain {
   background-image: url('../img/logo/spain-lang.svg');
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tab__content {
@@ -999,7 +1009,7 @@ input[type="search" i] {
 }
 
 .tab__content-description {
-  margin-bottom: 38px;
+  margin-bottom: 41px;
 }
 
 .tab__content__description-text {
@@ -1018,7 +1028,7 @@ input[type="search" i] {
 }
 
 .painter-img {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .left-block-heading {
@@ -1184,7 +1194,7 @@ input[type="search" i] {
 /*==================================EVENTS=========================*/
 
 .events__container {
-  padding-bottom: 81px;
+  padding-bottom: 79px;
 }
 
 .events-heading {
@@ -1245,15 +1255,16 @@ input[type="search" i] {
 
 }
 
-.events-swiper-slider:nth-child(1),
-.events-swiper-slider:nth-child(2),
-.events-swiper-slider:nth-child(4) {
+.events-swiper-slider {
   margin-right: 50px;
 }
 
-.events-swiper-slider:nth-child(1),
-.events-swiper-slider:nth-child(2),
-.events-swiper-slider:nth-child(3) {
+.events-swiper-slider:nth-child(3n){
+  margin-right: 0;
+}
+
+
+.events-swiper-slider:nth-child(3n) {
   margin-bottom: 50px;
 }
 
@@ -1262,20 +1273,21 @@ input[type="search" i] {
 }
 
 .events__item-description {
-  padding: 13px 19px 48px 50px;
+  padding: 13px 17px 46px 50px;
 }
 
 .events__img-span {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .wrapper-span {
   font-size: 12px;
   color: #999999;
   line-height: 16px;
+  letter-spacing: 0.3px;
 }
 
 .wrapper-heading {
@@ -1292,6 +1304,8 @@ input[type="search" i] {
 .wrapper-link {
   color: var(--pink);
   width: 92px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--pink);
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -1335,7 +1349,10 @@ input[type="search" i] {
   line-height: 24px;
   font-weight: 700;
 }
-
+.btn-event:hover {
+  color: var(--whitecolor);
+  background-color: var(--pink);
+}
 /*=====================================EDITION=====================*/
 .edition {
   background-image: url('../img/edition/birmingham-museums-edition-background.jpg');
@@ -1597,9 +1614,10 @@ input[type="search" i] {
   transition: all 0.3s ease-in-out 0s;
   letter-spacing: 1px;
   margin-top: 15px;
+  outline: none;
 }
 
-.span-btn:hover {
+.span-btn:focus {
   outline: 1px solid var(--pink);
 }
 
@@ -1816,6 +1834,7 @@ input[type="search" i] {
   margin-bottom: 23px;
   padding: 4px 0 4px 24px;
   color: #999999;
+  outline: none;
 }
 
 .contacts__form-btn {
@@ -1828,6 +1847,17 @@ input[type="search" i] {
   background-color: transparent;
   padding: 14px 34px 17px 34px;
   margin-bottom: 39px;
+  outline: none;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.contacts__form-btn:hover {
+  background-color: var(--pink);
+  color: var(--whitecolor);
+}
+
+.contacts__form-span:focus {
+  outline: 1px solid var(--pink);
 }
 
 .social-heading {
