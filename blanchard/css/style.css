@@ -963,10 +963,19 @@ input[type="search" i] {
 }
 
 .catalog__tabs-btn.is-active {
+  /*border: 1px solid var(--pink);*/
+}
+
+.catalog__tabs-btn:active {
   border: 1px solid var(--pink);
 }
 
+.catalog__tabs-btn.is-active .tabs__btn-border {
+  display: block;
+}
+
 .tabs__btn-border {
+  display: none;
   position: absolute;
   width: 66px;
   height: 66px;
@@ -1039,7 +1048,7 @@ input[type="search" i] {
 }
 
 .painters__left-block-active {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   max-width: 750px;
   margin-right: 50px;
@@ -1091,6 +1100,12 @@ input[type="search" i] {
 }
 
 .years-item-btn:focus span {
+  outline: 1px solid var(--pink);
+}
+
+
+.years-item-btn:focus .btn-svg {
+  border: 1px solid var(--pink);
   outline: 1px solid var(--pink);
 }
 
