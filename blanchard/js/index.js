@@ -277,8 +277,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('DOMContentLoaded', function(){
   document.querySelector('.btn-italic').classList.add('is-active')
-  document.querySelector('.dominic').classList.add('is-selected')
   document.querySelector('.accordion-link').classList.add('is-active')
+})
+
+window.addEventListener('DOMContentLoaded', function(){
+
+  document.querySelectorAll('.painters__left-block').forEach(function(tabContent){
+    tabContent.classList.remove('painters__left-block-active')
+    tabContent.classList.remove('is-active')
+  })
+  document.querySelectorAll('.tab__content-active').forEach(function(tabContent){
+    tabContent.classList.remove('tab__content-active')
+  })
+  document.querySelector('[data-target="three"]').classList.add('tab__content-active')
+  document.querySelectorAll('.first-active-painter-tab').forEach(function(tabContent){
+    tabContent.classList.add('painters__left-block-active');
+  });
+  document.querySelectorAll('.accordion-link.first-active-painter-link').forEach(function(link){
+    link.classList.add('is-active')
+  });
 })
 
 window.addEventListener('DOMContentLoaded', function() {
