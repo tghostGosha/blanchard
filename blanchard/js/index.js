@@ -299,6 +299,23 @@ window.addEventListener('DOMContentLoaded', function(){
 })
 
 window.addEventListener('DOMContentLoaded', function() {
+
+  document.querySelectorAll('.painters__left-block').forEach(function (tabContent) {
+    tabContent.classList.remove('painters__left-block-active')
+    tabContent.classList.remove('is-active')
+  })
+
+  document.querySelectorAll('.tab__content-active').forEach(function (tabContent) {
+    tabContent.classList.remove('tab__content-active')
+  })
+  document.querySelector(`[data-target="two"]`).classList.add('tab__content-active')
+  document.querySelectorAll('.first-active-painter-tab').forEach(function (tabContent) {
+    tabContent.classList.add('painters__left-block-active');
+  });
+  document.querySelectorAll('.accordion-link.first-active-painter-link').forEach(function (link) {
+    link.classList.add('is-active')
+  });
+  //
   document.querySelectorAll('.accordion-link').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
