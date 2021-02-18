@@ -302,16 +302,17 @@ window.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.accordion-link').forEach(function (tabsBtn) {
     tabsBtn.addEventListener('click', function (event) {
       const path = event.currentTarget.dataset.path
-
-      document.querySelectorAll('.painters__left-block').forEach(function (tabContent) {
+      const dataTargetVal = tabsBtn.closest(`.tab__content[data-target]`);
+      const tabContent = `.tab__content[data-target="${dataTargetVal.getAttribute('data-target')}"]`;
+      document.querySelectorAll(`${tabContent} .painters__left-block`).forEach(function (tabContent) {
         tabContent.classList.remove('painters__left-block-active')
         tabContent.classList.remove('is-active')
       })
-      document.querySelectorAll('.accordion-link').forEach(function (btn) {
+      document.querySelectorAll(`${tabContent} .accordion-link`).forEach(function (btn) {
         btn.classList.remove('is-active');
       });
       document.querySelector(`[data-target="${path}"]`).classList.add('painters__left-block-active')
-      tabsBtn.classList.toggle('is-active')
+      tabsBtn.classList.add('is-active')
     })
 
   })
