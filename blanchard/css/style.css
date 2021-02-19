@@ -415,7 +415,8 @@ h2 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.header__menu-form:focus > .input{
+.header__menu-form:focus > .input,
+.header__menu-form:focus .form__menu-btn{
   outline: 1px solid var(--pink);
 }
 
