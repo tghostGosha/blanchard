@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blanchard</title>
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
 
   <script src="js/choices.min.js"></script>
@@ -30,12 +30,12 @@
   <header class="header">
     <div class="header__background-container">
       <div class="header__container container">
-        <button class="header-burger" id="header-burger">
+        <button class="header-burger header-burger-320" id="header-burger">
           <span>
 
           </span>
         </button>
-        <a href="#" class="header__logo" id="header__logo">
+        <a href="#" class="header__logo header__logo-320" id="header__logo">
           <img src="img/logo/logo.svg" alt="" class="header__logo-image">
         </a>
         <div class="header__nav">
@@ -73,9 +73,9 @@
             Войти
           </a>
         </div>
-
+        <div class="form-tablet">
         <form action="#" method="get" class="header__form" id="header__form">
-          <button class="header__menu-btn" id="header__menu__btn" aria-label="Найти">
+          <button class="header__menu-btn" id="header__menu-btn" aria-label="Найти">
             <svg width="28" height="27" viewbox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="16.5138" y="14.5495" width="14.8678" height="1.71695"
                 transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 0.653427)" fill="currentColor" />
@@ -84,10 +84,11 @@
                 fill="white" />
             </svg>
           </button>
-          <input class="input header__menu-input" id="header__menu__input" placeholder="Поиск по сайту" name="search"
+          <input class="input header__menu-input" id="header__menu-input" placeholder="Поиск по сайту" name="search"
             type="search">
         </form>
         <button class="header__form__close-btn" id="header__close-btn"></button>
+      </div>
       </div>
     </div>
     <div class="header__menu-background">
@@ -243,9 +244,10 @@
   <main>
     <section class="hero anim-hero">
       <div class="section__hero container">
-        <h1 class="section__hero-heading">
+        <h1 class="hero-h1">Заголовок</h1>
+        <div class="section__hero-heading">
           Прикоснитесь к&nbsp;прекрасному
-        </h1>
+        </div>
         <p class="section__hero-text">
           Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых
           предложений.
@@ -828,7 +830,7 @@
                     <li class="accordion-item"><a href="#" class="accordion-link" aria-label="Андреа Верроккьо"
                         onclick="return false;">Андреа
                         Верроккьо</a></li>
-                    <li class="accordion-item"><a href="#Dominic" class="accordion-link dominic1 first-active-painter-link" data-path="Dominic"
+                    <li class="accordion-item"><a href="#Dominic" class="accordion-link Dominic dominic1 first-active-painter-link" data-path="Dominic"
                         aria-label="Доменико Гирландайо" onclick="return false;"> Доменико Гирландайо</a></li>
                     <li class="accordion-item"><a href="#" class="accordion-link" aria-label="Беноццо Гоццоли"
                         onclick="return false;">Беноццо
@@ -1436,11 +1438,11 @@
     <section class="project">
       <div class="project__container container">
         <h2 class="project__headding">Проекты</h2>
-        <p class="project__discription">
+        <p class="project__description">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
           фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не
           уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности.
-          Прежде всего, постоянное <br> информационно-пропагандистское <button class="btn-tooltip first-tooltip"
+          Прежде всего, постоянное информационно-пропагандистское <button class="btn-tooltip first-tooltip"
             id="myButton"></button> обеспечение нашей
           деятельности однозначно фиксирует
           необходимость&nbsp; экономической целесообразности принимаемых решений. И нет сомнений, что действия
@@ -1452,7 +1454,7 @@
           свершениям,
           которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной
           неузнаваемости.
-          Подробнее: <a href="#" class="project__discription-link"
+          Подробнее: <a href="#" class="project__description-link"
             aria-label="Подробнее">blanchard-art.ru/projects/about</a>
         </p>
 
@@ -1566,7 +1568,7 @@
   </footer>
   <script src="js/swiper-bundle.js"></script>
   <script src="js/index.js"> </script>
-  <script type="text/javascript">
+  <script >
     ymaps.ready(init);
     function init() {
       var myMap = new ymaps.Map("map", {

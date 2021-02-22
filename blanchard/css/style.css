@@ -101,7 +101,7 @@ h2 {
 .header__container {
   display: flex;
   padding-top: 30px;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   justify-content: space-between;
   align-items: center;
 }
@@ -226,7 +226,7 @@ h2 {
   display: flex;
   flex-direction: row;
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -424,11 +424,13 @@ h2 {
 }
 
 .form__menu-btn {
+  margin-right: 10px;
   background-color: transparent;
   border: 0;
   width: 22px;
   height: 22px;
   outline: none;
+
 }
 
 .form__menu-btn svg {
@@ -446,17 +448,16 @@ h2 {
   border: none;
   outline: 0;
   border-bottom: 1px solid var(--whitecolor);
-  color: var(--whitecolor);
+  color: var(--pink);
   cursor: pointer;
   font-size: 18px;
+  letter-spacing: 0.8px;
   transition: all 0.3s ease-in-out 0s;
-  letter-spacing: -0.6px;
-
 }
 
 input[type="search" i] {
-  padding-left: 9px;
-  padding-bottom: 2px;
+
+  padding-bottom: 4px;
 }
 
 .header__menu-form:hover input{
@@ -520,7 +521,9 @@ input[type="search" i] {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.hero-h1 {
+  display: none;
+}
 @keyframes anim {
   0% {
     background-image: url('../img/birmingham-museums.png');
@@ -689,7 +692,7 @@ input[type="search" i] {
   font-size: 16px;
   color: var(--whitecolor);
   line-height: 32px;
-  padding: 1px 21% 15px 14px;
+  padding: 2px 21% 15px 14px;
   border-radius: 6px;
   min-height: 0;
   height: 40px;
@@ -1692,25 +1695,25 @@ input[type="search" i] {
   margin-bottom: 17px;
 }
 
-.project__discription {
+.project__description {
   font-weight: 600;
   margin-bottom: 21px;
   padding-right: 34%;
   letter-spacing: -0.4px;
 }
 
-.project__discription-link {
+.project__description-link {
   letter-spacing: 0.3px;
   transition: all 0.3s ease-in-out 0s;
 }
 
-.project__discription-link:focus {
+.project__description-link:focus {
   outline: 1px solid var(--pink);
 }
-.project__discription-link:hover {
+.project__description-link:hover {
   border-bottom: 1px solid var(--pink);
 }
-.project__discription-link:active {
+.project__description-link:active {
   border-bottom: 1px solid #7943A4;
   color: #7943A4;
 }
@@ -1737,7 +1740,7 @@ input[type="search" i] {
 .swiper-heading-project {
   position: relative;
   left: -4px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   font-size: 24px;
   letter-spacing: -0.4px;
 }
@@ -1891,7 +1894,7 @@ input[type="search" i] {
 .form-heading {
   margin-bottom: 18px;
   font-size: 24px;
-  letter-spacing: -0.6px;
+  letter-spacing: -1.3px;
 }
 
 .form__input {
@@ -2060,13 +2063,13 @@ input[type="search" i] {
   .container {
     max-width: 1024px;
     margin: 0 auto;
-    padding-left: 49px;
-    padding-right: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
 
   .header__container {
-    padding: 33px 49px 37px 50px;
+    padding: 34px 49px 39px 50px;
   }
 
   .header__menu {
@@ -2121,7 +2124,7 @@ input[type="search" i] {
     width: 28px;
     height: 3px;
     left: 0;
-    top: 15px;
+    top: 16px;
     transition: all 0.3s ease 0s;
   }
 
@@ -2137,12 +2140,12 @@ input[type="search" i] {
 
   .header-burger::before {
     width: 100%;
-    top: 2px;
+    top: 3px;
   }
 
   .header-burger::after {
     width: 24px;
-    bottom: -3px;
+    bottom: -4px;
   }
   .nav {
     margin: 0;
@@ -2166,6 +2169,10 @@ input[type="search" i] {
     left: 0;
   }
 
+  .header__nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .header__logo-image {
     display: block;
     margin: 0;
@@ -2187,11 +2194,15 @@ input[type="search" i] {
     margin-right: 4px;
   }
 
-  .header__menu__input {
+  .header__menu-input {
     display: none;
   }
-  .header__menu__input.is-active {
-    display: flex;
+
+  #header__menu-input.is-open {
+    display: block;
+  }
+  .form-tablet {
+    background-color: #18171B;
   }
   .header__btn  {
     background-color: transparent;
@@ -2200,25 +2211,32 @@ input[type="search" i] {
     border-radius: 100px;
   }
 
+  .header__menu-btn svg {
+    top: 1px;
+  }
+
   .section__hero {
-    padding-top: 215px;
+    padding-top: 214px;
     padding-right: 24%;
     padding-bottom: 115px;
   }
 
   .section__hero-heading {
-    margin-bottom: 11px;
-
+    margin-bottom: 13px;
+    left: -6px;
   }
 
   .section__hero-text {
     margin-bottom: 133px;
   }
 
-  .section__about-discription {
+  .about-description {
     padding: 0;
   }
-
+  .about-heading  {
+    letter-spacing: 0;
+    left: -4px;
+  }
   .section__gallery {
     display: flex;
     padding-top: 80px;
@@ -2226,17 +2244,24 @@ input[type="search" i] {
     min-width: 0;
   }
 
-  .section__gallery__leftblock {
+  .gallery__container-leftblock {
     margin-right: 50px;
-    width: 279px;
+    width: 280px;
   }
 
+  .leftblock-heading {
+    left: -2px;
+  }
+
+  .gallery-description {
+    padding: 0;
+  }
   .choices__list--single .choices__item {
     width: 210px;
   }
 
   .choices {
-    margin-bottom: 365px;
+    margin-bottom: 366px;
   }
 
   .section__gallery-discription {
@@ -2269,14 +2294,18 @@ input[type="search" i] {
   .catalog-heading {
     margin-right: 38px;
   }
-
+  .catalog__tabs {
+    margin-bottom: 13px;
+    padding-left: 2px;
+    padding-top: 18px;
+  }
   .tabs {
     padding: 0;
     margin-bottom: 13px;
     padding-top: 19px;
   }
 
-  .tab__content__discription__text {
+  .tab__content__description-text {
     padding: 0;
   }
 
@@ -2297,25 +2326,35 @@ input[type="search" i] {
   .painters-left-block {
     max-width: 437px;
   }
-
+  .ui-accordion .ui-accordion-content {
+    padding: 26px 0px 20px 0;
+  }
   .painter-img {
     max-height: 274px;
   }
-
+  .Dominic {
+    letter-spacing: 0.4px;
+  }
   .painters-right-block {
     width: 47.4%;
   }
-
+  .painters__left-block span {
+    margin-bottom: 7px;
+  }
   .accordion-list {
     min-height: 440px;
     max-height: 440px;
   }
 
   .accordion-item {
-    width: 247px;
+    width: 250px;
   }
-  .events {
-    margin-bottom: 79px;
+
+  .events__container {
+    padding-bottom: 81px;
+  }
+  .events-heading {
+    margin-bottom: 14px;
   }
   .events__list {
     height: 683px;
@@ -2331,7 +2370,7 @@ input[type="search" i] {
 
   .events__item-img {
     height: 200px;
-    margin-bottom: 14px;
+    margin-bottom: 3px;
   }
 
   .events-swiper-slider:nth-child(1),
@@ -2347,57 +2386,75 @@ input[type="search" i] {
   }
 
   .btn-event {
-    margin-top: 50px;
+    margin-top: 51px;
   }
-  .events__item-discription {
+
+  .events__item-description {
     padding-left: 35px;
-  }
-  .wrapper-span {
-    padding-right: 20px;
-    letter-spacing: 0.5px;
+    padding-bottom: 56px;
   }
   .wrapper-heading {
-    padding: 0px 24px 0 0;
-
+    margin-bottom: 2px;
   }
-
+  .wrapper-span {
+    letter-spacing: 0.2px;
+  }
   .wrapper-heading-second {
-    padding: 0px 22px 0 0;
-    letter-spacing: 0.5px;
-  }
-  .wrapper-discription {
-    padding: 0 33px 0 0;
+    padding:  0;
+    letter-spacing: -0.9px;
   }
 
-  .first-wrapper-discription {
-    width: 289px;
+  .wrapper-description {
+    padding:  0;
+    padding-right: 15px;
+  }
+
+  .first-wrapper-description {
     height: 223px;
   }
-  .second-wrapper-discription {
+  .second-wrapper-description {
     height: 200px;
+    margin-bottom: 24px;
   }
 
-  .third-wrapper-discription {
+  .third-wrapper-description {
     height: 266px;
   }
-  .fourth-wrapper-discription {
+  .fourth-wrapper-description {
     height: 200px;
   }
-  .fifth-wrapper-discription {
+  .fifth-wrapper-description {
     height: 200px;
   }
   .custom-scroll >.simplebar-track.simplebar-vertical {
     display: none;
   }
-  .first-wrapper-discription {
+  .first-wrapper-description {
     margin-bottom: 34px;
   }
   .wrapper-link:hover {
     border: none;
   }
-  .edition-container {
+
+  .edition__container {
     padding-bottom: 78px;
+    padding-top: 80px;
   }
+  .edition__heading {
+    left: -5px;
+  }
+  .edition__checkbox-btn {
+    letter-spacing: 0.5px;
+  }
+  .edition__form-span {
+    margin-left: 23px;
+  }
+  .edition__form-span::before {
+    content: "";
+    width: 10px;
+    height: 11px;
+  }
+
   .edition__checkbox {
     margin-right: 17px;
   }
@@ -2423,6 +2480,9 @@ input[type="search" i] {
     width: 136px;
     padding-top: 34px;
   }
+  .edition__item-heading {
+    letter-spacing: 0;
+  }
   .edition-swiper-wrapper {
     width: 629px;
   }
@@ -2433,16 +2493,15 @@ input[type="search" i] {
   }
 
   .edition__item-btn {
-    margin-top: 18px;
+    margin-top: 17px;
   }
 
   .project-section {
     padding-top: 80px;
   }
 
-  .project__discription {
+  .project__description {
     padding: 0;
-    margin-bottom: 22px;
   }
   .project-swiper-button-prev {
     margin-right: 25px;
@@ -2475,7 +2534,7 @@ input[type="search" i] {
   }
 
   .contacts__left {
-    padding: 124px 100px 124px 50px;
+    padding: 124px 100px 125px 50px;
   }
 
   .form__input {
@@ -2488,17 +2547,20 @@ input[type="search" i] {
 
   .contacts__map {
     width: 537px;
+    height: 698px;
   }
 
-  .footer-container {
+  .footer__container {
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 47px;
   }
 
   .footer__logo-img {
     width: 174px;
   }
-
+  .footer__logo {
+    padding-bottom: 47px;
+  }
   .footer__social-list {
     padding-right: 4px;
   }
@@ -2528,15 +2590,15 @@ input[type="search" i] {
     display: none;
   }
 
-  .header__menu__input {
+  .header__menu-input {
     display: none;
   }
 
-  .header__menu__btn svg {
+  .header__menu-btn svg {
     margin: 0;
   }
 
-  .header__menu__input.is-active {
+  .header__menu-input.is-active {
     display: flex;
     z-index: 50;
     width: 100%;
@@ -2763,7 +2825,7 @@ input[type="search" i] {
     width: 290px;
   }
 
-  .project__discription {
+  .project__description {
     padding-right: 1%;
     margin-bottom: 27px;
   }
@@ -2824,8 +2886,8 @@ input[type="search" i] {
     height: 2px;
   }
 
-  .header-burger.is-close,
-  .header__logo.is-close{
+  .header-burger-320.is-close,
+  .header__logo-320.is-close{
     display: none;
   }
 
@@ -2858,7 +2920,7 @@ input[type="search" i] {
     top: 4px;
   }
 
-  .header__menu__input.is-open {
+  .header__menu-input.is-open {
     display: block;
     width: 100%;
   }
@@ -3332,7 +3394,7 @@ input[type="search" i] {
     padding-top: 50px;
     margin-bottom: 50px;
   }
-  .project__discription {
+  .project__description {
     margin-bottom: 16px;
   }
 

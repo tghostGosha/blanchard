@@ -30,14 +30,15 @@ $(document).ready(function() {
   });
 });
 
+
 /*====================320 px header=================*/
 window.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#header__menu__btn, #header__close-btn').addEventListener('click', function(event) {
+  document.querySelector('#header__menu-btn, #header__close-btn').addEventListener('click', function(event) {
     document.querySelector('#header__form').classList.toggle('is-active')
-    document.querySelector('.header-burger').classList.toggle('is-close')
-    document.querySelector('.header__logo').classList.toggle('is-close')
-    document.querySelector('.header__close-btn').classList.toggle('is-open')
-    document.querySelector('.header__menu__input').classList.toggle('is-open')
+    document.querySelector('.header-burger-320').classList.toggle('is-close')
+    document.querySelector('.header__logo-320').classList.toggle('is-close')
+    document.querySelector('.header__form__close-btn').classList.toggle('is-open')
+    document.querySelector('#header__menu-input').classList.toggle('is-open')
   })
 
 })
