@@ -74,10 +74,10 @@ let swiper = new Swiper(sliders, {
 
     breakpoints: {
 
-      600: {
+      610: {
         slidesPerView: 4,
         slidesPerColumn: 2,
-        spaceBetween: 34,
+        spaceBetween: 50,
         slidesPerGroup: 4,
       },
 
@@ -93,7 +93,7 @@ let swiper = new Swiper(sliders, {
         slidesPerColumn: 2,
         spaceBetween: 50,
         slidesPerGroup: 3,
-      }
+      },
     },
 
 });
