@@ -77,7 +77,7 @@ let swiper = new Swiper(sliders, {
       610: {
         slidesPerView: 4,
         slidesPerColumn: 2,
-        spaceBetween: 50,
+        spaceBetween: 34,
         slidesPerGroup: 4,
       },
 
