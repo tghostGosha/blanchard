@@ -49,6 +49,13 @@ window.addEventListener('DOMContentLoaded', function () {
   })
 });
 
+/*=====================edition-select======================*/
+window.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.edition__form-label').addEventListener('click', function(){
+    document.querySelector('.edition__form-input').classList.toggle('is-selected')
+  })
+})
+
 /*==========================swiper==================*/
 const sliders = document.querySelector('.swiper-container');
 const slider1 = document.querySelector('.edition-swiper-container');
@@ -58,7 +65,7 @@ const slider = document.querySelector('.events-swiper-container');
 let swiper = new Swiper(sliders, {
 
   pagination: {
-    slidesPerView: 1,
+    slidesPerView: 3,
     slidesPerColumn: 1,
     slidesPerGroup: 1,
     spaceBetween: 12,
@@ -73,29 +80,28 @@ let swiper = new Swiper(sliders, {
     },
 
     breakpoints: {
-
-      610: {
-        slidesPerView: 4,
-        slidesPerColumn: 2,
-        spaceBetween: 34,
-        slidesPerGroup: 4,
-      },
-
-      850: {
-        slidesPerView: 4,
-        slidesPerColumn: 2,
-        spaceBetween: 34,
-        slidesPerGroup: 3,
-      },
-
+    //
       1420: {
         slidesPerView: 3,
         slidesPerColumn: 2,
         spaceBetween: 50,
         slidesPerGroup: 3,
       },
-    },
 
+      850: {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 34,
+      },
+
+      600: {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 34,
+      },
+    },
 });
 
 let swiper1;
@@ -118,7 +124,7 @@ function init_swiper1() {
     breakpoints: {
 
       600: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 34,
         slidesPerGroup: 2,
       },
@@ -222,7 +228,7 @@ let swiper2 = new Swiper(slider2, {
 
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#btn-event').addEventListener('click', function () {
-    document.querySelector('.events-swiper-containert, .events-swiper-wrapper').classList.toggle('is-active')
+    document.querySelector('.events-swiper-container, .events-swiper-wrapper').classList.toggle('is-active')
     let x = document.getElementById("btn-event");
     if (x.style.display === "none") {
       x.style.display = "block";
@@ -245,6 +251,8 @@ new Choices(element, {
   searchEnabled: false,
   itemSelectText: false
 });
+
+
 
 /*====================accordion link================*/
 window.addEventListener('DOMContentLoaded', function () {
