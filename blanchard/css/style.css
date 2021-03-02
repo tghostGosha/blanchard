@@ -1097,23 +1097,6 @@ input[type="search" i] {
   transition: all 0.3s ease 0s;
 }
 
-.years-item-btn:focus span {
-  outline: 1px solid var(--pink);
-}
-
-.years-item-btn:focus .btn-svg {
-  border: 1px solid var(--pink);
-}
-
-.years-item-btn:hover span {
-  color: var(--pink);
-  outline: 0;
-}
-
-.years-item-btn:hover .btn-svg {
-  background-color: var(--pink);
-  color: var(--whitecolor);
-}
 
 .ui-accordion .ui-accordion-header  {
   display: flex;
@@ -1134,16 +1117,16 @@ input[type="search" i] {
 }
 .ui-state-active {
   color:var(--pink);
+
 }
 .ui-state-active .btn-svg {
   background-color: var(--pink);
+  border: 0;
 }
 .ui-state-active .btn-svg svg {
   color: var(--whitecolor);
 }
-.ui-state-default:focus span {
-  outline: 1px solid var(--pink);
-}
+
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button  {
   font-size: 24px;
   line-height: 32px;
@@ -1153,6 +1136,28 @@ input[type="search" i] {
 }
 .ui-accordion .ui-accordion-content {
   padding: 26px 25px 20px 0;
+}
+
+.years-item-btn:focus span,
+.years-item-btn:focus .btn-svg {
+  border: 1px solid var(--pink);
+}
+
+.years-item-btn:hover span {
+  color: var(--pink);
+  outline: 0;
+  border: none;
+}
+
+.years-item-btn:hover .btn-svg {
+  background-color: var(--pink);
+  color: var(--whitecolor);
+  border: none;
+}
+
+.years-item-btn:active .btn-svg {
+  background-color: #7943A4;
+  border: 1px solid #D1A9F0;
 }
 
 .btn-svg {
@@ -1209,7 +1214,7 @@ input[type="search" i] {
 }
 
 .accordion-link:focus {
-  outline: 1px solid var(--pink);
+  border: 1px solid var(--pink);
 }
 
 .accordion-link:hover {
@@ -1227,6 +1232,7 @@ input[type="search" i] {
   color: #7943A4;
   box-shadow: none;
   outline: none;
+
 }
 
 /*==================================EVENTS=========================*/
@@ -1280,11 +1286,10 @@ input[type="search" i] {
   max-width: 500px;
 }
 
-.events-swiper-containert,
 .events-swiper-wrapper.is-active {
   height: 1450px;
+  overflow: visible;
 }
-
 .events__item {
   max-width: 500px;
   border: 1px solid #cacaca;
@@ -1351,7 +1356,6 @@ input[type="search" i] {
   border: 1px solid var(--pink);
 }
 .wrapper-link:hover {
-
   font-weight: bold;
 }
 

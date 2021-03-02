@@ -228,7 +228,7 @@ let swiper2 = new Swiper(slider2, {
 
 window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#btn-event').addEventListener('click', function () {
-    document.querySelector('.events-swiper-container, .events-swiper-wrapper').classList.toggle('is-active')
+    document.querySelector('.events-swiper-wrapper').classList.toggle('is-active')
     let x = document.getElementById("btn-event");
     if (x.style.display === "none") {
       x.style.display = "block";
