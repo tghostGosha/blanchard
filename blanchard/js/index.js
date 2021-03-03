@@ -108,7 +108,9 @@ let swiper1;
 
 function init_swiper1() {
   swiper1 = new Swiper(slider1, {
-    autoHeight: false,
+    slidesPerView: 1,
+    spaceBetween: 34,
+    slidesPerGroup: 2,
     slideClass: 'edition-swiper-slide',
     wrapperClass: 'edition-swiper-wrapper',
     pagination: {
@@ -121,12 +123,12 @@ function init_swiper1() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    breakpoints: {
 
-      600: {
-        slidesPerView: 1,
-        spaceBetween: 34,
-        slidesPerGroup: 2,
+    breakpoints: {
+      1420: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        slidesPerGroup: 3,
       },
 
       1024: {
@@ -134,16 +136,11 @@ function init_swiper1() {
         spaceBetween: 49,
         slidesPerGroup: 2,
       },
-
-      1420: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-        slidesPerGroup: 3,
-      }
     },
 
   });
 }
+
 init_swiper1();
 const changeDirection = () => {
   console.log(document.documentElement.clientWidth)
