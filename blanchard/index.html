@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blanchard</title>
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-
-
-  <script src="js/choices.min.js"></script>
-  <script src="js/simplebar.min.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <script src="https://unpkg.com/tippy.js@6"></script>
-  <script src="js/just-validate.min.js"></script>
-  <script src="js/inputmask.min.js"></script>
+  <script  src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script  src="js/choices.min.js"></script>
+  <script  src="js/simplebar.min.js"></script>
+  <script  src="js/jquery.js"></script>
+  <script  src="js/jquery-ui.js"></script>
+  <script  src="https://unpkg.com/@popperjs/core@2"></script>
+  <script  src="https://unpkg.com/tippy.js@6"></script>
+  <script  src="js/just-validate.min.js"></script>
+  <script  src="js/inputmask.min.js"></script>
 
   <link rel="stylesheet" href="css/swiper-bundle.css">
   <link rel="stylesheet" href="css/jquery-ui.css">
@@ -829,7 +827,7 @@
                     <li class="accordion-item"><a href="#" class="accordion-link" aria-label="Андреа Верроккьо"
                         onclick="return false;">Андреа
                         Верроккьо</a></li>
-                    <li class="accordion-item"><a href="#Dominic" class="accordion-link Dominic dominic1 first-active-painter-link" data-path="Dominic"
+                    <li class="accordion-item"><a href="#Dominic" class="accordion-link dominic  first-active-painter-link" data-path="Dominic"
                         aria-label="Доменико Гирландайо" onclick="return false;"> Доменико Гирландайо</a></li>
                     <li class="accordion-item"><a href="#" class="accordion-link" aria-label="Беноццо Гоццоли"
                         onclick="return false;">Беноццо
@@ -846,7 +844,7 @@
                         onclick="return false;">Джорджоне</a>
                     </li>
                     <li class="accordion-item"><a href="#" class="accordion-link parentino"
-                        aria-label="Парентино,Бернардо" onclick="return false;">Парентино,Бернардо</a></li>
+                        aria-label="Парентино,Бернардо" onclick="return false;">Парентино, Бернардо</a></li>
                     <li class="accordion-item"><a href="#" class="accordion-link" aria-label="Пезеллино"
                         onclick="return false;">Пезеллино</a>
                     </li>
@@ -854,7 +852,7 @@
                         onclick="return false;">Пьетро
                         Перуджино</a></li>
                     <li class="accordion-item"><a href="#" class="accordion-link baldassary"
-                        aria-label="Перуцци,Бальдассаре" onclick="return false;">Перуцци,Бальдассаре</a></li>
+                        aria-label="Перуцци,Бальдассаре" onclick="return false;">Перуцци, Бальдассаре</a></li>
                     <li class="accordion-item"><a href="#" class="accordion-link" aria-label="Пизанелло"
                         onclick="return false;">Пизанелло</a>
                     </li>
@@ -1164,8 +1162,8 @@
                 <img src="img/events/event-1.png" alt="" class="events__item-img">
                 <div class="events__item-description">
                   <div class="events__img-span">
-                    <span class="wrapper-span">Музей им. Щусева </span>
-                    <span class="wrapper-span"> с 20 марта по 30 апреля</span>
+                    <span class="wrapper-span-first">Музей им. Щусева </span>
+                    <span class="wrapper-span-first"> с 20 марта по 30 апреля</span>
                   </div>
                   <h3 class="wrapper-heading">Книжная гравюра в живом восприятии</h3>
                   <p class="wrapper-description first-wrapper-description custom-scroll" data-simplebar>
@@ -1344,9 +1342,9 @@
           <h3 class="price-heading">Цена</h3>
           <form action="url" class="form-price">
             <span class="price-span-first">От</span>
-            <input type="text" class="price-input">
-            <span class="price-span-second">До</span>
-            <input type="text" class="price-input">
+            <input type="number" class="price-input">
+            <span class="price-span-second">до</span>
+            <input type="number" class="price-input">
             <span class="price-span-third">руб.</span>
           </form>
         </div>
