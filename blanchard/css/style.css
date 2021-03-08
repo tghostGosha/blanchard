@@ -1621,8 +1621,7 @@ input[type="search" i] {
 
 .price-input {
   border: none;
-  background-color: #9D5CD0;
-  opacity: 0.5;
+  background: rgba(157, 92, 208, 0.5);
   width: 82px;
   color: var(--whitecolor);
   font-weight: 400px;
