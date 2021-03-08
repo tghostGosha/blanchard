@@ -1898,23 +1898,24 @@ input[type="search" i] {
 /*===============================CONTACTS==========================*/
 
 .contacts-heading {
-  padding-left: 156px;
+  padding-left: 29px;
   margin-bottom: 15px;
 }
 
 .contacts__container {
-  width: 100%;
+  max-width: 1920px;
+  padding-left: 127px;
   margin: 0 auto;
 }
 
 .contacts-block {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .contacts__left {
   max-width: 700px;
-  padding: 125px 122px 124px 160px;
+  padding: 125px 122px 124px 15px;
   border-top: 1px solid #cacaca;
 }
 
