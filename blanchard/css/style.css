@@ -115,7 +115,9 @@ h2 {
   display: none;
   outline: none;
 }
-
+.btn-1024px {
+  display: none;
+}
 .header__form {
   display: none;
 }
@@ -140,7 +142,7 @@ h2 {
 }
 
 
-.nav {
+.header__nav {
   margin-right: auto;
   margin-left: auto;
 }
@@ -766,7 +768,7 @@ input[type="search" i] {
 
 .gallery-swiper-slide img {
   max-width: 100%;
-
+  max-height: 280px;
 }
 
 .gallery-swiper-slide:hover {
@@ -788,8 +790,8 @@ input[type="search" i] {
   justify-content: space-between;
   align-items: center;
   width: 133px;
-  padding-top: 24px;
-  padding-left: 3px;
+  padding-top: 25px;
+  padding-left: 1px;
   margin-bottom: 29px;
 }
 
@@ -1108,8 +1110,9 @@ input[type="search" i] {
 
 .ui-accordion .ui-accordion-header  {
   display: flex;
+  margin: 0;
   font-size: 24px;
-  padding: 28px 0 33px 0;
+  padding: 29px 0 34px 0;
 }
 .ui-widget-content {
   border: none;
@@ -1148,7 +1151,8 @@ input[type="search" i] {
   font-family: 'OpenSans';
 }
 .ui-accordion .ui-accordion-content {
-  padding: 26px 25px 20px 0;
+  padding: 25px 25px 18px 0;
+  margin-bottom: 6px;
 }
 
 .years-item-btn:focus span,
@@ -1292,7 +1296,7 @@ input[type="search" i] {
 }
 
 .events-swiper-slider {
-  width: 31%;
+  width: 31.3%;
 }
 
 .events-swiper-wrapper.is-active {
@@ -1300,7 +1304,7 @@ input[type="search" i] {
   overflow: visible;
 }
 .events__item {
-  max-width: 500px;
+
   border: 1px solid #cacaca;
   display: flex;
   flex-direction: column;
@@ -1400,7 +1404,7 @@ input[type="search" i] {
 .btn-event {
   display: block;
   margin: 0 auto;
-  margin-top: 51px;
+  margin-top: 50px;
   padding: 15px 33px 16px 33px;
   border: 2px solid var(--pink);
   border-radius: 100px;
@@ -2139,7 +2143,13 @@ input[type="search" i] {
     border: none;
     z-index: 5;
   }
-
+  .btn-1920px {
+    display: none;
+  }
+  .btn-1024px {
+    display: block;
+    margin: 0;
+  }
   .header-burger.active::before {
     transform: rotate(45deg);
     bottom: 10px;
@@ -2184,9 +2194,7 @@ input[type="search" i] {
     width: 24px;
     bottom: -3px;
   }
-  .nav {
-    margin: 0;
-  }
+
   .header__nav {
     position: absolute;
     top: 0;
@@ -2233,8 +2241,9 @@ input[type="search" i] {
   }
   .form-tablet {
     background-color: #18171B;
+    margin-left: auto;
   }
-  .header__btn  {
+  .nav-btn  {
     background-color: transparent;
     padding: 19px 88px 22px 88px;
     border: 1px solid var(--pink);
@@ -2243,6 +2252,7 @@ input[type="search" i] {
 
   .header__menu-btn svg {
     top: 1px;
+
   }
 
   .section__hero {
@@ -2281,6 +2291,7 @@ input[type="search" i] {
 
   .leftblock-heading {
     left: -2px;
+    margin-bottom: 16px;
   }
 
   .gallery-description {
@@ -2307,7 +2318,8 @@ input[type="search" i] {
   }
 
   .slider-top {
-    width: 133px;
+    width: 131px;
+    margin-bottom: 30px;
   }
 
   .swiper-slide {
@@ -2348,31 +2360,43 @@ input[type="search" i] {
 
     bottom: 540px;
   }
-  .painters-left-block {
-    max-width: 437px;
+  .painters__left-block-active {
+    max-width: 47.3%;
+  }
+  .painters__right-block {
+    width: 47.3%;
+  }
+
+  .accordion-list {
+    column-count: 2;
+    column-gap: 63px;
   }
   .ui-accordion .ui-accordion-content {
-    padding: 26px 0px 20px 0;
+    padding: 25px 0px 20px 0;
+    margin: 0;
   }
   .painter-img {
     max-height: 274px;
   }
-
+  .years-span {
+    padding-bottom: 6px;
+  }
+  .btn-svg svg {
+    top: 2px;
+  }
+  .ui-accordion .ui-accordion-header {
+    padding: 32px 0 31px 0;
+  }
   .painters-right-block {
     width: 47.4%;
   }
   .painters__left-block span {
     margin-bottom: 7px;
   }
-  .accordion-list {
-    min-height: 440px;
-    max-height: 440px;
-  }
 
-  .accordion-item {
-    width: 250px;
+  .link-hidden {
+    display: none;
   }
-
   .events__container {
     padding-bottom: 81px;
   }
@@ -2510,8 +2534,8 @@ input[type="search" i] {
     width: 629px;
   }
   .edition-img {
-    width: 100%;
     height: 320px;
+    width: 290px;
     margin-bottom: 10px;
   }
 
@@ -2743,10 +2767,6 @@ input[type="search" i] {
     margin-bottom: 19px;
   }
 
-  .accordion-list {
-    min-height: 344px;
-    max-height: 344px;
-  }
 
   .accordion-item {
     width: 242px;
@@ -3203,8 +3223,6 @@ input[type="search" i] {
 
   .accordion-list {
     padding-top: 16px;
-    max-height: 806px;
-    min-height: 806px;
     padding: 17px 0 20px 0;
   }
 
