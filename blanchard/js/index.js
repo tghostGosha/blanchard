@@ -90,7 +90,7 @@ let swiper = new Swiper(sliders, {
 
       850: {
         slidesPerView: 2,
-        slidesPerColumn: 2,
+        slidesPerColumn: 3,
         slidesPerGroup: 2,
         spaceBetween: 34,
       },
@@ -109,7 +109,7 @@ let swiper1;
 function init_swiper1() {
   swiper1 = new Swiper(slider1, {
     slidesPerView: 1,
-    spaceBetween: 34,
+    spaceBetween: 0,
     slidesPerGroup: 2,
     slideClass: 'edition-swiper-slide',
     wrapperClass: 'edition-swiper-wrapper',
