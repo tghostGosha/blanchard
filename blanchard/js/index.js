@@ -65,10 +65,10 @@ const slider = document.querySelector('.events-swiper-container');
 let swiper = new Swiper(sliders, {
 
   pagination: {
-    slidesPerView: 3,
+    slidesPerView: 1,
     slidesPerColumn: 1,
     slidesPerGroup: 1,
-    spaceBetween: 12,
+    spaceBetween: 0,
     el: '.swiper-pagination',
       clickable: true,
       type: 'fraction',
@@ -90,7 +90,7 @@ let swiper = new Swiper(sliders, {
 
       850: {
         slidesPerView: 2,
-        slidesPerColumn: 3,
+        slidesPerColumn: 2,
         slidesPerGroup: 2,
         spaceBetween: 34,
       },
@@ -108,9 +108,9 @@ let swiper1;
 
 function init_swiper1() {
   swiper1 = new Swiper(slider1, {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    slidesPerGroup: 2,
+    slidesPerView: 2,
+    slidesPerColumn: 2,
+    spaceBetween: 30,
     slideClass: 'edition-swiper-slide',
     wrapperClass: 'edition-swiper-wrapper',
     pagination: {
@@ -193,7 +193,7 @@ window.addEventListener('resize', () => {
 let swiper2 = new Swiper(slider2, {
   slidesPerView: 1,
   slidesPerGroup: 1,
-  spaceBetween: 21,
+  spaceBetween: 0,
   centerSlides: true,
   slideClass: 'project-swiper-slide',
   wrapperClass: 'project-swiper-wrapper',
