@@ -132,7 +132,7 @@ function init_swiper1() {
       },
 
       1024: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 49,
         slidesPerGroup: 2,
       },
@@ -359,5 +359,9 @@ new JustValidate('.form', {
     tel: 'Укажите ваш телефон',
   },
 });
-
-
+/*================edition-accordion==========*/
+$(document).ready(function(){
+  $('edition__checkbox-btn').click(function(event){
+    $(this).toggleClass('active').next().slideToggle(300);
+  });
+});

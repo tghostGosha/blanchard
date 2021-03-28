@@ -3500,8 +3500,8 @@ input[type="search" i] {
   }
 
   .edition__checkbox-btn {
+    width: 100%;
     margin: 0;
-    margin-bottom: 64px;  /*убрать*/
     border: none;
     border-radius: 0;
     padding-top: 10px;
@@ -3538,16 +3538,15 @@ input[type="search" i] {
     display: none;
   }
   .edition-swiper-container {
-    display: flex;
     height: 900px;
-    width: 290px;
-    max-width: 290px;
+    width: 100%;
+    max-width: none;
   }
 
   .edition-swiper-wrapper {
-    display: flex;
-    max-width: 290px;
-    width: 290px;
+
+    max-width: none;
+    width: 100%;
     height: 900px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -3562,11 +3561,15 @@ input[type="search" i] {
   .edition-swiper-slide:nth-child(3),
   .edition-swiper-slide:nth-child(4),
   .edition-swiper-slide:nth-child(5){
-    margin-bottom: 50px;
+    margin-top: 0px;
+  }
+  .edition-swiper-slide {
+
+    margin-top: 0px !important;
   }
 
   .edition-img {
-    width: 130px;
+    width: 100%;
     height: 143px;
     margin-bottom: 6px;
   }
@@ -3575,7 +3578,7 @@ input[type="search" i] {
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    width: 130px;
+    width: 100%;
   }
 
   .edition__item-heading,
@@ -3588,7 +3591,7 @@ input[type="search" i] {
 
   }
   .edition__item-heading {
-    width: 130px;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -3745,7 +3748,7 @@ input[type="search" i] {
 
 
 }
-
+}
 
 
 

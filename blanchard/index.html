@@ -1330,64 +1330,68 @@
       <div class="edition__container container">
         <div class="edition__checkbox">
           <h2 class="edition__heading">Издания</h2>
-          <button class="edition__checkbox-btn" type="button" id="edition__checkbox-btn">
-            <span>Категории</span>
-            <span class="checkbox-btn-svg">
-              <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
-              </svg>
-            </span>
-          </button>
-          <form action="url" class="edition__form" id="edition-select">
-            <label for="check-1" class="edition__form-label">
-              <input type="checkbox" name="Бестселлеры" id="check-1" class="edition__form-input sr-only">
-              <span class="edition__form-span">Бестселлеры</span>
-            </label>
-            <label for="check-2" class="edition__form-label">
-              <input type="checkbox" name="Искусство" id="check-2" class="edition__form-input sr-only">
-              <span class="edition__form-span">Искусство</span>
-            </label>
-            <label for="check-3" class="edition__form-label">
-              <input type="checkbox" name="Архитектура" id="check-3" class="edition__form-input sr-only">
-              <span class="edition__form-span">Архитектура</span>
-            </label>
-            <label for="check-4" class="edition__form-label">
-              <input type="checkbox" name="Дизайн" id="check-4" class="edition__form-input sr-only">
-              <span class="edition__form-span">Дизайн</span>
-            </label>
-            <label for="check-5" class="edition__form-label">
-              <input type="checkbox" name="Мода" id="check-5" class="edition__form-input sr-only">
-              <span class="edition__form-span">Мода</span>
-            </label>
-            <label for="check-6" class="edition__form-label">
-              <input type="checkbox" name="Детям" id="check-6" class="edition__form-input sr-only">
-              <span class="edition__form-span">Детям</span>
-            </label>
-            <label for="check-7" class="edition__form-label">
-              <input type="checkbox" name="Художественная литература" id="check-7" class="edition__form-input sr-only">
-              <span class="edition__form-span">Художественная литература</span>
-            </label>
-            <label for="check-8" class="edition__form-label">
-              <input type="checkbox" name="Публицистика" id="check-8" class="edition__form-input sr-only">
-              <span class="edition__form-span">Публицистика</span>
-            </label>
-            <label for="check-9" class="edition__form-label">
-              <input type="checkbox" name="Путеводители" id="check-9" class="edition__form-input sr-only">
-              <span class="edition__form-span">Путеводители</span>
-            </label>
-            <label for="check-10" class="edition__form-label">
-              <input type="checkbox" name="Философия" id="check-10" class="edition__form-input sr-only">
-              <span class="edition__form-span">Философия</span>
-            </label>
-            <label for="check-11" class="edition__form-label">
-              <input type="checkbox" name="Учебная литература" id="check-11" class="edition__form-input sr-only">
-              <span class="edition__form-span">Учебная литература</span>
-            </label>
-            <label for="check-12" class="edition__form-label">
-              <input type="checkbox" name="Журналы и газеты" id="check-12" class="edition__form-input sr-only">
-              <span class="edition__form-span">Журналы и газеты</span>
-            </label>
-          </form>
+          <div class="accordion-edition">
+            <button class="edition__checkbox-btn" type="button" id="edition__checkbox-btn">
+              <span>Категории</span>
+              <span class="checkbox-btn-svg">
+                <svg width="10" height="10" viewbox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.3333 1.33334L9 9.66667L0.666664 1.33334" stroke="currentColor" />
+                </svg>
+              </span>
+            </button>
+            <form action="url" class="edition__form" id="edition-select">
+              <label for="check-1" class="edition__form-label">
+                <input type="checkbox" name="Бестселлеры" id="check-1" class="edition__form-input sr-only">
+                <span class="edition__form-span">Бестселлеры</span>
+              </label>
+              <label for="check-2" class="edition__form-label">
+                <input type="checkbox" name="Искусство" id="check-2" class="edition__form-input sr-only">
+                <span class="edition__form-span">Искусство</span>
+              </label>
+              <label for="check-3" class="edition__form-label">
+                <input type="checkbox" name="Архитектура" id="check-3" class="edition__form-input sr-only">
+                <span class="edition__form-span">Архитектура</span>
+              </label>
+              <label for="check-4" class="edition__form-label">
+                <input type="checkbox" name="Дизайн" id="check-4" class="edition__form-input sr-only">
+                <span class="edition__form-span">Дизайн</span>
+              </label>
+              <label for="check-5" class="edition__form-label">
+                <input type="checkbox" name="Мода" id="check-5" class="edition__form-input sr-only">
+                <span class="edition__form-span">Мода</span>
+              </label>
+              <label for="check-6" class="edition__form-label">
+                <input type="checkbox" name="Детям" id="check-6" class="edition__form-input sr-only">
+                <span class="edition__form-span">Детям</span>
+              </label>
+              <label for="check-7" class="edition__form-label">
+                <input type="checkbox" name="Художественная литература" id="check-7"
+                  class="edition__form-input sr-only">
+                <span class="edition__form-span">Художественная литература</span>
+              </label>
+              <label for="check-8" class="edition__form-label">
+                <input type="checkbox" name="Публицистика" id="check-8" class="edition__form-input sr-only">
+                <span class="edition__form-span">Публицистика</span>
+              </label>
+              <label for="check-9" class="edition__form-label">
+                <input type="checkbox" name="Путеводители" id="check-9" class="edition__form-input sr-only">
+                <span class="edition__form-span">Путеводители</span>
+              </label>
+              <label for="check-10" class="edition__form-label">
+                <input type="checkbox" name="Философия" id="check-10" class="edition__form-input sr-only">
+                <span class="edition__form-span">Философия</span>
+              </label>
+              <label for="check-11" class="edition__form-label">
+                <input type="checkbox" name="Учебная литература" id="check-11" class="edition__form-input sr-only">
+                <span class="edition__form-span">Учебная литература</span>
+              </label>
+              <label for="check-12" class="edition__form-label">
+                <input type="checkbox" name="Журналы и газеты" id="check-12" class="edition__form-input sr-only">
+                <span class="edition__form-span">Журналы и газеты</span>
+              </label>
+            </form>
+          </div>
+          
           <h3 class="price-heading">Цена</h3>
           <form action="url" class="form-price">
             <span class="price-span-first">От</span>
@@ -1549,31 +1553,31 @@
             <h3 class="contacts__left-heading">Шоурум №4</h3>
             <p class="contacts__left-heading-discr">Леонтьевский переулок, дом 5, строение 1</p>
           </div>
-            <div class="contacts__left-form">
-              <h3 class="form-heading">Заказать обратный звонок</h3>
-              <form action="#" class="js-form form">
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <label for="name"></label>
-                    <input type="text" class="form__input form-control" placeholder="Имя*" autocomplete="off"
-                      data-validate-field="name" name="name" id="name">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label class="sr-only" for="tel"></label>
-                    <input type="tel" class="form__input form-control" placeholder="Телефон*" autocomplete="off"
-                      data-validate-field="tel" data-validate-rules="phone" name="tel" id="tel">
-                  </div>
+          <div class="contacts__left-form">
+            <h3 class="form-heading">Заказать обратный звонок</h3>
+            <form action="#" class="js-form form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name"></label>
+                  <input type="text" class="form__input form-control" placeholder="Имя*" autocomplete="off"
+                    data-validate-field="name" name="name" id="name">
                 </div>
-                <button class="contacts__form-btn" aria-label="Заказать">
-                  <span class="contacts__form-span">Заказать</span>
-                </button>
-              </form>
-              <p class="social-heading"> Связаться в один клик</p>
-              <div class="social-icons">
-                <a href="#" class="social-link whatsapp" aria-label="Напиши whatsapp"></a>
-                <a href="#" class="social-link telegram" aria-label="Напиши telegram"></a>
+                <div class="form-group col-md-6">
+                  <label class="sr-only" for="tel"></label>
+                  <input type="tel" class="form__input form-control" placeholder="Телефон*" autocomplete="off"
+                    data-validate-field="tel" data-validate-rules="phone" name="tel" id="tel">
+                </div>
               </div>
+              <button class="contacts__form-btn" aria-label="Заказать">
+                <span class="contacts__form-span">Заказать</span>
+              </button>
+            </form>
+            <p class="social-heading"> Связаться в один клик</p>
+            <div class="social-icons">
+              <a href="#" class="social-link whatsapp" aria-label="Напиши whatsapp"></a>
+              <a href="#" class="social-link telegram" aria-label="Напиши telegram"></a>
             </div>
+          </div>
 
           <div class="contacts__map" id="map"></div>
         </div>
@@ -1645,6 +1649,9 @@
         collapsible: true,
       });
       $('#accordion5').accordion({
+        collapsible: true,
+      });
+      $('#accordion-edition').accordion({
         collapsible: true,
       });
     });
