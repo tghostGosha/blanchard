@@ -3519,7 +3519,9 @@ input[type="search" i] {
   .edition__form-label:nth-last-child(-n+4) {
     margin: 0;
   }
-
+  .highlight{
+    background-color: #666666;
+  }
   .edition__form-span::after {
     left: 5px;
     top: 17px;

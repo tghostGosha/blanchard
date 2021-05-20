@@ -1330,7 +1330,7 @@
       <div class="edition__container container">
         <div class="edition__checkbox">
           <h2 class="edition__heading">Издания</h2>
-          <div class="accordion-edition">
+          <div class="accordion-edition" id="accordion-edition">
             <button class="edition__checkbox-btn" type="button" id="edition__checkbox-btn">
               <span>Категории</span>
               <span class="checkbox-btn-svg">
@@ -1339,7 +1339,7 @@
                 </svg>
               </span>
             </button>
-            <form action="url" class="edition__form" id="edition-select">
+            <form action="url" class="edition__form" id="edition-select ">
               <label for="check-1" class="edition__form-label">
                 <input type="checkbox" name="Бестселлеры" id="check-1" class="edition__form-input sr-only">
                 <span class="edition__form-span">Бестселлеры</span>
@@ -1391,7 +1391,7 @@
               </label>
             </form>
           </div>
-          
+
           <h3 class="price-heading">Цена</h3>
           <form action="url" class="form-price">
             <span class="price-span-first">От</span>
@@ -1651,9 +1651,17 @@
       $('#accordion5').accordion({
         collapsible: true,
       });
-      $('#accordion-edition').accordion({
+
+      if (window.matchMedia("(min-width: 400px)").matches) {
+        /* the viewport is at least 400 pixels wide */
+      } else {
+        $('#accordion-edition').accordion({
         collapsible: true,
+        classes: {
+          "ui-widget-content": "highlight"
+        }
       });
+      }
     });
   </script>
 
