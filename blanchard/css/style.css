@@ -3485,9 +3485,13 @@ input[type="search" i] {
   .edition__form {
     display: none;
     flex-wrap: nowrap;
-    height: 36px;
+    height: auto;
     margin-bottom: 28px;
-    transition: all 0.3s  ease-in-out 0s;
+    background-color: transparent;
+  }
+
+  .accordion-edition.ui-accordion-content{
+    padding: 0;
   }
 
   .edition__form.is-active {
@@ -3498,7 +3502,9 @@ input[type="search" i] {
   .edition__form-input.is-selected {
     display: block;
   }
-
+  .highlight {
+    padding: 0;
+  }
   .edition__checkbox-btn {
     width: 100%;
     margin: 0;

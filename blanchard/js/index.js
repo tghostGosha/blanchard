@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 })
 /*===================edition checkbox=================*/
-window.addEventListener('DOMContentLoaded', function () {
+/*window.addEventListener('DOMContentLoaded', function () {
   document.querySelector('#edition__checkbox-btn').addEventListener('click', function(event) {
     document.querySelector('.edition__form').classList.toggle('is-active')
   })
@@ -360,8 +360,8 @@ new JustValidate('.form', {
   },
 });
 /*================edition-accordion==========*/
-$(document).ready(function(){
-  $('edition__checkbox-btn').click(function(event){
-    $(this).toggleClass('active').next().slideToggle(300);
-  });
-});
+  //$(document).ready(function(){
+   // $('edition__checkbox-btn').click(function(event){
+  //    $(this).toggleClass('active').next().slideToggle(300);
+   // });
+  //});
