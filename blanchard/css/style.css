@@ -82,7 +82,7 @@ h2 {
 
 .img{
   max-width: 100%;
-  max-height: auto;
+  height: auto;
 }
 
 .container {
@@ -1630,7 +1630,7 @@ input[type="search" i] {
   background: rgba(157, 92, 208, 0.5);
   width: 82px;
   color: var(--whitecolor);
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 32px;
   padding: 4px 0 2px 7px;
   outline: none;
@@ -2150,7 +2150,7 @@ input[type="search" i] {
     margin: 0;
     padding: 0;
     text-align: left;
-    align-content: left;
+    align-content: center;
     width: 188px;
   }
   .header-burger {
@@ -3307,6 +3307,7 @@ input[type="search" i] {
   }
   .ui-accordion .ui-accordion-content {
     padding: 17px 0px 12px 0;
+    height: 803px !important; /*не понял как убрать*/
   }
   .btn-svg {
     width: 30px;
@@ -3332,7 +3333,7 @@ input[type="search" i] {
   }
 
   .painters__right-block {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .left-block-heading {
@@ -3488,6 +3489,7 @@ input[type="search" i] {
     height: auto;
     margin-bottom: 28px;
     background-color: transparent;
+    padding-top: 0 !important;
   }
 
   .accordion-edition.ui-accordion-content{
@@ -3505,13 +3507,23 @@ input[type="search" i] {
   .highlight {
     padding: 0;
   }
+
+  #accordion-edition {
+    margin-bottom: 66px;
+  }
+
+  .ui-accordion.accordion-btn {
+    padding: 10px 0 !important;
+  }
   .edition__checkbox-btn {
     width: 100%;
     margin: 0;
     border: none;
+    font-size: 15px !important;
     border-radius: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 3px !important;
+    padding-left: 2px;
+    padding-bottom: 0px !important;
     border-top: 1px solid var(--whitecolor);
     border-bottom: 1px solid var(--whitecolor);
     outline: none;
@@ -3546,7 +3558,7 @@ input[type="search" i] {
     display: none;
   }
   .edition-swiper-container {
-    height: 900px;
+    height: 1165px;
     width: 100%;
     max-width: none;
   }
@@ -3555,7 +3567,7 @@ input[type="search" i] {
 
     max-width: none;
     width: 100%;
-    height: 900px;
+    height: 1165px;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
@@ -3572,7 +3584,7 @@ input[type="search" i] {
     margin-top: 0px;
   }
   .edition-swiper-slide {
-
+    height: 305px;
     margin-top: 0px !important;
   }
 
@@ -3624,7 +3636,7 @@ input[type="search" i] {
   }
 
   .project__headding {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 
   }
 
@@ -3666,6 +3678,7 @@ input[type="search" i] {
     padding: 0;
     flex-wrap: nowrap;
     border: none;
+    height: auto;
   }
 
   .contacts-heading {
@@ -3680,7 +3693,7 @@ input[type="search" i] {
   .contacts__left-heading-discr {
     font-size: 14px;
     line-height: 14px;
-
+    margin-bottom: 22px;
   }
   .contacts__left-block {
     padding: 0;
@@ -3699,6 +3712,7 @@ input[type="search" i] {
     width: 100%;
     height: 320px;
     order: 2;
+    margin-bottom: 18px;
   }
 
   .form__input {
@@ -3720,43 +3734,54 @@ input[type="search" i] {
 
   .social-heading {
     font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
+  .social-link {
+    width: 48.5px;
+    height: 48.5px;
 
+  }
+  .social-link:not(:last-child) {
+    margin-right: 23px;
+  }
   .footer__container {
+    flex-direction: column-reverse;
     padding-left: 15px;
     padding-right: 15px;
   }
 
   .footer__logo {
-    padding: 12px 0 10px 0;
+    padding: 12px 0 6px 0;
   }
   .footer__logo-img {
     width: 97px;
   }
   .footer__social-link,
   .footer__social-item {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
   }
   .footer__social-item:not(:last-child) {
-    margin-right: 13px;
+    margin-right: 30px;
   }
 
   .instagram svg {
     color: #cacaca;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
   }
 
   .vk,
   .facebook {
-    background-size: 25px;
+    background-size: 50px;
   }
 
+  .footer__social-list {
+    padding-top: 19px;
+  }
+}
+}
 
-}
-}
 
 
 

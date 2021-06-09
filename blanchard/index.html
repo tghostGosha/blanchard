@@ -1339,7 +1339,7 @@
                 </svg>
               </span>
             </button>
-            <form action="url" class="edition__form" id="edition-select ">
+            <form action="url" class="edition__form" id="edition-select">
               <label for="check-1" class="edition__form-label">
                 <input type="checkbox" name="Бестселлеры" id="check-1" class="edition__form-input sr-only">
                 <span class="edition__form-span">Бестселлеры</span>
@@ -1657,8 +1657,10 @@
       } else {
         $('#accordion-edition').accordion({
         collapsible: true,
+        active: true,
         classes: {
-          "ui-accordion-contentt": "highlight"
+          'ui-accordion-content': '.highlight',
+          'ui-accordion-header': '.accordion-btn'
         }
       });
       }

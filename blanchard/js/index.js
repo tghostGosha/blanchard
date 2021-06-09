@@ -109,7 +109,8 @@ let swiper1;
 function init_swiper1() {
   swiper1 = new Swiper(slider1, {
     slidesPerView: 2,
-    slidesPerColumn: 2,
+    slidesPerColumn: 4,
+    slidesPerGroup: 2,
     spaceBetween: 30,
     slideClass: 'edition-swiper-slide',
     wrapperClass: 'edition-swiper-wrapper',
