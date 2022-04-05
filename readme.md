@@ -1,7 +1,7 @@
-##Курсовой проект Blanchard (HTML + CSS)
+Курсовой проект Blanchard (HTML + CSS)
 
 ---
-###Библиотеки:
+Библиотеки:
 - [jQuery UI 1.13](https://api.jqueryui.com/) 
 - [Swiper JS](https://swiperjs.com/)
 - [Just-validate](https://github.com/horprogs/Just-validate)
